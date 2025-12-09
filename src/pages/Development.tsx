@@ -1,0 +1,336 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { GraduationCap, Heart, Building, Sprout } from 'lucide-react';
+
+export default function Development() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  return (
+    <div>
+      <section className="relative h-96 flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://placehold.co/1920x600/4C7000/FFF?text=Development)' }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Development Initiatives</h1>
+          <p className="text-xl md:text-2xl">Building a Brighter Future Together</p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Our Development Vision
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Progress rooted in our values, development that honors our heritage—we're building a Tanyigbe that provides opportunity, health, and prosperity for all while preserving what makes us unique.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <a href="#education" className="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+              <div className="bg-[#E2A201] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <GraduationCap className="text-white" size={40} />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Education</h3>
+              <p className="text-gray-600">Empowering through knowledge</p>
+            </a>
+
+            <a href="#health" className="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+              <div className="bg-[#FF4516] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="text-white" size={40} />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Health</h3>
+              <p className="text-gray-600">Ensuring wellness for all</p>
+            </a>
+
+            <a href="#infrastructure" className="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+              <div className="bg-[#4C7000] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Building className="text-white" size={40} />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Infrastructure</h3>
+              <p className="text-gray-600">Building foundations</p>
+            </a>
+
+            <a href="#agriculture" className="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+              <div className="bg-[#1F2937] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Sprout className="text-white" size={40} />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Agriculture</h3>
+              <p className="text-gray-600">Cultivating prosperity</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" className="py-20 bg-gray-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="/533048130_1314207883612102_7986478633305916107_n.jpg"
+                alt="Education"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div className="bg-[#E2A201] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <GraduationCap className="text-white" size={32} />
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Education Development
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Education is the foundation of progress. We invest in our children's future through comprehensive programs that ensure every Tanyigbe child has access to quality education.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Education Initiatives:</h3>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>BECE Support Programs:</strong> Providing study materials, extra classes, and exam preparation for all students preparing for basic education exams</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Scholarship Fund:</strong> Financial assistance for brilliant but needy students to continue their education at secondary and tertiary levels</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>School Infrastructure:</strong> Renovating classrooms, building libraries, and improving learning facilities across all four divisions</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Teacher Support:</strong> Incentives and accommodations to attract and retain quality teachers in our schools</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Adult Literacy Programs:</strong> Education opportunities for adults who missed formal schooling</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>ICT Training:</strong> Computer literacy and digital skills programs preparing youth for the modern economy</span>
+                </li>
+              </ul>
+
+              <div className="bg-[#E2A201] bg-opacity-10 rounded-lg p-6">
+                <p className="text-gray-900 font-semibold">
+                  "Education is not just about passing exams—it's about empowering our people to reach their full potential and contribute meaningfully to our community's development."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="health" className="py-20 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-[#FF4516] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Heart className="text-white" size={32} />
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Healthcare Initiatives
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Good health is fundamental to community wellbeing. We're working to ensure that every Tanyigbe resident has access to quality healthcare services.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Health Programs:</h3>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>NHIS Registration Drives:</strong> Ensuring all community members are enrolled in the National Health Insurance Scheme</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Health Screening Programs:</strong> Regular free health checks for common conditions like diabetes, hypertension, and malaria</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Clinic Improvement:</strong> Upgrading existing health facilities with modern equipment and supplies</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Maternal Health:</strong> Special programs supporting pregnant women and new mothers with care and education</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Disease Prevention:</strong> Vaccination drives, sanitation education, and preventive health campaigns</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Emergency Response:</strong> Improving access to emergency medical care and ambulance services</span>
+                </li>
+              </ul>
+
+              <div className="bg-[#FF4516] bg-opacity-10 rounded-lg p-6">
+                <p className="text-gray-900 font-semibold">
+                  "A healthy community is a productive community. We're committed to ensuring that healthcare is accessible and affordable for all our people."
+                </p>
+              </div>
+            </div>
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="https://placehold.co/600x400/FF4516/FFF?text=Healthcare+Services"
+                alt="Healthcare"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="infrastructure" className="py-20 bg-gray-50 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="https://placehold.co/600x400/4C7000/FFF?text=Infrastructure+Development"
+                alt="Infrastructure"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div className="bg-[#4C7000] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Building className="text-white" size={32} />
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Infrastructure Development
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Strong infrastructure is the backbone of community development. We're investing in roads, water, electricity, and facilities that improve quality of life.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Infrastructure Projects:</h3>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Road Construction:</strong> Improving connectivity between divisions with better roads and pathways</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Water Systems:</strong> Expanding access to clean water through boreholes, pipe systems, and storage tanks</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Electricity Extension:</strong> Working to ensure all households have access to reliable electricity</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Community Centers:</strong> Building and renovating spaces for meetings, celebrations, and community activities</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Market Facilities:</strong> Improving market infrastructure to support trade and economic activity</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Sanitation Systems:</strong> Installing proper waste management and public toilet facilities</span>
+                </li>
+              </ul>
+
+              <div className="bg-[#4C7000] bg-opacity-10 rounded-lg p-6">
+                <p className="text-gray-900 font-semibold">
+                  "Good infrastructure doesn't just make life easier—it creates opportunities for economic growth and improves the wellbeing of every community member."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agriculture" className="py-20 bg-white scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-[#1F2937] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Sprout className="text-white" size={32} />
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Agricultural Development
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Agriculture is the lifeblood of our community. We're modernizing farming practices while preserving sustainable methods that have served us for generations.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Agriculture Programs:</h3>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Cocoa Rehabilitation:</strong> Supporting farmers to improve cocoa yields through modern farming techniques and inputs</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Food Crop Production:</strong> Promoting cultivation of yam, cassava, maize, and vegetables for food security</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Livestock Development:</strong> Supporting poultry, goat, and small animal farming initiatives</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Youth in Agriculture:</strong> Encouraging young people to see farming as a viable and profitable career</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Farmer Training:</strong> Educational programs on modern farming techniques, pest management, and crop diversification</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Market Access:</strong> Creating better linkages between farmers and markets for their produce</span>
+                </li>
+              </ul>
+
+              <div className="bg-gray-100 rounded-lg p-6">
+                <p className="text-gray-900 font-semibold">
+                  "Agriculture feeds our families, sustains our economy, and connects us to our land. Investing in agriculture is investing in our future."
+                </p>
+              </div>
+            </div>
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="https://placehold.co/600x400/1F2937/FFF?text=Agriculture+Programs"
+                alt="Agriculture"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-[#E2A201] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+              Partner With Us
+            </h2>
+            <p className="text-xl mb-8">
+              These development initiatives require resources, expertise, and commitment. Whether through financial support, technical assistance, or volunteer time, your contribution makes a real difference.
+            </p>
+            <p className="text-lg mb-8">
+              Join us in building a Tanyigbe where every child gets an education, every person has access to healthcare, infrastructure supports growth, and agriculture provides prosperity.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-white text-[#E2A201] px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+                Support Development
+              </button>
+              <button className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-[#E2A201] transition-colors">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
