@@ -77,13 +77,14 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                   />
                 </button>
                 <div
-                  className={`absolute top-full left-0 bg-white shadow-xl rounded-lg mt-2 w-80 border border-gray-100 transition-all duration-300 ease-out origin-top ${
+                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
                     activeDropdown === 'about'
                       ? 'opacity-100 translate-y-0 pointer-events-auto'
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
+                  style={{ paddingTop: '0.5rem' }}
                 >
-                  <div className="p-6">
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
                     <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">About Tanyigbe</h3>
                     <div className="grid gap-3">
                       <Link
@@ -120,13 +121,14 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                   />
                 </button>
                 <div
-                  className={`absolute top-full left-0 bg-white shadow-xl rounded-lg mt-2 w-80 border border-gray-100 transition-all duration-300 ease-out origin-top ${
+                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
                     activeDropdown === 'culture'
                       ? 'opacity-100 translate-y-0 pointer-events-auto'
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
+                  style={{ paddingTop: '0.5rem' }}
                 >
-                  <div className="p-6">
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
                     <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Culture & Traditions</h3>
                     <div className="grid gap-3">
                       <Link
@@ -156,13 +158,14 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                   />
                 </button>
                 <div
-                  className={`absolute top-full left-1/2 -translate-x-1/2 bg-white shadow-xl rounded-lg mt-2 w-[600px] border border-gray-100 transition-all duration-300 ease-out origin-top ${
+                  className={`absolute top-full left-1/2 -translate-x-1/2 w-[600px] transition-all duration-300 ease-out origin-top ${
                     activeDropdown === 'development'
                       ? 'opacity-100 translate-y-0 pointer-events-auto'
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
+                  style={{ paddingTop: '0.5rem' }}
                 >
-                  <div className="p-6">
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
                     <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Development Initiatives</h3>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-3">
