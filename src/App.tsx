@@ -11,6 +11,7 @@ import Development from './pages/Development';
 import Diaspora from './pages/Diaspora';
 import Tourism from './pages/Tourism';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/development" element={<Development />} />
           <Route path="/diaspora" element={<Diaspora />} />
           <Route path="/tourism" element={<Tourism />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
