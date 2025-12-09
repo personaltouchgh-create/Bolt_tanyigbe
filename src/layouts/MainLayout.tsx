@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Menu, X, ChevronDown, Facebook, Instagram, Youtube, Music, Mail, Phone, MapPin } from 'lucide-react';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -458,6 +458,15 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-300 hover:text-[#E2A201] transition-colors">
                   <Facebook size={24} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#E2A201] transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#E2A201] transition-colors">
+                  <Youtube size={24} />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-[#E2A201] transition-colors">
+                  <Music size={24} />
                 </a>
               </div>
             </div>

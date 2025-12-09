@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Send, Facebook, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Send, Facebook, Instagram, Youtube, Music, MessageCircle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 export default function Contact() {
@@ -121,10 +121,23 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Social Media</h4>
-                    <p className="text-gray-700">
-                      Follow us for updates, event announcements, and community news:<br />
-                      <a href="#" className="text-[#E2A201] hover:underline">Facebook: Tanyigbe Traditional Area</a>
+                    <p className="text-gray-700 mb-3">
+                      Follow us for updates, event announcements, and community news
                     </p>
+                    <div className="flex space-x-3">
+                      <a href="#" className="text-gray-600 hover:text-[#E2A201] transition-colors">
+                        <Facebook size={28} />
+                      </a>
+                      <a href="#" className="text-gray-600 hover:text-[#E2A201] transition-colors">
+                        <Instagram size={28} />
+                      </a>
+                      <a href="#" className="text-gray-600 hover:text-[#E2A201] transition-colors">
+                        <Youtube size={28} />
+                      </a>
+                      <a href="#" className="text-gray-600 hover:text-[#E2A201] transition-colors">
+                        <Music size={28} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
