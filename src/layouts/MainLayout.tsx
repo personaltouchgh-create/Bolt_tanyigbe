@@ -224,6 +224,15 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
               </Link>
 
               <Link
+                to="/blog"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  isActive('/blog') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                }`}
+              >
+                Blog
+              </Link>
+
+              <Link
                 to="/contact"
                 className={`px-4 py-2 rounded-md transition-colors ${
                   isActive('/contact') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
@@ -404,6 +413,14 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
               </Link>
 
               <Link
+                to="/blog"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </Link>
+
+              <Link
                 to="/contact"
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
@@ -478,6 +495,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 <li><Link to="/history" className="text-gray-300 hover:text-[#E2A201] transition-colors">History</Link></li>
                 <li><Link to="/culture" className="text-gray-300 hover:text-[#E2A201] transition-colors">Culture</Link></li>
                 <li><Link to="/development" className="text-gray-300 hover:text-[#E2A201] transition-colors">Development</Link></li>
+                <li><Link to="/blog" className="text-gray-300 hover:text-[#E2A201] transition-colors">Blog</Link></li>
               </ul>
             </div>
 

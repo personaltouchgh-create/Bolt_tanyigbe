@@ -10,6 +10,7 @@ import Culture from './pages/Culture';
 import Development from './pages/Development';
 import Diaspora from './pages/Diaspora';
 import Tourism from './pages/Tourism';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/development" element={<Development />} />
           <Route path="/diaspora" element={<Diaspora />} />
           <Route path="/tourism" element={<Tourism />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </MainLayout>
