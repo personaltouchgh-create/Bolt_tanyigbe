@@ -102,8 +102,8 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
 
           <p className="text-center text-gray-600 mt-6">
             For more information or to discuss larger contributions, please contact us at{' '}
-            <a href="mailto:donations@tanyigbe.org" className="text-[#E2A201] hover:underline">
-              donations@tanyigbe.org
+            <a href="mailto:donations@tanyigbe.com" className="text-[#E2A201] hover:underline">
+              donations@tanyigbe.com
             </a>
           </p>
         </div>

@@ -495,7 +495,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 </li>
                 <li className="flex items-center">
                   <Mail size={20} className="mr-2" />
-                  <span>info@tanyigbe.org</span>
+                  <span>info@tanyigbe.com</span>
                 </li>
               </ul>
             </div>

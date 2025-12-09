@@ -108,9 +108,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Email</h4>
                     <p className="text-gray-700">
-                      General Inquiries: <a href="mailto:info@tanyigbe.org" className="text-[#E2A201] hover:underline">info@tanyigbe.org</a><br />
-                      Development Projects: <a href="mailto:development@tanyigbe.org" className="text-[#E2A201] hover:underline">development@tanyigbe.org</a><br />
-                      Diaspora Network: <a href="mailto:diaspora@tanyigbe.org" className="text-[#E2A201] hover:underline">diaspora@tanyigbe.org</a>
+                      General Inquiries: <a href="mailto:info@tanyigbe.com" className="text-[#E2A201] hover:underline">info@tanyigbe.com</a><br />
+                      Development Projects: <a href="mailto:development@tanyigbe.com" className="text-[#E2A201] hover:underline">development@tanyigbe.com</a><br />
+                      Diaspora Network: <a href="mailto:diaspora@tanyigbe.com" className="text-[#E2A201] hover:underline">diaspora@tanyigbe.com</a>
                     </p>
                   </div>
                 </div>
@@ -251,7 +251,7 @@ export default function Contact() {
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 XX XXX XXXX</p>
-                <p>Email: etoe@tanyigbe.org</p>
+                <p>Email: etoe@tanyigbe.com</p>
               </div>
             </div>
 
@@ -263,7 +263,7 @@ export default function Contact() {
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 XX XXX XXXX</p>
-                <p>Email: gbogame@tanyigbe.org</p>
+                <p>Email: gbogame@tanyigbe.com</p>
               </div>
             </div>
 
@@ -275,7 +275,7 @@ export default function Contact() {
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 XX XXX XXXX</p>
-                <p>Email: avedome@tanyigbe.org</p>
+                <p>Email: avedome@tanyigbe.com</p>
               </div>
             </div>
 
@@ -287,7 +287,7 @@ export default function Contact() {
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 XX XXX XXXX</p>
-                <p>Email: dugame@tanyigbe.org</p>
+                <p>Email: dugame@tanyigbe.com</p>
               </div>
             </div>
           </div>
@@ -309,7 +309,7 @@ export default function Contact() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:info@tanyigbe.org"
+                  href="mailto:info@tanyigbe.com"
                   className="inline-flex items-center justify-center bg-[#E2A201] text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-colors"
                 >
                   <Mail size={20} className="mr-2" />
