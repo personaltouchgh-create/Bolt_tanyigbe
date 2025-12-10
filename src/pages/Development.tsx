@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { GraduationCap, Heart, Building, Sprout } from 'lucide-react';
+import { GraduationCap, Heart, Building, Sprout, Award, Globe } from 'lucide-react';
 
 export default function Development() {
   const location = useLocation();
@@ -303,6 +303,95 @@ export default function Development() {
                 alt="Agriculture"
                 className="w-full h-full object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-[#1F2937] via-[#4C7000] to-[#E2A201]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center gap-4 mb-6">
+              <div className="bg-white p-4 rounded-full">
+                <Award className="text-[#E2A201]" size={48} />
+              </div>
+              <div className="bg-white p-4 rounded-full">
+                <Globe className="text-[#4C7000]" size={48} />
+              </div>
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-6">
+              Distinguished Natives Contributing to Development
+            </h2>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Tanyigbe natives serve with distinction in various professional capacities across Ghana and internationally, making significant contributions to national development in political, cultural, educational, and professional sectors.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: 'Gen. H. K Anyidoho (rtd)', field: 'Military & Public Service' },
+                  { name: 'Captain Simon D.K Kpe', field: 'Military Service' },
+                  { name: 'Sam Kabo', field: 'Public Service' },
+                  { name: 'Seth D. Kpodo', field: 'Professional Service' },
+                  { name: 'Togbe Kwasi Tutu II', field: 'Traditional Leadership' },
+                  { name: 'Winfred K. Bimah', field: 'Professional Service' },
+                  { name: 'P.D.K Abiwu', field: 'Public Service' },
+                  { name: 'Mama (Dr) Abra Hokor I', field: 'Healthcare & Leadership' },
+                  { name: 'Justice Wutor', field: 'Judiciary' },
+                  { name: 'Ing Sammy Akuaku', field: 'Engineering' },
+                  { name: 'Prof D. Dzansi', field: 'Academia' },
+                  { name: 'Wisdom Kofi Xetor', field: 'Professional Service' },
+                  { name: 'Prof V.C Wutor', field: 'Academia' },
+                  { name: 'Victor Akudey', field: 'Professional Service' },
+                  { name: 'Rev Emmanuel Tide', field: 'Religious Leadership' },
+                  { name: 'Zikpuitor Enos Adiko Mensa', field: 'Public Service' },
+                  { name: 'S.Y Akafia', field: 'Professional Service' },
+                  { name: 'Emmanuel Kwami Wutor', field: 'Professional Service' },
+                  { name: 'Hon. Ivy Adiko', field: 'Politics & Governance' },
+                  { name: 'Robertson Kwasi Kpatsa', field: 'Professional Service' },
+                  { name: 'Ms Dinah Adiko', field: 'Professional Service' },
+                  { name: 'Koku Anyidoho', field: 'Politics & Communications' },
+                  { name: 'Amorin Koto', field: 'Professional Service' },
+                  { name: 'Aaron Danso', field: 'Professional Service' }
+                ].map((person, index) => (
+                  <div key={index} className="group">
+                    <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-6 border-l-4 border-[#E2A201] hover:shadow-lg transition-all hover:scale-105">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Award className="text-[#E2A201]" size={20} />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-gray-900 mb-1 group-hover:text-[#E2A201] transition-colors">
+                            {person.name}
+                          </h3>
+                          <p className="text-sm text-gray-600">
+                            {person.field}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <div className="bg-gradient-to-r from-[#E2A201] to-[#4C7000] rounded-xl p-8 text-white">
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold mb-4">A Legacy of Excellence</h3>
+                    <p className="text-lg leading-relaxed opacity-95">
+                      These distinguished individuals, along with many more Tanyigbe natives, continue to bring honor to our community through their exceptional service and contributions across diverse fields. They serve as role models, demonstrating the values of excellence, dedication, and service that define the Tanyigbe spirit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-gray-600 italic">
+                  This list includes but is not limited to these distinguished names. Many more Tanyigbe sons and daughters continue to excel in various fields, contributing to the development of Ghana and beyond.
+                </p>
+              </div>
             </div>
           </div>
         </div>
