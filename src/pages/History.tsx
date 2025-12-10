@@ -150,7 +150,7 @@ export default function History() {
             <div className="border-l-4 border-[#4C7000] pl-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Formation of the Four Divisions</h3>
               <p className="text-lg text-gray-700">
-                Recognition and formal organization of Tanyigbe-Etoe, Tanyigbe-Gbogame, Tanyigbe-Avedome, and Tanyigbe-Dugame as distinct but united divisions.
+                Recognition and formal organization of Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe as distinct but united divisions under one traditional authority.
               </p>
             </div>
 

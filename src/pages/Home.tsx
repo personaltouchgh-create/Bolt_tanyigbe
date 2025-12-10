@@ -53,7 +53,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Our Community</h3>
               <p className="text-gray-700 mb-4">
-                Four united divisions working together: Tanyigbe-Etoe, Tanyigbe-Gbogame, Tanyigbe-Avedome, and Tanyigbe-Dugame.
+                Four united divisions working together: Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe.
               </p>
               <Link to="/about" className="text-[#E2A201] font-semibold hover:underline inline-flex items-center">
                 Learn More <ArrowRight size={16} className="ml-1" />

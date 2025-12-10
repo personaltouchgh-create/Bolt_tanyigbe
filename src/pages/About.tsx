@@ -56,7 +56,7 @@ export default function About() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Etoe</h3>
               <p className="text-gray-700 leading-relaxed">
-                The first division, Etoe holds a special place in our history as one of the founding settlements. Known for its strong agricultural traditions and community leadership, Etoe exemplifies the pioneering spirit of our ancestors.
+                The paramount division and seat of traditional authority, Etoe serves as the administrative center of the Tanyigbe Traditional Area. Home to the paramount chief, it embodies leadership, governance, and the unity that binds all four divisions together.
               </p>
             </div>
 
@@ -64,9 +64,9 @@ export default function About() {
               <div className="bg-[#4C7000] w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Building2 className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Gbogame</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Aveme</h3>
               <p className="text-gray-700 leading-relaxed">
-                Gbogame is renowned for its vibrant market culture and as a center of trade within the traditional area. This division plays a crucial role in our economic development and serves as a hub for commercial activities.
+                Known for its strong agricultural foundation and vibrant community spirit, Aveme plays a vital role in food production and cultural preservation. The division is celebrated for its dedication to maintaining traditional farming practices alongside modern techniques.
               </p>
             </div>
 
@@ -74,9 +74,9 @@ export default function About() {
               <div className="bg-[#FF4516] w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Users className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Avedome</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Bator</h3>
               <p className="text-gray-700 leading-relaxed">
-                Avedome is celebrated for its rich cultural heritage and is home to many of our traditional festivals and ceremonies. The division is a guardian of our customs and plays a vital role in preserving Eʋe traditions.
+                Bator is distinguished by its rich cultural heritage and deep connection to traditional customs. This division serves as a guardian of ancestral knowledge and plays a central role in preserving the spiritual and cultural practices that define the Tanyigbe identity.
               </p>
             </div>
 
@@ -84,9 +84,9 @@ export default function About() {
               <div className="bg-[#1F2937] w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <MapPin className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Dugame</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Dzigbe</h3>
               <p className="text-gray-700 leading-relaxed">
-                Dugame contributes significantly to our agricultural output and is known for its cocoa farming expertise. This division represents the industrious nature of our people and their commitment to sustainable development.
+                Dzigbe represents the industrious nature of the Tanyigbe people, with strong emphasis on communal development and education. The division is known for its progressive outlook while maintaining deep respect for tradition and cultural values.
               </p>
             </div>
           </div>
