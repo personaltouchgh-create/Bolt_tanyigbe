@@ -37,7 +37,7 @@ export default function TraditionalGovernance() {
       title: 'Current Paramount Chief',
       description: 'Leading Tanyigbe Traditional Area into the future while preserving rich cultural heritage',
       era: 'Present',
-      image: '/envato-labs-image-edit_(4).png',
+      image: '/48 copy.jpg',
       current: true
     }
   ];
@@ -104,7 +104,7 @@ export default function TraditionalGovernance() {
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform transition hover:scale-105">
               <div className="relative h-96">
                 <img
-                  src="/envato-labs-image-edit_(4).png"
+                  src="/48 copy.jpg"
                   alt="Togbe Kodi Adiko VI"
                   className="w-full h-full object-cover"
                 />
