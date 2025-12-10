@@ -308,7 +308,7 @@ export default function Development() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-[#1F2937] via-[#4C7000] to-[#E2A201]">
+      <section id="distinguished-natives" className="py-20 bg-gradient-to-br from-[#1F2937] via-[#4C7000] to-[#E2A201] scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center gap-4 mb-6">
