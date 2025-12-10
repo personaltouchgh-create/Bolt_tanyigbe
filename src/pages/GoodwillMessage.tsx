@@ -20,7 +20,7 @@ export default function GoodwillMessage() {
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#E2A201] via-[#4C7000] to-[#FF4516] rounded-full blur-xl opacity-30"></div>
                   <img
-                    src="/48.jpg"
+                    src="/1.jpg"
                     alt="Togbe Kodi Adiko VI, Paramount Chief of Tanyigbe Traditional Area"
                     className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-8 border-white shadow-2xl mx-auto"
                   />
