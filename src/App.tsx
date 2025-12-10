@@ -7,6 +7,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import History from './pages/History';
 import Culture from './pages/Culture';
+import TraditionalGovernance from './pages/TraditionalGovernance';
+import NorduFestival from './pages/NorduFestival';
+import Tayafest from './pages/Tayafest';
 import Development from './pages/Development';
 import Diaspora from './pages/Diaspora';
 import Tourism from './pages/Tourism';
@@ -29,6 +32,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/history" element={<History />} />
           <Route path="/culture" element={<Culture />} />
+          <Route path="/culture/governance" element={<TraditionalGovernance />} />
+          <Route path="/culture/nordu-festival" element={<NorduFestival />} />
+          <Route path="/culture/tayafest" element={<Tayafest />} />
           <Route path="/development" element={<Development />} />
           <Route path="/diaspora" element={<Diaspora />} />
           <Route path="/tourism" element={<Tourism />} />

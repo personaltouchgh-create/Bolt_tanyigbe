@@ -135,8 +135,33 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                         to="/culture"
                         className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
                       >
-                        <div className="font-semibold text-gray-900">Festivals</div>
-                        <div className="text-sm text-gray-600">TAYAFEST and traditions</div>
+                        <div className="font-semibold text-gray-900">Overview</div>
+                        <div className="text-sm text-gray-600">Eʋe culture and traditions</div>
+                      </Link>
+                      <Link
+                        to="/culture/governance"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Traditional Governance</div>
+                        <div className="text-sm text-gray-600">Leadership & customs</div>
+                      </Link>
+                      <div className="border-t border-gray-200 my-2"></div>
+                      <div className="px-4 py-2">
+                        <div className="text-xs font-bold text-gray-500 uppercase tracking-wider">Festivals</div>
+                      </div>
+                      <Link
+                        to="/culture/tayafest"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">TAYAFEST</div>
+                        <div className="text-sm text-gray-600">Annual Yam Festival</div>
+                      </Link>
+                      <Link
+                        to="/culture/nordu-festival"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">NORDU Festival</div>
+                        <div className="text-sm text-gray-600">Community celebration</div>
                       </Link>
                     </div>
                   </div>
@@ -330,7 +355,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('culture') ? 'max-h-20 opacity-100' : 'max-h-0 opacity-0'
+                    mobileExpandedMenus.has('culture') ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="pl-4 py-2 space-y-1">
@@ -339,7 +364,29 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Festivals & Traditions
+                      Overview
+                    </Link>
+                    <Link
+                      to="/culture/governance"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Traditional Governance
+                    </Link>
+                    <div className="px-4 py-2 text-xs font-bold text-gray-500 uppercase">Festivals</div>
+                    <Link
+                      to="/culture/tayafest"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      TAYAFEST
+                    </Link>
+                    <Link
+                      to="/culture/nordu-festival"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      NORDU Festival
                     </Link>
                   </div>
                 </div>
