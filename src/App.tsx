@@ -6,6 +6,7 @@ import VolunteerModal from './components/VolunteerModal';
 import Home from './pages/Home';
 import About from './pages/About';
 import History from './pages/History';
+import GoodwillMessage from './pages/GoodwillMessage';
 import Culture from './pages/Culture';
 import TraditionalGovernance from './pages/TraditionalGovernance';
 import NorduFestival from './pages/NorduFestival';
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/goodwill-message" element={<GoodwillMessage />} />
           <Route path="/history" element={<History />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/culture/governance" element={<TraditionalGovernance />} />

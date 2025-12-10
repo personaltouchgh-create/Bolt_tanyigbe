@@ -101,6 +101,13 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                         <div className="font-semibold text-gray-900">History & Heritage</div>
                         <div className="text-sm text-gray-600">Our migration story</div>
                       </Link>
+                      <Link
+                        to="/about/goodwill-message"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Goodwill Message</div>
+                        <div className="text-sm text-gray-600">From the Paramount Chief</div>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -318,7 +325,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('about') ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                    mobileExpandedMenus.has('about') ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="pl-4 py-2 space-y-1">
@@ -335,6 +342,13 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                       onClick={() => setIsMenuOpen(false)}
                     >
                       History & Heritage
+                    </Link>
+                    <Link
+                      to="/about/goodwill-message"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Goodwill Message
                     </Link>
                   </div>
                 </div>
