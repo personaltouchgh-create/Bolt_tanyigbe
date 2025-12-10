@@ -30,7 +30,7 @@ export default function Culture() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Music & Dance</h3>
               <p className="text-gray-700">
-                Traditional Agbadza, Atsiagbekor, and other Eʋe dances remain central to our celebrations
+                Traditional Eʋe dances including Agbadza are performed during cultural celebrations and festivals
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function Culture() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Cuisine</h3>
               <p className="text-gray-700">
-                Akple, fetri detsi, and other traditional Eʋe dishes continue to nourish body and soul
+                Traditional Eʋe cuisine is prepared for festivals and community gatherings
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function Culture() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Festivals</h3>
               <p className="text-gray-700">
-                TAYAFEST and other celebrations bring the community together in joyous unity
+                Annual festivals bring together community members from all four divisions and diaspora
               </p>
             </div>
 
@@ -215,7 +215,7 @@ export default function Culture() {
               Traditional Ceremonies & Rites
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-              Life's important transitions are marked by ceremonies that connect us to our heritage and community.
+              Traditional ceremonies mark significant life events following Eʋe cultural practices.
             </p>
           </div>
 
@@ -223,21 +223,21 @@ export default function Culture() {
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Naming Ceremonies</h3>
               <p className="text-gray-700 leading-relaxed">
-                The outdooring of a newborn is a joyous occasion where the child is formally introduced to the community and given their name, connecting them to ancestors and establishing their place in the family lineage.
+                Naming ceremonies are performed following Eʋe traditions, where newborns are formally introduced to the community and family.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Traditional Marriages</h3>
               <p className="text-gray-700 leading-relaxed">
-                Marriage ceremonies blend traditional customs with modern practices, featuring the knocking ceremony, bride price negotiations, and celebrations that unite two families within the Tanyigbe community.
+                Marriage ceremonies follow Eʋe customary practices, including traditional rites that unite families within the community.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Funeral Rites</h3>
               <p className="text-gray-700 leading-relaxed">
-                We honor our departed with elaborate funeral ceremonies that celebrate their lives, provide comfort to the bereaved, and ensure a proper spiritual transition according to Eʋe traditions.
+                Funeral ceremonies are conducted according to Eʋe traditions and customs, honoring the departed and bringing together community members.
               </p>
             </div>
           </div>

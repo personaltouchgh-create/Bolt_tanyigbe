@@ -19,10 +19,10 @@ export default function About() {
               The Tanyigbe Traditional Area
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Tanyigbe is a vibrant Eʋe community located in the Volta Region of Ghana, nestled in the scenic hills near Hohoe. Our traditional area represents the unity and strength of four distinct divisions, each contributing to the rich tapestry of our shared heritage.
+              Tanyigbe is an Eʋe community located in the Hohoe District of the Volta Region, Ghana. The traditional area comprises four divisions united under one paramount stool, with a shared commitment to preserving our heritage while embracing development.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              We are a people bound by common ancestry, shared values, and an unwavering commitment to progress while preserving our cultural identity.
+              Our community is governed by traditional leadership structures that honor both our Eʋe heritage and the unique identity of each division.
             </p>
           </div>
 
@@ -30,9 +30,9 @@ export default function About() {
             <div className="flex items-center justify-center mb-6">
               <MapPin size={48} className="text-[#E2A201]" />
             </div>
-            <h3 className="font-serif text-3xl font-bold text-gray-900 text-center mb-4">Location & Geography</h3>
+            <h3 className="font-serif text-3xl font-bold text-gray-900 text-center mb-4">Location</h3>
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
-              Situated in the lush highlands of the Volta Region, Tanyigbe benefits from fertile lands, abundant rainfall, and proximity to some of Ghana's most stunning natural attractions, including the Wli Waterfalls and Mount Afadja.
+              Located in the Hohoe District of the Volta Region, Ghana, Tanyigbe is part of the historic Eʋe settlement area with proximity to significant regional landmarks.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function About() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Etoe</h3>
               <p className="text-gray-700 leading-relaxed">
-                The paramount division and seat of traditional authority, Etoe serves as the administrative center of the Tanyigbe Traditional Area. Home to the paramount chief, it embodies leadership, governance, and the unity that binds all four divisions together.
+                Etoe serves as the seat of the paramount chief and administrative center of the Tanyigbe Traditional Area, representing the traditional authority and unity of all four divisions.
               </p>
             </div>
 
@@ -66,7 +66,7 @@ export default function About() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Aveme</h3>
               <p className="text-gray-700 leading-relaxed">
-                Known for its strong agricultural foundation and vibrant community spirit, Aveme plays a vital role in food production and cultural preservation. The division is celebrated for its dedication to maintaining traditional farming practices alongside modern techniques.
+                Aveme is one of the four constituent divisions of the Tanyigbe Traditional Area, contributing to the community's agricultural activities and cultural heritage.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function About() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Bator</h3>
               <p className="text-gray-700 leading-relaxed">
-                Bator is distinguished by its rich cultural heritage and deep connection to traditional customs. This division serves as a guardian of ancestral knowledge and plays a central role in preserving the spiritual and cultural practices that define the Tanyigbe identity.
+                Bator is one of the four divisions within the Tanyigbe Traditional Area, maintaining its distinct identity while contributing to the unity of the community.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ export default function About() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Dzigbe</h3>
               <p className="text-gray-700 leading-relaxed">
-                Dzigbe represents the industrious nature of the Tanyigbe people, with strong emphasis on communal development and education. The division is known for its progressive outlook while maintaining deep respect for tradition and cultural values.
+                Dzigbe is one of the four divisions of the Tanyigbe Traditional Area, contributing to the collective development and preservation of community traditions.
               </p>
             </div>
           </div>
@@ -102,27 +102,27 @@ export default function About() {
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-[#E2A201] mb-2">Unity</h3>
+                  <h3 className="text-2xl font-bold text-[#E2A201] mb-2">Traditional Governance</h3>
                   <p className="text-lg text-gray-700">
-                    Despite our four divisions, we stand as one people with a shared destiny and common purpose.
+                    The Tanyigbe Traditional Area is governed by a paramount chief and a council of divisional chiefs, maintaining the traditional leadership structure of the Eʋe people.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#4C7000] mb-2">Heritage</h3>
+                  <h3 className="text-2xl font-bold text-[#4C7000] mb-2">Cultural Identity</h3>
                   <p className="text-lg text-gray-700">
-                    We honor and preserve the traditions, language, and customs passed down through generations.
+                    As part of the Eʋe ethnic group, Tanyigbe shares language, customs, and cultural practices with other Eʋe communities in Ghana and Togo.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#FF4516] mb-2">Progress</h3>
+                  <h3 className="text-2xl font-bold text-[#FF4516] mb-2">Community Structure</h3>
                   <p className="text-lg text-gray-700">
-                    We embrace development and innovation while maintaining our cultural identity and values.
+                    The four divisions work together under one traditional authority, each maintaining its identity while contributing to collective development.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Community</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Development Focus</h3>
                   <p className="text-lg text-gray-700">
-                    We support each other, celebrate together, and work collectively toward a better future.
+                    The community prioritizes education, healthcare, and infrastructure development while preserving cultural heritage.
                   </p>
                 </div>
               </div>
@@ -142,16 +142,13 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              Our Motto
+              The Tanyigbe Community
             </h2>
-            <p className="text-3xl md:text-4xl font-serif mb-8 text-[#E2A201]">
-              "Deka kple Dzotsotso"
-            </p>
-            <p className="text-2xl md:text-3xl mb-6">
-              Unity and Progress
+            <p className="text-xl text-gray-300 leading-relaxed mb-6">
+              The Tanyigbe Traditional Area operates under a traditional governance system with a paramount chief serving as the head of the four divisions.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
-              These words guide our journey as a community. We believe that through unity, we achieve strength, and through progress, we secure a prosperous future for generations to come.
+              Each division is represented in the traditional council, ensuring balanced decision-making and preservation of cultural practices across the community.
             </p>
           </div>
         </div>

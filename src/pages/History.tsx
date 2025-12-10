@@ -20,13 +20,13 @@ export default function History() {
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                The history of Tanyigbe is a testament to the enduring spirit of the Eʋe people. Our ancestors embarked on a remarkable journey that would shape the identity of our community for generations to come.
+                Tanyigbe is an Eʋe community with roots in the broader Eʋe migration history. The Eʋe people trace their origins to Notsie in present-day Togo, from where various groups migrated to establish settlements across the Volta Region.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Like many Eʋe communities, our forebears migrated from Notsie (in present-day Togo) during the great Eʋe exodus. This migration, driven by the quest for freedom and better living conditions, led them through challenging terrains and countless obstacles.
+                The Tanyigbe Traditional Area was established in the Hohoe District, where the community has maintained its presence for generations, developing its traditional governance structures and cultural practices.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed">
-                After a long journey, our ancestors discovered the fertile hills of what is now the Hohoe district. Captivated by the land's potential and natural beauty, they established settlements that would eventually grow into the four divisions we know today as the Tanyigbe Traditional Area.
+                Today, the traditional area consists of four divisions—Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe—united under one paramount chief.
               </p>
             </div>
           </div>
@@ -43,9 +43,9 @@ export default function History() {
               <div className="bg-[#E2A201] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Compass className="text-white" size={40} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">The Exodus</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Eʋe Origins</h3>
               <p className="text-gray-700">
-                Departure from Notsie in search of freedom and new opportunities
+                Part of the broader Eʋe migration from Notsie in present-day Togo
               </p>
             </div>
 
@@ -53,9 +53,9 @@ export default function History() {
               <div className="bg-[#4C7000] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Mountain className="text-white" size={40} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">The Trek</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Migration Period</h3>
               <p className="text-gray-700">
-                A challenging journey through forests and mountains seeking a new homeland
+                Settlement in the Volta Region as part of Eʋe migration patterns
               </p>
             </div>
 
@@ -63,9 +63,9 @@ export default function History() {
               <div className="bg-[#FF4516] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TreePine className="text-white" size={40} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Discovery</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Settlement</h3>
               <p className="text-gray-700">
-                Finding the fertile hills and establishing the first settlements
+                Establishment of communities in the Hohoe District area
               </p>
             </div>
 
@@ -73,9 +73,9 @@ export default function History() {
               <div className="bg-[#1F2937] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Flag className="text-white" size={40} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Foundation</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Traditional Area Formation</h3>
               <p className="text-gray-700">
-                Building our four divisions and establishing the Tanyigbe Traditional Area
+                Development of the four-division structure under one paramount stool
               </p>
             </div>
           </div>
@@ -97,13 +97,13 @@ export default function History() {
                 Traditional Governance
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Upon settling in our current location, our ancestors established a system of traditional governance that has endured to this day. The leadership structure honors both our Eʋe heritage and the unique needs of our community.
+                The Tanyigbe Traditional Area operates under a hierarchical governance system typical of Eʋe communities. A paramount chief serves as the overall traditional authority, supported by divisional chiefs from each of the four constituent divisions.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Each of the four divisions is led by a chief who works in consultation with elders and the community. Together, they form the traditional council that guides Tanyigbe, making decisions that balance respect for custom with the demands of modern development.
+                The traditional council comprises the paramount chief, divisional chiefs, and elders who provide guidance on customary matters, dispute resolution, and community development initiatives.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                This governance structure has been instrumental in maintaining unity across our divisions and ensuring that every voice is heard in matters affecting our traditional area.
+                This structure maintains continuity with traditional Eʋe governance while adapting to contemporary administrative requirements in the Hohoe District.
               </p>
             </div>
           </div>
@@ -118,16 +118,16 @@ export default function History() {
             </h2>
             <div className="bg-white rounded-lg shadow-lg p-8">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                As proud members of the Eʋe ethnic group, we share a rich cultural heritage with other Eʋe communities across Ghana and Togo. Our language, traditions, and customs connect us to a broader family while maintaining our unique Tanyigbe identity.
+                Tanyigbe is part of the Eʋe ethnic group, one of Ghana's major ethnic groups with populations also in Togo and Benin. The Eʋe language (Eʋegbe) serves as the primary language of communication within the community.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Eʋe people are known for their complex drumming traditions, particularly the Agbadza dance, which remains a central part of our cultural celebrations. We take pride in preserving these artistic traditions and passing them down to younger generations.
+                The community shares cultural practices common to Eʋe communities, including traditional music, dance forms such as Agbadza, and customary ceremonies that mark significant life events and seasonal celebrations.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our traditional religion and spiritual practices, though now coexisting with Christianity, continue to shape our worldview and inform our relationship with the land and each other.
+                Like many Ghanaian communities, Tanyigbe has experienced religious transformation, with Christianity becoming predominant while traditional beliefs continue to influence cultural practices and worldview.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                The Eʋe language remains the primary language of daily life in Tanyigbe, serving as a living link to our ancestors and a foundation for our cultural identity.
+                The preservation of Eʋe language and cultural practices remains important to community identity, particularly through festivals, traditional ceremonies, and educational initiatives.
               </p>
             </div>
           </div>
@@ -141,37 +141,37 @@ export default function History() {
           </h2>
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Early Settlement</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Eʋe Migration Heritage</h3>
               <p className="text-lg text-gray-700">
-                Establishment of the first permanent settlements in the Tanyigbe area, marking the beginning of our recorded history in this region.
+                Tanyigbe's origins are connected to the broader Eʋe migration from Notsie in present-day Togo, a historical movement that shaped Eʋe settlements across the Volta Region.
               </p>
             </div>
 
             <div className="border-l-4 border-[#4C7000] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Formation of the Four Divisions</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Traditional Area Structure</h3>
               <p className="text-lg text-gray-700">
-                Recognition and formal organization of Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe as distinct but united divisions under one traditional authority.
+                The four divisions—Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe—operate under one paramount stool with a coordinated traditional governance system.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FF4516] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Colonial Era</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Colonial and Independence Period</h3>
               <p className="text-lg text-gray-700">
-                Navigation of the challenges and opportunities presented by British colonial rule, while maintaining our traditional structures and cultural identity.
+                Tanyigbe, as part of the Volta Region, experienced British colonial administration and subsequently became part of independent Ghana in 1957.
               </p>
             </div>
 
             <div className="border-l-4 border-[#1F2937] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Post-Independence Development</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Contemporary Development</h3>
               <p className="text-lg text-gray-700">
-                Embrace of Ghana's independence and active participation in national development while strengthening our local institutions and preserving our heritage.
+                The community continues to balance traditional governance with modern administrative structures, focusing on education, healthcare, and infrastructure development.
               </p>
             </div>
 
             <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Modern Era</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Diaspora Connections</h3>
               <p className="text-lg text-gray-700">
-                Contemporary development initiatives, diaspora engagement, and efforts to balance modernization with cultural preservation.
+                Members of the Tanyigbe community living in other parts of Ghana and abroad maintain connections through annual festivals and development initiatives.
               </p>
             </div>
           </div>
@@ -182,16 +182,13 @@ export default function History() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              Honoring Our Past, Building Our Future
+              The Tanyigbe Traditional Area Today
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              The story of Tanyigbe is one of perseverance, unity, and unwavering commitment to our identity. As we honor the sacrifices and achievements of our ancestors, we remain dedicated to building a future worthy of their legacy.
+              The Tanyigbe Traditional Area operates within the Hohoe District administrative framework while maintaining its traditional governance structures. The community continues to preserve Eʋe cultural heritage through festivals, language maintenance, and traditional ceremonies.
             </p>
-            <p className="text-2xl font-serif text-[#E2A201]">
-              "Míawo tɔgbuiwo ƒe nu siwo wowɔ la, míaɖo ŋku edzi ɣe sia ɣi"
-            </p>
-            <p className="text-lg text-gray-300 mt-4">
-              We will always remember the deeds of our ancestors
+            <p className="text-xl text-gray-300 leading-relaxed">
+              Development priorities include education, healthcare infrastructure, agricultural advancement, and maintaining connections with diaspora community members who contribute to local development initiatives.
             </p>
           </div>
         </div>
