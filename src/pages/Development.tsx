@@ -90,7 +90,7 @@ export default function Development() {
                 Education Development
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Education is the foundation of progress. We invest in our children's future through comprehensive programs that ensure every Tanyigbe child has access to quality education.
+                Education is the foundation of progress. Tanyigbe Traditional Area boasts comprehensive educational facilities: 4 Kindergartens, 4 Primary Schools, 4 Junior High Schools, and 1 Senior High School. Our investment in education has produced many citizens with advanced degrees including PhDs, Professors, and various professional qualifications who contribute meaningfully to national development.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Education Initiatives:</h3>
@@ -105,6 +105,10 @@ export default function Development() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
+                  <span><strong>Youth Development & ICT Centre:</strong> In partnership with Eban Capital, we're building a multipurpose Youth Development & ICT centre to equip the youth with modern skills and technology</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
                   <span><strong>School Infrastructure:</strong> Renovating classrooms, building libraries, and improving learning facilities across all four divisions</span>
                 </li>
                 <li className="flex items-start">
@@ -113,17 +117,16 @@ export default function Development() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Adult Literacy Programs:</strong> Education opportunities for adults who missed formal schooling</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>ICT Training:</strong> Computer literacy and digital skills programs preparing youth for the modern economy</span>
+                  <span><strong>Youth-Centered Programs:</strong> Our annual yam festival celebrations emphasize youth development, cultural preservation, and serve as homecoming events to inspire the next generation of leaders</span>
                 </li>
               </ul>
 
               <div className="bg-[#E2A201] bg-opacity-10 rounded-lg p-6">
-                <p className="text-gray-900 font-semibold">
+                <p className="text-gray-900 font-semibold mb-4">
                   "Education is not just about passing exams—it's about empowering our people to reach their full potential and contribute meaningfully to our community's development."
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Current leaders focus on developing the skills of youth while consciously mobilizing them to embrace our tradition, culture and customs as future leaders. Our annual yam festival celebrations emphasize these areas with youth-centered activities that also serve as homecoming events.
                 </p>
               </div>
             </div>
@@ -142,11 +145,15 @@ export default function Development() {
                 Healthcare Initiatives
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Good health is fundamental to community wellbeing. We're working to ensure that every Tanyigbe resident has access to quality healthcare services.
+                Good health is fundamental to community wellbeing. We've made significant progress with a newly built community clinic managed by a Physician Assistant, ensuring that every Tanyigbe resident has access to quality healthcare services close to home.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Health Programs:</h3>
               <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
+                  <span><strong>Community Clinic:</strong> Our newly built clinic, professionally managed by a Physician Assistant, provides accessible primary healthcare services to all residents</span>
+                </li>
                 <li className="flex items-start">
                   <span className="text-[#FF4516] mr-2 text-xl">•</span>
                   <span><strong>NHIS Registration Drives:</strong> Ensuring all community members are enrolled in the National Health Insurance Scheme</span>
@@ -154,10 +161,6 @@ export default function Development() {
                 <li className="flex items-start">
                   <span className="text-[#FF4516] mr-2 text-xl">•</span>
                   <span><strong>Health Screening Programs:</strong> Regular free health checks for common conditions like diabetes, hypertension, and malaria</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF4516] mr-2 text-xl">•</span>
-                  <span><strong>Clinic Improvement:</strong> Upgrading existing health facilities with modern equipment and supplies</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FF4516] mr-2 text-xl">•</span>
@@ -208,14 +211,18 @@ export default function Development() {
                 Infrastructure Development
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Strong infrastructure is the backbone of community development. We're investing in roads, water, electricity, and facilities that improve quality of life.
+                Strong infrastructure is the backbone of community development. A major milestone is the Tanyigbe town roads project—an initiative that began 10 years ago and has been persistently pursued through the years. This project has been awarded for construction under President John D. Mahama's government Big Push agenda, demonstrating our community's commitment to sustained advocacy for development.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Infrastructure Projects:</h3>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start">
                   <span className="text-[#4C7000] mr-2 text-xl">•</span>
-                  <span><strong>Road Construction:</strong> Improving connectivity between divisions with better roads and pathways</span>
+                  <span><strong>Town Roads Construction:</strong> Our decade-long advocacy has borne fruit with the Tanyigbe town roads project awarded under the Big Push agenda for construction, improving connectivity throughout our community</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
+                  <span><strong>Youth Development & ICT Centre:</strong> Multipurpose facility being built in partnership with Eban Capital to equip youth with modern skills and technology for the digital age</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#4C7000] mr-2 text-xl">•</span>
@@ -228,10 +235,6 @@ export default function Development() {
                 <li className="flex items-start">
                   <span className="text-[#4C7000] mr-2 text-xl">•</span>
                   <span><strong>Community Centers:</strong> Building and renovating spaces for meetings, celebrations, and community activities</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#4C7000] mr-2 text-xl">•</span>
-                  <span><strong>Market Facilities:</strong> Improving market infrastructure to support trade and economic activity</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#4C7000] mr-2 text-xl">•</span>
@@ -260,34 +263,34 @@ export default function Development() {
                 Agricultural Development
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Agriculture is the lifeblood of our community. We're modernizing farming practices while preserving sustainable methods that have served us for generations.
+                Agriculture is the lifeblood of our industrious community. The people of Tanyigbe engage in diverse economic activities including agriculture (both food and cash crops), masonry, carpentry, and trading. Cocoa stands as our main cash crop, while farm produce from Tanyigbe is primarily sold at the Ho market, contributing significantly to the regional economy.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Agriculture Programs:</h3>
               <ul className="space-y-3 text-gray-700 mb-6">
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Cocoa Rehabilitation:</strong> Supporting farmers to improve cocoa yields through modern farming techniques and inputs</span>
+                  <span><strong>Cocoa Production:</strong> As our main cash crop, cocoa farming receives focused support through modern farming techniques, inputs, and rehabilitation programs to improve yields and quality</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Food Crop Production:</strong> Promoting cultivation of yam, cassava, maize, and vegetables for food security</span>
+                  <span><strong>Food Crop Production:</strong> Promoting cultivation of yam, cassava, maize, and vegetables for food security and commercial sale at Ho market</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Livestock Development:</strong> Supporting poultry, goat, and small animal farming initiatives</span>
+                  <span><strong>Market Linkages:</strong> Our strategic connection to Ho market provides farmers with reliable outlets for their produce, supporting the regional economy</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Youth in Agriculture:</strong> Encouraging young people to see farming as a viable and profitable career</span>
+                  <span><strong>Diverse Livelihoods:</strong> Supporting masonry, carpentry, and trading alongside agriculture to ensure economic diversity and resilience</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Farmer Training:</strong> Educational programs on modern farming techniques, pest management, and crop diversification</span>
+                  <span><strong>Youth in Agriculture:</strong> Encouraging young people to see farming and related trades as viable and profitable careers</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Market Access:</strong> Creating better linkages between farmers and markets for their produce</span>
+                  <span><strong>Farmer Training:</strong> Educational programs on modern farming techniques, pest management, and crop diversification to improve productivity</span>
                 </li>
               </ul>
 
