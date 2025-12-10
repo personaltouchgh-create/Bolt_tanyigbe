@@ -16,8 +16,15 @@ export default function GoodwillMessage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block bg-[#E2A201] bg-opacity-10 rounded-full p-6 mb-6">
-                <Shield size={64} className="text-[#E2A201]" />
+              <div className="mb-8">
+                <div className="relative inline-block">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#E2A201] via-[#4C7000] to-[#FF4516] rounded-full blur-xl opacity-30"></div>
+                  <img
+                    src="/48.jpg"
+                    alt="Togbe Kodi Adiko VI, Paramount Chief of Tanyigbe Traditional Area"
+                    className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-8 border-white shadow-2xl mx-auto"
+                  />
+                </div>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Togbe Kodi Adiko VI
