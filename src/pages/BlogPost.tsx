@@ -175,13 +175,10 @@ export default function BlogPost() {
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none">
-              {post.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-gray-700 leading-relaxed mb-6">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            <div
+              className="prose prose-lg max-w-none blog-content"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
 
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex items-center justify-between">
