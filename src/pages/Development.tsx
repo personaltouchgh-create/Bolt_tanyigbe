@@ -16,9 +16,7 @@ export default function Development() {
 
   return (
     <div>
-      <section className="relative h-96 flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: 'url(https://placehold.co/1920x600/4C7000/FFF?text=Development)' }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <section className="relative h-96 flex items-center justify-center bg-gradient-to-br from-[#4C7000] to-[#E2A201]">
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Development Initiatives</h1>
           <p className="text-xl md:text-2xl">Building a Brighter Future Together</p>
@@ -182,12 +180,8 @@ export default function Development() {
                 </p>
               </div>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://placehold.co/600x400/FF4516/FFF?text=Healthcare+Services"
-                alt="Healthcare"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-[#FF4516] to-[#E2A201] flex items-center justify-center">
+              <Heart className="text-white opacity-20" size={120} />
             </div>
           </div>
         </div>
@@ -196,12 +190,8 @@ export default function Development() {
       <section id="infrastructure" className="py-20 bg-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://placehold.co/600x400/4C7000/FFF?text=Infrastructure+Development"
-                alt="Infrastructure"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-[#4C7000] to-[#E2A201] flex items-center justify-center">
+              <Building className="text-white opacity-20" size={120} />
             </div>
             <div>
               <div className="bg-[#4C7000] w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -300,12 +290,8 @@ export default function Development() {
                 </p>
               </div>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://placehold.co/600x400/1F2937/FFF?text=Agriculture+Programs"
-                alt="Agriculture"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-[#1F2937] to-[#4C7000] flex items-center justify-center">
+              <Sprout className="text-white opacity-20" size={120} />
             </div>
           </div>
         </div>

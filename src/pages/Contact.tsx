@@ -48,9 +48,7 @@ export default function Contact() {
 
   return (
     <div>
-      <section className="relative h-96 flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: 'url(https://placehold.co/1920x600/E2A201/FFF?text=Contact+Us)' }}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <section className="relative h-96 flex items-center justify-center bg-gradient-to-br from-[#E2A201] to-[#4C7000]">
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl md:text-2xl">We'd Love to Hear From You</p>
