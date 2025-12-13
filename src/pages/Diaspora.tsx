@@ -165,7 +165,7 @@ export default function Diaspora() {
             </div>
             <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://placehold.co/600x600/4C7000/FFF?text=Diaspora+Community"
+                src="/93.jpg"
                 alt="Diaspora Community"
                 className="w-full h-full object-cover"
               />
