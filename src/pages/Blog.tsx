@@ -22,11 +22,11 @@ export default function Blog() {
 
   const categories = [
     { id: 'all', name: 'All Posts' },
-    { id: 'community', name: 'Community' },
-    { id: 'culture', name: 'Culture' },
-    { id: 'development', name: 'Development' },
-    { id: 'events', name: 'Events' },
-    { id: 'diaspora', name: 'Diaspora' },
+    { id: 'History', name: 'History' },
+    { id: 'Culture', name: 'Culture' },
+    { id: 'Traditional Governance', name: 'Traditional Governance' },
+    { id: 'Tourism', name: 'Tourism' },
+    { id: 'Development', name: 'Development' },
   ];
 
   useEffect(() => {
