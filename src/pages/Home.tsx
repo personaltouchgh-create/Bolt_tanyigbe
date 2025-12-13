@@ -1,7 +1,45 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Heart, Landmark } from 'lucide-react';
+import { ArrowRight, Users, Heart, Landmark, Calendar, User } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { supabase } from '../lib/supabase';
+
+interface BlogPost {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  author: string;
+  featured_image: string | null;
+  category: string;
+  published_at: string;
+}
 
 export default function Home() {
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchBlogPosts() {
+      try {
+        const { data, error } = await supabase
+          .from('blog_posts')
+          .select('id, title, slug, excerpt, author, featured_image, category, published_at')
+          .eq('published', true)
+          .order('published_at', { ascending: false })
+          .limit(3);
+
+        if (error) throw error;
+        setBlogPosts(data || []);
+      } catch (error) {
+        console.error('Error fetching blog posts:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBlogPosts();
+  }, []);
+
   return (
     <div>
       <section className="relative h-screen flex items-center justify-center bg-cover bg-center"
@@ -136,6 +174,89 @@ export default function Home() {
             Join the Network
             <ArrowRight className="ml-2" size={20} />
           </Link>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Latest News & Stories
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Stay connected with the latest happenings, stories, and updates from our community.
+            </p>
+          </div>
+
+          {loading ? (
+            <div className="text-center py-12">
+              <p className="text-gray-600">Loading posts...</p>
+            </div>
+          ) : blogPosts.length > 0 ? (
+            <>
+              <div className="grid md:grid-cols-3 gap-8">
+                {blogPosts.map((post) => (
+                  <Link
+                    key={post.id}
+                    to={`/blog/${post.slug}`}
+                    className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all bg-white"
+                  >
+                    {post.featured_image ? (
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={post.featured_image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute top-4 left-4">
+                          <span className="bg-[#E2A201] text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">
+                            {post.category}
+                          </span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="h-48 bg-gradient-to-br from-[#E2A201] to-[#4C7000] flex items-center justify-center">
+                        <span className="text-white text-xs font-semibold px-3 py-1 rounded-full uppercase bg-white bg-opacity-20">
+                          {post.category}
+                        </span>
+                      </div>
+                    )}
+                    <div className="p-6">
+                      <h3 className="font-serif text-xl font-bold text-gray-900 mb-3 group-hover:text-[#E2A201] transition-colors line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-700 mb-4 line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                      <div className="flex items-center justify-between text-sm text-gray-500">
+                        <div className="flex items-center">
+                          <User size={14} className="mr-1" />
+                          <span>{post.author}</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Calendar size={14} className="mr-1" />
+                          <span>{new Date(post.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mt-12">
+                <Link
+                  to="/blog"
+                  className="inline-flex items-center bg-[#E2A201] text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-opacity-90 transition-colors"
+                >
+                  View All Posts
+                  <ArrowRight className="ml-2" size={20} />
+                </Link>
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-gray-600 text-lg">No blog posts available yet. Check back soon!</p>
+            </div>
+          )}
         </div>
       </section>
 
