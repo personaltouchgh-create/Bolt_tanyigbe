@@ -158,7 +158,7 @@ export default function Tourism() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://placehold.co/600x400/FF4516/FFF?text=Canopy+Walkway"
+                src="/screenshot_2025-12-06_001744.png"
                 alt="Amedzofe Canopy Walkway"
                 className="w-full h-full object-cover"
               />
