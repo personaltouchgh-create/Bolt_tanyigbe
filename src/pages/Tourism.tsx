@@ -148,7 +148,7 @@ export default function Tourism() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl order-first md:order-last">
               <img
-                src="https://placehold.co/600x400/E2A201/FFF?text=Mount+Afadja"
+                src="/screenshot_2025-12-06_001430 copy copy copy.png"
                 alt="Mount Afadja"
                 className="w-full h-full object-cover"
               />
