@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Heart, Landmark, Calendar, User } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
+import GoodwillModal from '../components/GoodwillModal';
 
 interface BlogPost {
   id: string;
@@ -17,6 +18,7 @@ interface BlogPost {
 export default function Home() {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     async function fetchBlogPosts() {
@@ -38,6 +40,14 @@ export default function Home() {
     }
 
     fetchBlogPosts();
+  }, []);
+
+  useEffect(() => {
+    const modalTimer = setTimeout(() => {
+      setShowModal(true);
+    }, 5000);
+
+    return () => clearTimeout(modalTimer);
   }, []);
 
   return (
@@ -326,6 +336,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GoodwillModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 }
