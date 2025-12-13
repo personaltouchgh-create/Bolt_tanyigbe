@@ -56,7 +56,7 @@ export default function Tourism() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/93.jpg"
+                src="/screenshot_2025-12-05_234830 copy copy copy.png"
                 alt="Wli Waterfalls"
                 className="w-full h-full object-cover"
               />
