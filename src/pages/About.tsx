@@ -1,4 +1,5 @@
-import { MapPin, Users, Building2, Home } from 'lucide-react';
+import { MapPin, Users, Landmark, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -47,46 +48,74 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-[#E2A201] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Home className="text-white" size={32} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              to="/divisions/anyigbe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#E2A201] to-[#FF4516] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Anyigbe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Etoe</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Etoe serves as the seat of the paramount chief and administrative center of the Tanyigbe Traditional Area, representing the traditional authority and unity of all four divisions.
-              </p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-[#4C7000] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Building2 className="text-white" size={32} />
+            <Link
+              to="/divisions/etoe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4C7000] to-[#2F5300] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Landmark className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Etoe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Aveme</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Aveme is one of the four constituent divisions of the Tanyigbe Traditional Area, contributing to the community's agricultural activities and cultural heritage.
-              </p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-[#FF4516] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Users className="text-white" size={32} />
+            <Link
+              to="/divisions/atidze"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FF4516] to-[#D63600] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Atidze</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Bator</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Bator is one of the four divisions within the Tanyigbe Traditional Area, maintaining its distinct identity while contributing to the unity of the community.
-              </p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-[#1F2937] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <MapPin className="text-white" size={32} />
+            <Link
+              to="/divisions/dzafe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2C5F2D] to-[#1D3F1E] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Landmark className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Dzafe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Tanyigbe-Dzigbe</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Dzigbe is one of the four divisions of the Tanyigbe Traditional Area, contributing to the collective development and preservation of community traditions.
-              </p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
