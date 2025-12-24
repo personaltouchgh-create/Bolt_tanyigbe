@@ -130,9 +130,6 @@ All tables are protected with Row Level Security (RLS):
 - Only authenticated admin users can access CMS data
 - Full CRUD permissions for authenticated users
 - Public users cannot access admin functionality
-- RLS policies optimized for performance using SELECT subqueries
-- Foreign key indexes added for optimal query performance
-- Function search paths secured against SQL injection
 
 ## Content Guidelines
 
