@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Sparkles, Users, Heart, Calendar, Handshake, TreePine } from 'lucide-react';
 
 export default function Tayafest() {
@@ -178,6 +179,89 @@ export default function Tayafest() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              The Four Divisions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              TAYAFEST unites all four divisions of the Tanyigbe Traditional Area in celebration. Explore each division's unique heritage and traditional governance.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link
+              to="/divisions/anyigbe"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              <div className="h-48 bg-gradient-to-br from-[#E2A201] to-[#4C7000] flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <Users className="text-white opacity-20 absolute" size={120} />
+                <div className="relative z-10 text-center text-white p-6">
+                  <h3 className="font-serif text-2xl font-bold">Anyigbe</h3>
+                </div>
+              </div>
+              <div className="p-6 text-center">
+                <p className="text-gray-700 mb-4">Explore the traditional governance and communities of Tanyigbe-Anyigbe</p>
+                <span className="text-[#E2A201] font-semibold group-hover:underline">Learn More →</span>
+              </div>
+            </Link>
+
+            <Link
+              to="/divisions/etoe"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              <div className="h-48 bg-gradient-to-br from-[#4C7000] to-[#FF4516] flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <Users className="text-white opacity-20 absolute" size={120} />
+                <div className="relative z-10 text-center text-white p-6">
+                  <h3 className="font-serif text-2xl font-bold">Etoe</h3>
+                </div>
+              </div>
+              <div className="p-6 text-center">
+                <p className="text-gray-700 mb-4">Discover the heritage and leadership of Tanyigbe-Etoe</p>
+                <span className="text-[#4C7000] font-semibold group-hover:underline">Learn More →</span>
+              </div>
+            </Link>
+
+            <Link
+              to="/divisions/atidze"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              <div className="h-48 bg-gradient-to-br from-[#FF4516] to-[#E2A201] flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <Users className="text-white opacity-20 absolute" size={120} />
+                <div className="relative z-10 text-center text-white p-6">
+                  <h3 className="font-serif text-2xl font-bold">Atidze</h3>
+                </div>
+              </div>
+              <div className="p-6 text-center">
+                <p className="text-gray-700 mb-4">Experience the culture and traditions of Tanyigbe-Atidze</p>
+                <span className="text-[#FF4516] font-semibold group-hover:underline">Learn More →</span>
+              </div>
+            </Link>
+
+            <Link
+              to="/divisions/dzafe"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+              <div className="h-48 bg-gradient-to-br from-[#1F2937] to-[#E2A201] flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <Users className="text-white opacity-20 absolute" size={120} />
+                <div className="relative z-10 text-center text-white p-6">
+                  <h3 className="font-serif text-2xl font-bold">Dzafe</h3>
+                </div>
+              </div>
+              <div className="p-6 text-center">
+                <p className="text-gray-700 mb-4">Meet the leaders and communities of Tanyigbe-Dzafe</p>
+                <span className="text-[#1F2937] font-semibold group-hover:underline">Learn More →</span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

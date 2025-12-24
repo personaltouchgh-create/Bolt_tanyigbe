@@ -16,6 +16,10 @@ import Tourism from './pages/Tourism';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
+import TanyigbeAnyigbe from './pages/divisions/TanyigbeAnyigbe';
+import TanyigbeEtoe from './pages/divisions/TanyigbeEtoe';
+import TanyigbeAtidze from './pages/divisions/TanyigbeAtidze';
+import TanyigbeDzafe from './pages/divisions/TanyigbeDzafe';
 
 function App() {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
@@ -34,6 +38,10 @@ function App() {
           <Route path="/culture/governance" element={<TraditionalGovernance />} />
           <Route path="/culture/nordu-festival" element={<NorduFestival />} />
           <Route path="/culture/tayafest" element={<Tayafest />} />
+          <Route path="/divisions/anyigbe" element={<TanyigbeAnyigbe />} />
+          <Route path="/divisions/etoe" element={<TanyigbeEtoe />} />
+          <Route path="/divisions/atidze" element={<TanyigbeAtidze />} />
+          <Route path="/divisions/dzafe" element={<TanyigbeDzafe />} />
           <Route path="/development" element={<Development />} />
           <Route path="/diaspora" element={<Diaspora />} />
           <Route path="/tourism" element={<Tourism />} />
