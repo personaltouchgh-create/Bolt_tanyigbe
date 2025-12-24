@@ -17,7 +17,7 @@ export default function About() {
               The Tanyigbe Traditional Area
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Tanyigbe is an Eʋe community located in the Hohoe District of the Volta Region, Ghana. The traditional area comprises four divisions united under one paramount stool, with a shared commitment to preserving our heritage while embracing development.
+              Tanyigbe is an Eʋe community located in the Ho district of the Volta Region, Ghana. The traditional area comprises four divisions united under one paramount stool, with a shared commitment to preserving our heritage while embracing development.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
               Our community is governed by traditional leadership structures that honor both our Eʋe heritage and the unique identity of each division.
@@ -30,7 +30,7 @@ export default function About() {
             </div>
             <h3 className="font-serif text-3xl font-bold text-gray-900 text-center mb-4">Location</h3>
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
-              Located in the Hohoe District of the Volta Region, Ghana, Tanyigbe is part of the historic Eʋe settlement area with proximity to significant regional landmarks.
+              Located in the Ho district of the Volta Region, Ghana, Tanyigbe is part of the historic Eʋe settlement area with proximity to significant regional landmarks.
             </p>
           </div>
         </div>
