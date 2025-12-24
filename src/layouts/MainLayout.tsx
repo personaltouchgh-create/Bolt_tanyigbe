@@ -5,10 +5,9 @@ import { Menu, X, ChevronDown, Facebook, Instagram, Youtube, Music, Mail, Phone,
 interface MainLayoutProps {
   children: React.ReactNode;
   onDonateClick: () => void;
-  onVolunteerClick: () => void;
 }
 
-export default function MainLayout({ children, onDonateClick, onVolunteerClick }: MainLayoutProps) {
+export default function MainLayout({ children, onDonateClick }: MainLayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpandedMenus, setMobileExpandedMenus] = useState<Set<string>>(new Set());
@@ -281,13 +280,6 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
               </Link>
 
               <button
-                onClick={onVolunteerClick}
-                className="ml-2 bg-[#4C7000] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors"
-              >
-                Volunteer
-              </button>
-
-              <button
                 onClick={onDonateClick}
                 className="bg-[#FF4516] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors"
               >
@@ -503,17 +495,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 Contact
               </Link>
 
-              <div className="pt-4 space-y-2">
-                <button
-                  onClick={() => {
-                    onVolunteerClick();
-                    setIsMenuOpen(false);
-                  }}
-                  className="w-full mx-4 bg-[#4C7000] text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-200 hover:scale-105"
-                  style={{ width: 'calc(100% - 2rem)' }}
-                >
-                  Volunteer
-                </button>
+              <div className="pt-4">
                 <button
                   onClick={() => {
                     onDonateClick();
@@ -579,7 +561,6 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
               <ul className="space-y-2">
                 <li><Link to="/diaspora" className="text-gray-300 hover:text-[#E2A201] transition-colors">Diaspora Network</Link></li>
                 <li><Link to="/tourism" className="text-gray-300 hover:text-[#E2A201] transition-colors">Tourism</Link></li>
-                <li><button onClick={onVolunteerClick} className="text-gray-300 hover:text-[#E2A201] transition-colors">Volunteer</button></li>
                 <li><button onClick={onDonateClick} className="text-gray-300 hover:text-[#E2A201] transition-colors">Donate</button></li>
               </ul>
             </div>
