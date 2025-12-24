@@ -27,9 +27,12 @@ const galleryImages: GalleryImage[] = [
   { id: 16, src: '/36.jpg', alt: 'Tanyigbe View', category: 'Landscape' },
   { id: 17, src: '/48.jpg', alt: 'Community Event', category: 'Community' },
   { id: 18, src: '/93.jpg', alt: 'Cultural Practice', category: 'Culture' },
+  { id: 19, src: '/screenshot_2025-12-05_234830 copy.png', alt: 'Wli Waterfalls', category: 'Tourism' },
+  { id: 20, src: '/screenshot_2025-12-06_001430 copy copy.png', alt: 'Mount Afadja', category: 'Tourism' },
+  { id: 21, src: '/screenshot_2025-12-06_001918.png', alt: 'Amedzofe Canopy Walk', category: 'Tourism' },
 ];
 
-const categories = ['All', 'Community', 'Culture', 'Festivals', 'Landscape'];
+const categories = ['All', 'Community', 'Culture', 'Festivals', 'Tourism', 'Landscape'];
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
