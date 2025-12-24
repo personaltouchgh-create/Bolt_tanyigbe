@@ -18,13 +18,13 @@ const galleryImages: GalleryImage[] = [
   { id: 7, src: '/491399177_1229152465450978_4812860042655025826_n.jpg', alt: 'Community Members', category: 'Community' },
   { id: 8, src: '/493059710_1229153082117583_6095061872545654825_n.jpg', alt: 'Cultural Celebration', category: 'Culture' },
   { id: 9, src: '/533048130_1314207883612102_7986478633305916107_n.jpg', alt: 'Festival Performance', category: 'Festivals' },
-  { id: 10, src: '/1.jpg', alt: 'Tanyigbe Landscape', category: 'Landscape' },
+  { id: 10, src: '/1.jpg', alt: 'Tanyigbe Landscape', category: 'Tourism' },
   { id: 11, src: '/2.jpg', alt: 'Community Scene', category: 'Community' },
   { id: 12, src: '/6.jpg', alt: 'Cultural Heritage', category: 'Culture' },
   { id: 13, src: '/8.jpg', alt: 'Traditional Setting', category: 'Culture' },
   { id: 14, src: '/20.jpg', alt: 'Community Life', category: 'Community' },
-  { id: 15, src: '/24.jpg', alt: 'Local Scene', category: 'Landscape' },
-  { id: 16, src: '/36.jpg', alt: 'Tanyigbe View', category: 'Landscape' },
+  { id: 15, src: '/24.jpg', alt: 'Local Scene', category: 'Tourism' },
+  { id: 16, src: '/36.jpg', alt: 'Tanyigbe View', category: 'Tourism' },
   { id: 17, src: '/48.jpg', alt: 'Community Event', category: 'Community' },
   { id: 18, src: '/93.jpg', alt: 'Cultural Practice', category: 'Culture' },
   { id: 19, src: '/screenshot_2025-12-05_234830 copy.png', alt: 'Wli Waterfalls', category: 'Developments' },
@@ -32,7 +32,7 @@ const galleryImages: GalleryImage[] = [
   { id: 21, src: '/screenshot_2025-12-06_001918.png', alt: 'Amedzofe Canopy Walk', category: 'Developments' },
 ];
 
-const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Landscape'];
+const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Tourism'];
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
