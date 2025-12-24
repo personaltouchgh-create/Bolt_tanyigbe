@@ -25,6 +25,7 @@ import TanyigbeEtoe from './pages/divisions/TanyigbeEtoe';
 import TanyigbeAtidze from './pages/divisions/TanyigbeAtidze';
 import TanyigbeDzafe from './pages/divisions/TanyigbeDzafe';
 import Login from './pages/admin/Login';
+import SignUp from './pages/admin/SignUp';
 import Dashboard from './pages/admin/Dashboard';
 import Categories from './pages/admin/Categories';
 import Tags from './pages/admin/Tags';
@@ -40,6 +41,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin/signup" element={<SignUp />} />
 
           <Route
             path="/admin/*"

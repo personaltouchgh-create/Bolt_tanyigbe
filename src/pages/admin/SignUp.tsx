@@ -1,25 +1,38 @@
 import { useState, FormEvent } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Lock, Mail, AlertCircle } from 'lucide-react';
+import { UserPlus, Mail, Lock, User, AlertCircle } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
-export default function Login() {
+export default function SignUp() {
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { signIn } = useAuth();
+  const { signUp } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError('');
+
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+    if (password.length < 6) {
+      setError('Password must be at least 6 characters long');
+      return;
+    }
+
     setLoading(true);
 
-    const { error: signInError } = await signIn(email, password);
+    const { error: signUpError } = await signUp(email, password, fullName);
 
-    if (signInError) {
-      setError(signInError.message);
+    if (signUpError) {
+      setError(signUpError.message);
       setLoading(false);
     } else {
       navigate('/admin/dashboard');
@@ -32,10 +45,10 @@ export default function Login() {
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-              <Lock className="w-8 h-8 text-green-600" />
+              <UserPlus className="w-8 h-8 text-green-600" />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Admin Login</h1>
-            <p className="text-gray-600">Sign in to manage your content</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h1>
+            <p className="text-gray-600">Sign up to manage your content</p>
           </div>
 
           {error && (
@@ -46,6 +59,24 @@ export default function Login() {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                Full Name
+              </label>
+              <div className="relative">
+                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                <input
+                  id="fullName"
+                  type="text"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  required
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+            </div>
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 Email Address
@@ -77,7 +108,25 @@ export default function Login() {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
-                  placeholder="Enter your password"
+                  placeholder="At least 6 characters"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-2">
+                Confirm Password
+              </label>
+              <div className="relative">
+                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                  placeholder="Re-enter your password"
                 />
               </div>
             </div>
@@ -87,15 +136,15 @@ export default function Login() {
               disabled={loading}
               className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Signing in...' : 'Sign In'}
+              {loading ? 'Creating account...' : 'Sign Up'}
             </button>
           </form>
 
           <div className="mt-6 text-center space-y-3">
             <p className="text-sm text-gray-600">
-              Don't have an account?{' '}
-              <Link to="/admin/signup" className="text-green-600 hover:text-green-700 font-medium">
-                Sign up
+              Already have an account?{' '}
+              <Link to="/admin/login" className="text-green-600 hover:text-green-700 font-medium">
+                Sign in
               </Link>
             </p>
             <a href="/" className="block text-sm text-green-600 hover:text-green-700 font-medium">
