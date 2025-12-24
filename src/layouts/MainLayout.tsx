@@ -68,7 +68,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                 onMouseLeave={handleMouseLeave}
               >
                 <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  About
+                  About Us
                   <ChevronDown
                     size={16}
                     className={`ml-1 transition-transform duration-300 ${
@@ -322,7 +322,7 @@ export default function MainLayout({ children, onDonateClick, onVolunteerClick }
                   onClick={() => toggleMobileSubmenu('about')}
                   className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
                 >
-                  <span>About</span>
+                  <span>About Us</span>
                   <ChevronDown
                     size={18}
                     className={`transition-transform duration-300 ${
