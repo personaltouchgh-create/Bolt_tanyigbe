@@ -214,6 +214,8 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                           <div className="font-semibold text-gray-900">Health</div>
                           <div className="text-sm text-gray-600">Medical facilities & programs</div>
                         </Link>
+                      </div>
+                      <div className="space-y-3">
                         <Link
                           to="/development#infrastructure"
                           className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
@@ -221,21 +223,12 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                           <div className="font-semibold text-gray-900">Infrastructure</div>
                           <div className="text-sm text-gray-600">Roads & water projects</div>
                         </Link>
-                      </div>
-                      <div className="space-y-3">
                         <Link
                           to="/development#agriculture"
                           className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
                         >
                           <div className="font-semibold text-gray-900">Agriculture</div>
                           <div className="text-sm text-gray-600">Cocoa & food security</div>
-                        </Link>
-                        <Link
-                          to="/development#distinguished-natives"
-                          className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                        >
-                          <div className="font-semibold text-gray-900">Distinguished Natives</div>
-                          <div className="text-sm text-gray-600">Contributors to development</div>
                         </Link>
                       </div>
                     </div>
@@ -451,13 +444,6 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Agriculture
-                    </Link>
-                    <Link
-                      to="/development#distinguished-natives"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Distinguished Natives
                     </Link>
                   </div>
                 </div>
