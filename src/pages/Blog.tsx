@@ -70,7 +70,7 @@ export default function Blog() {
     <div>
       <section className="relative h-96 flex items-center justify-center bg-gradient-to-br from-[#E2A201] to-[#4C7000]">
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Community Blog</h1>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Publications</h1>
           <p className="text-xl md:text-2xl">Stories, News & Updates from Tanyigbe</p>
         </div>
       </section>
