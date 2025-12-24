@@ -255,6 +255,15 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               </Link>
 
               <Link
+                to="/gallery"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  isActive('/gallery') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                }`}
+              >
+                Gallery
+              </Link>
+
+              <Link
                 to="/blog"
                 className={`px-4 py-2 rounded-md transition-colors ${
                   isActive('/blog') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
@@ -466,6 +475,14 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               </Link>
 
               <Link
+                to="/gallery"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Gallery
+              </Link>
+
+              <Link
                 to="/blog"
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
@@ -547,6 +564,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               <ul className="space-y-2">
                 <li><Link to="/diaspora" className="text-gray-300 hover:text-[#E2A201] transition-colors">Diaspora Network</Link></li>
                 <li><Link to="/tourism" className="text-gray-300 hover:text-[#E2A201] transition-colors">Tourism</Link></li>
+                <li><Link to="/gallery" className="text-gray-300 hover:text-[#E2A201] transition-colors">Gallery</Link></li>
                 <li><button onClick={onDonateClick} className="text-gray-300 hover:text-[#E2A201] transition-colors">Donate</button></li>
               </ul>
             </div>

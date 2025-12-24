@@ -16,6 +16,7 @@ import Tourism from './pages/Tourism';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
+import Gallery from './pages/Gallery';
 import TanyigbeAnyigbe from './pages/divisions/TanyigbeAnyigbe';
 import TanyigbeEtoe from './pages/divisions/TanyigbeEtoe';
 import TanyigbeAtidze from './pages/divisions/TanyigbeAtidze';
@@ -45,6 +46,7 @@ function App() {
           <Route path="/development" element={<Development />} />
           <Route path="/diaspora" element={<Diaspora />} />
           <Route path="/tourism" element={<Tourism />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
