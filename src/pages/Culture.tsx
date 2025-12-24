@@ -184,7 +184,7 @@ export default function Culture() {
               <div className="bg-[#E2A201] bg-opacity-10 rounded-lg p-6">
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Common Eʋe Greetings</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li><span className="font-semibold">Mia woezɔ:</span> Welcome (plural)</li>
+                  <li><span className="font-semibold">Miawoezɔ:</span> Welcome (plural)</li>
                   <li><span className="font-semibold">Ŋdi na wò:</span> Good morning</li>
                   <li><span className="font-semibold">Ŋdɔ na wò:</span> Good afternoon</li>
                   <li><span className="font-semibold">Fiẽyi na wò:</span> Good afternoon (alternate)</li>
