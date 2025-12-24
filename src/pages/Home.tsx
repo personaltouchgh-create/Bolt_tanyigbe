@@ -94,20 +94,77 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 rounded-lg hover:shadow-xl transition-shadow">
-              <div className="bg-[#E2A201] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="text-white" size={40} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <Link
+              to="/divisions/anyigbe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#E2A201] to-[#FF4516] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Anyigbe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Our Community</h3>
-              <p className="text-gray-700 mb-4">
-                Four united divisions working together: Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe.
-              </p>
-              <Link to="/about" className="text-[#E2A201] font-semibold hover:underline inline-flex items-center">
-                Learn More <ArrowRight size={16} className="ml-1" />
-              </Link>
-            </div>
+            </Link>
 
+            <Link
+              to="/divisions/etoe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4C7000] to-[#2F5300] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Landmark className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Etoe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              to="/divisions/atidze"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FF4516] to-[#D63600] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Atidze</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              to="/divisions/dzafe"
+              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2C5F2D] to-[#1D3F1E] opacity-90"></div>
+              <div className="relative p-8 h-64 flex flex-col items-center justify-center text-white">
+                <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Landmark className="text-white" size={32} />
+                </div>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Dzafe</h3>
+                <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
+                <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
+                  Learn More <ArrowRight size={16} className="ml-1" />
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="text-center p-8 rounded-lg hover:shadow-xl transition-shadow">
               <div className="bg-[#4C7000] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Landmark className="text-white" size={40} />
