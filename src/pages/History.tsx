@@ -132,59 +132,125 @@ export default function History() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center">
             Key Historical Milestones
           </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Origins in Notsie</h3>
-              <p className="text-lg text-gray-700">
-                Our history traces back to the migration of the Ewe people from Notsie in present-day Togo, where our ancestors lived before embarking on a journey in search of freedom and better living conditions.
-              </p>
-            </div>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+            Journey through time and discover the defining moments that shaped our community
+          </p>
 
-            <div className="border-l-4 border-[#4C7000] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">The Migration Journey</h3>
-              <p className="text-lg text-gray-700">
-                Along our journey, our people passed through areas such as Gbélé (near the Aburi Mountains) and Amamprobi in Akwapem, before moving through parts of the Volta region in search of fertile land, water, and security.
-              </p>
-            </div>
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#E2A201] via-[#4C7000] to-[#FF4516]"></div>
 
-            <div className="border-l-4 border-[#FF4516] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">The Dzifadzi Episode</h3>
-              <p className="text-lg text-gray-700">
-                Our oral history recalls a significant episode at Dzifadzi, where two brothers became separated from the main group during the migration, compelling them to settle there and start their families. Tanyigbe remains connected to the Dzifadzi community.
-              </p>
-            </div>
+              <div className="space-y-12">
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right md:pr-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#E2A201]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">Origins in Notsie</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Our history traces back to the migration of the Ewe people from Notsie in present-day Togo, where our ancestors lived before embarking on a journey in search of freedom and better living conditions.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block"></div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#E2A201] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">1</span>
+                  </div>
+                </div>
 
-            <div className="border-l-4 border-[#1F2937] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Settlement at Klɔbɔ (Gborkome or Old Town)</h3>
-              <p className="text-lg text-gray-700">
-                Our community settled for an extended period at Klɔbɔ (Gborxome or Old Town), where social structures, farming practices, and communal life were firmly established.
-              </p>
-            </div>
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="hidden md:block"></div>
+                  <div className="md:pl-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#4C7000]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">The Migration Journey</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Along our journey, our people passed through areas such as Gbélé (near the Aburi Mountains) and Amamprobi in Akwapem, before moving through parts of the Volta region in search of fertile land, water, and security.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#4C7000] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">2</span>
+                  </div>
+                </div>
 
-            <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Relocation to Our Present Home</h3>
-              <p className="text-lg text-gray-700">
-                In the late 20th century, our people relocated from the Old Town to our present location along the Ho-Kpalimé corridor, where Tanyigbe continues to grow and thrive today.
-              </p>
-            </div>
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right md:pr-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#FF4516]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">The Dzifadzi Episode</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Our oral history recalls a significant episode at Dzifadzi, where two brothers became separated from the main group during the migration, compelling them to settle there and start their families. Tanyigbe remains connected to the Dzifadzi community.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block"></div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#FF4516] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">3</span>
+                  </div>
+                </div>
 
-            <div className="border-l-4 border-[#4C7000] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Annual Yam Festival (TAYAFEST)</h3>
-              <p className="text-lg text-gray-700">
-                Each year, usually in September, our community comes together to celebrate the Yam Festival, a key cultural milestone marked by thanksgiving, unity, and the reaffirmation of shared values and heritage.
-              </p>
-            </div>
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="hidden md:block"></div>
+                  <div className="md:pl-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#1F2937]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">Settlement at Klɔbɔ (Gborkome or Old Town)</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Our community settled for an extended period at Klɔbɔ (Gborxome or Old Town), where social structures, farming practices, and communal life were firmly established.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#1F2937] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">4</span>
+                  </div>
+                </div>
 
-            <div className="border-l-4 border-[#FF4516] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Community Today</h3>
-              <p className="text-lg text-gray-700">
-                Today, our community is organized into four divisions—Anyigbe, Etoe, Atidze, and Dzafe—and continues to advance education, health, culture, and community development through collective effort and cooperation.
-              </p>
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right md:pr-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#E2A201]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">Relocation to Our Present Home</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        In the late 20th century, our people relocated from the Old Town to our present location along the Ho-Kpalimé corridor, where Tanyigbe continues to grow and thrive today.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block"></div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#E2A201] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">5</span>
+                  </div>
+                </div>
+
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="hidden md:block"></div>
+                  <div className="md:pl-16">
+                    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#4C7000]">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">Annual Yam Festival (TAYAFEST)</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Each year, usually in September, our community comes together to celebrate the Yam Festival, a key cultural milestone marked by thanksgiving, unity, and the reaffirmation of shared values and heritage.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-[#4C7000] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">6</span>
+                  </div>
+                </div>
+
+                <div className="relative grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right md:pr-16">
+                    <div className="bg-gradient-to-br from-[#FF4516] to-[#E2A201] rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 text-white">
+                      <h3 className="text-2xl font-bold mb-3">Our Community Today</h3>
+                      <p className="leading-relaxed">
+                        Today, our community is organized into four divisions—Anyigbe, Etoe, Atidze, and Dzafe—and continues to advance education, health, culture, and community development through collective effort and cooperation.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:block"></div>
+                  <div className="absolute left-8 md:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-[#FF4516] to-[#E2A201] rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">7</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
