@@ -34,9 +34,9 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
               <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">Mobile Money</h3>
               <div className="space-y-2 text-gray-700">
                 <p className="font-semibold">MTN Mobile Money:</p>
-                <p className="text-lg font-mono">024 XXX XXXX</p>
+                <p className="text-lg font-mono">024 040 2187</p>
                 <p className="font-semibold mt-4">Vodafone Cash:</p>
-                <p className="text-lg font-mono">020 XXX XXXX</p>
+                <p className="text-lg font-mono">054 868 2669</p>
                 <p className="text-sm text-gray-600 mt-4">Name: Tanyigbe Development Fund</p>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
                 <p className="mb-4">Send to Ghana</p>
                 <p className="font-semibold">Recipient Details:</p>
                 <p>Name: Tanyigbe Development</p>
-                <p className="text-lg font-mono mt-2">024 XXX XXXX</p>
+                <p className="text-lg font-mono mt-2">024 040 2187</p>
                 <p className="text-sm text-gray-600 mt-4">Available for pickup at any agent location</p>
               </div>
             </div>

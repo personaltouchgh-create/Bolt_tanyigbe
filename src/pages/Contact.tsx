@@ -92,9 +92,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Phone</h4>
                     <p className="text-gray-700">
-                      Main Line: +233 XX XXX XXXX<br />
-                      Traditional Council: +233 XX XXX XXXX<br />
-                      Development Office: +233 XX XXX XXXX
+                      Main Line: +233 24 040 2187<br />
+                      Traditional Council: +233 54 868 2669<br />
+                      Development Office: +233 24 040 2187
                     </p>
                   </div>
                 </div>
@@ -261,7 +261,7 @@ export default function Contact() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Etoe</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
-                <p>Contact: +233 XX XXX XXXX</p>
+                <p>Contact: +233 24 040 2187</p>
                 <p>Email: etoe@tanyigbe.com</p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function Contact() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Gbogame</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
-                <p>Contact: +233 XX XXX XXXX</p>
+                <p>Contact: +233 54 868 2669</p>
                 <p>Email: gbogame@tanyigbe.com</p>
               </div>
             </div>
@@ -285,7 +285,7 @@ export default function Contact() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Avedome</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
-                <p>Contact: +233 XX XXX XXXX</p>
+                <p>Contact: +233 24 040 2187</p>
                 <p>Email: avedome@tanyigbe.com</p>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Contact() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Dugame</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
-                <p>Contact: +233 XX XXX XXXX</p>
+                <p>Contact: +233 54 868 2669</p>
                 <p>Email: dugame@tanyigbe.com</p>
               </div>
             </div>
@@ -327,7 +327,7 @@ export default function Contact() {
                   Email Us
                 </a>
                 <a
-                  href="tel:+233XXXXXXXXX"
+                  href="tel:+233240402187"
                   className="inline-flex items-center justify-center border-2 border-[#E2A201] text-[#E2A201] px-8 py-3 rounded-md text-lg font-semibold hover:bg-[#E2A201] hover:text-white transition-colors"
                 >
                   <Phone size={20} className="mr-2" />

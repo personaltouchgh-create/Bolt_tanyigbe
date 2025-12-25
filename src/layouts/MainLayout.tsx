@@ -578,7 +578,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 </li>
                 <li className="flex items-center">
                   <Phone size={20} className="mr-2" />
-                  <span>+233 XX XXX XXXX</span>
+                  <span>+233 24 040 2187</span>
                 </li>
                 <li className="flex items-center">
                   <Mail size={20} className="mr-2" />
