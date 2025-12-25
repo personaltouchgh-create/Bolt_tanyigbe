@@ -205,7 +205,7 @@ export default function Home() {
                 Every year, we come together to celebrate TAYAFEST, our signature cultural festival that showcases the vibrant traditions, music, dance, and unity of the Tanyigbe people.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                From traditional Agbadza performances to our famous durbar of chiefs, TAYAFEST is where heritage meets celebration.
+                From traditional Borborbor performances to our famous durbar of chiefs, TAYAFEST is where heritage meets celebration.
               </p>
               <Link
                 to="/culture"

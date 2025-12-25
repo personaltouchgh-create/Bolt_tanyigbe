@@ -28,7 +28,7 @@ export default function Culture() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Music & Dance</h3>
               <p className="text-gray-700">
-                Traditional Eʋe dances including Agbadza are performed during cultural celebrations and festivals
+                Traditional Eʋe dances including Borborbor are performed during cultural celebrations and festivals
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function Culture() {
               <div>
                 <h4 className="text-xl font-bold text-[#E2A201] mb-3">Traditional Performances</h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• Agbadza drum and dance ensemble</li>
+                  <li>• Borborbor drum and dance ensemble</li>
                   <li>• Atsiagbekor war dance</li>
                   <li>• Traditional poetry and storytelling</li>
                   <li>• Youth cultural displays</li>

@@ -119,7 +119,7 @@ export default function History() {
                 Tanyigbe is part of the Eʋe ethnic group, one of Ghana's major ethnic groups with populations also in Togo and Benin. The Eʋe language (Eʋegbe) serves as the primary language of communication within the community.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The community shares cultural practices common to Eʋe communities, including traditional music, dance forms such as Agbadza, and customary ceremonies that mark significant life events and seasonal celebrations.
+                The community shares cultural practices common to Eʋe communities, including traditional music, dance forms such as Borborbor, and customary ceremonies that mark significant life events and seasonal celebrations.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Like many Ghanaian communities, Tanyigbe has experienced religious transformation, with Christianity becoming predominant while traditional beliefs continue to influence cultural practices and worldview.
