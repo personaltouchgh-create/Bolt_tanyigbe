@@ -21,7 +21,7 @@ export default function History() {
                 Tanyigbe is an Eʋe community with roots in the broader Eʋe migration history. The Eʋe people trace their origins to Notsie in present-day Togo, from where various groups migrated to establish settlements across the Volta Region.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                The Tanyigbe Traditional Area was established in the Hohoe District, where the community has maintained its presence for generations, developing its traditional governance structures and cultural practices.
+                The Tanyigbe Traditional Area was established in the Ho District, where the community has maintained its presence for generations, developing its traditional governance structures and cultural practices.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed">
                 Today, the community is organized into four divisions—Anyigbe, Etoe, Atidze, and Dzafe—united under one paramount chief.
@@ -263,7 +263,7 @@ export default function History() {
               The Tanyigbe Traditional Area Today
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              The Tanyigbe Traditional Area operates within the Hohoe District administrative framework while maintaining its traditional governance structures. The community continues to preserve Eʋe cultural heritage through festivals, language maintenance, and traditional ceremonies.
+              The Tanyigbe Traditional Area operates within the Ho District administrative framework while maintaining its traditional governance structures. The community continues to preserve Eʋe cultural heritage through festivals, language maintenance, and traditional ceremonies.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
               Development priorities include education, healthcare infrastructure, agricultural advancement, and maintaining connections with diaspora community members who contribute to local development initiatives.
