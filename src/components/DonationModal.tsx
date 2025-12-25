@@ -54,7 +54,7 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
                 <p className="font-semibold mt-3">Account Name:</p>
                 <p>Tanyigbe Traditional Council</p>
                 <p className="font-semibold mt-3">Branch:</p>
-                <p>Hohoe</p>
+                <p>Ho</p>
               </div>
             </div>
 

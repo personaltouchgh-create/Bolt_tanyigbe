@@ -63,7 +63,7 @@ export default function History() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Settlement</h3>
               <p className="text-gray-700">
-                Establishment of communities in the Hohoe District area
+                Establishment of communities in the Ho District area
               </p>
             </div>
 

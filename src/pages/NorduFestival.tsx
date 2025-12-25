@@ -63,7 +63,7 @@ export default function NorduFestival() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Traditional Area</h3>
               <p className="text-gray-700">
-                Celebrated within the Tanyigbe Traditional Area in Hohoe District
+                Celebrated within the Tanyigbe Traditional Area in Ho District
               </p>
             </div>
           </div>

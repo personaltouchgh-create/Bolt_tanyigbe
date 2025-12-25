@@ -79,7 +79,7 @@ export default function Contact() {
                     <h4 className="font-semibold text-gray-900 mb-2">Location</h4>
                     <p className="text-gray-700">
                       Tanyigbe Traditional Area<br />
-                      Hohoe Municipality<br />
+                      Ho Municipality<br />
                       Volta Region, Ghana
                     </p>
                   </div>

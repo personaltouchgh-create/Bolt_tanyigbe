@@ -225,7 +225,7 @@ export default function Tourism() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Getting There</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• From Accra: 4-5 hours by road</li>
-                <li>• Via Hohoe: 30-45 minutes to Tanyigbe</li>
+                <li>• Via Ho: 30-45 minutes to Tanyigbe</li>
                 <li>• Public transport available</li>
                 <li>• Private hire recommended for flexibility</li>
               </ul>
@@ -276,7 +276,7 @@ export default function Tourism() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span><strong>Hohoe:</strong> Various hotels and guesthouses with modern amenities</span>
+                  <span><strong>Ho:</strong> Various hotels and guesthouses with modern amenities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
