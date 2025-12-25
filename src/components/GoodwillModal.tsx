@@ -78,12 +78,14 @@ export default function GoodwillModal({ isOpen, onClose }: GoodwillModalProps) {
           <div className="p-8 md:p-10">
             <div className="text-center mb-8">
               <div className="relative inline-block mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 rounded-full blur-xl opacity-30"></div>
-                <img
-                  src="/48 copy.jpg"
-                  alt="His Royal Highness Togbega Kodi Adiko VI"
-                  className="relative w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-white shadow-xl mx-auto"
-                />
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 rounded-xl blur-xl opacity-30"></div>
+                <div className="relative bg-white p-2 rounded-xl shadow-xl">
+                  <img
+                    src="/gemini_generated_image_zc992mzc992mzc99.webp"
+                    alt="His Royal Highness Togbega Kodi Adiko VI in traditional regalia"
+                    className="w-40 h-auto md:w-48 object-cover rounded-lg mx-auto"
+                  />
+                </div>
               </div>
               <h3 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                 His Royal Highness Togbega Kodi Adiko VI

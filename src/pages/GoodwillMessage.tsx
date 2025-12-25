@@ -24,12 +24,14 @@ export default function GoodwillMessage() {
             <div className="text-center mb-12">
               <div className="mb-8">
                 <div className="relative inline-block">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 rounded-full blur-2xl opacity-20"></div>
-                  <img
-                    src="/48 copy.jpg"
-                    alt="His Royal Highness Togbega Kodi Adiko VI"
-                    className="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-8 border-white shadow-2xl mx-auto"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 rounded-2xl blur-2xl opacity-20"></div>
+                  <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
+                    <img
+                      src="/gemini_generated_image_zc992mzc992mzc99.webp"
+                      alt="His Royal Highness Togbega Kodi Adiko VI in traditional regalia"
+                      className="w-80 h-auto md:w-96 object-cover rounded-xl mx-auto"
+                    />
+                  </div>
                 </div>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-2">
