@@ -24,7 +24,7 @@ export default function History() {
                 The Tanyigbe Traditional Area was established in the Hohoe District, where the community has maintained its presence for generations, developing its traditional governance structures and cultural practices.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed">
-                Today, the traditional area consists of four divisions—Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe—united under one paramount chief.
+                Today, the community is organized into four divisions—Anyigbe, Etoe, Atidze, and Dzafe—united under one paramount chief.
               </p>
             </div>
           </div>
@@ -95,13 +95,13 @@ export default function History() {
                 Traditional Governance
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Tanyigbe Traditional Area operates under a hierarchical governance system typical of Eʋe communities. A paramount chief serves as the overall traditional authority, supported by divisional chiefs from each of the four constituent divisions.
+                The Tanyigbe Traditional Area operates under a hierarchical governance system typical of Eʋe communities. A paramount chief serves as the overall traditional authority, supported by divisional chiefs from each of the four divisions: Anyigbe, Etoe, Atidze, and Dzafe.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The traditional council comprises the paramount chief, divisional chiefs, and elders who provide guidance on customary matters, dispute resolution, and community development initiatives.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                This structure maintains continuity with traditional Eʋe governance while adapting to contemporary administrative requirements in the Hohoe District.
+                This structure maintains continuity with traditional Eʋe governance while adapting to contemporary administrative requirements.
               </p>
             </div>
           </div>
@@ -139,37 +139,51 @@ export default function History() {
           </h2>
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Eʋe Migration Heritage</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Origins in Notsie</h3>
               <p className="text-lg text-gray-700">
-                Tanyigbe's origins are connected to the broader Eʋe migration from Notsie in present-day Togo, a historical movement that shaped Eʋe settlements across the Volta Region.
+                Our history traces back to the migration of the Ewe people from Notsie in present-day Togo, where our ancestors lived before embarking on a journey in search of freedom and better living conditions.
               </p>
             </div>
 
             <div className="border-l-4 border-[#4C7000] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Traditional Area Structure</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">The Migration Journey</h3>
               <p className="text-lg text-gray-700">
-                The four divisions—Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe—operate under one paramount stool with a coordinated traditional governance system.
+                Along our journey, our people passed through areas such as Gbélé (near the Aburi Mountains) and Amamprobi in Akwapem, before moving through parts of the Volta region in search of fertile land, water, and security.
               </p>
             </div>
 
             <div className="border-l-4 border-[#FF4516] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Colonial and Independence Period</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">The Dzifadzi Episode</h3>
               <p className="text-lg text-gray-700">
-                Tanyigbe, as part of the Volta Region, experienced British colonial administration and subsequently became part of independent Ghana in 1957.
+                Our oral history recalls a significant episode at Dzifadzi, where two brothers became separated from the main group during the migration, compelling them to settle there and start their families. Tanyigbe remains connected to the Dzifadzi community.
               </p>
             </div>
 
             <div className="border-l-4 border-[#1F2937] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Contemporary Development</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Settlement at Klɔbɔ (Gborkome or Old Town)</h3>
               <p className="text-lg text-gray-700">
-                The community continues to balance traditional governance with modern administrative structures, focusing on education, healthcare, and infrastructure development.
+                Our community settled for an extended period at Klɔbɔ (Gborxome or Old Town), where social structures, farming practices, and communal life were firmly established.
               </p>
             </div>
 
             <div className="border-l-4 border-[#E2A201] pl-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Diaspora Connections</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Relocation to Our Present Home</h3>
               <p className="text-lg text-gray-700">
-                Members of the Tanyigbe community living in other parts of Ghana and abroad maintain connections through annual festivals and development initiatives.
+                In the late 20th century, our people relocated from the Old Town to our present location along the Ho-Kpalimé corridor, where Tanyigbe continues to grow and thrive today.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-[#4C7000] pl-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Annual Yam Festival (TAYAFEST)</h3>
+              <p className="text-lg text-gray-700">
+                Each year, usually in September, our community comes together to celebrate the Yam Festival, a key cultural milestone marked by thanksgiving, unity, and the reaffirmation of shared values and heritage.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-[#FF4516] pl-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Community Today</h3>
+              <p className="text-lg text-gray-700">
+                Today, our community is organized into four divisions—Anyigbe, Etoe, Atidze, and Dzafe—and continues to advance education, health, culture, and community development through collective effort and cooperation.
               </p>
             </div>
           </div>
