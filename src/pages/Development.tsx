@@ -70,63 +70,76 @@ export default function Development() {
         </div>
       </section>
 
-      <section id="education" className="py-20 bg-gray-50 scroll-mt-20">
+      <section id="education" className="py-20 bg-gradient-to-b from-white to-gray-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+          <div className="text-center mb-12">
+            <div className="inline-block bg-[#E2A201] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+              <GraduationCap className="text-white" size={40} />
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Education & Youth Development
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Under the leadership of Togbe Kodi Adiko VI, sustained efforts have focused on strengthening education and expanding opportunities for young people in Tanyigbe
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/533048130_1314207883612102_7986478633305916107_n.jpg"
                 alt="Education"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div>
-              <div className="bg-[#E2A201] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <GraduationCap className="text-white" size={32} />
+
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#E2A201] hover:shadow-xl transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#E2A201] bg-opacity-10 rounded-lg p-3 flex-shrink-0">
+                    <span className="text-3xl font-bold text-[#E2A201]">8</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Years of BECE Support</h3>
+                    <p className="text-gray-700">
+                      Eight consecutive years of comprehensive support for BECE candidates across all four basic schools, including learning materials, daily meals during examinations, mathematical sets, and full transportation to and from examination centres.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Education Development
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Education is the foundation of progress. Tanyigbe Traditional Area boasts comprehensive educational facilities: 4 Kindergartens, 4 Primary Schools, 4 Junior High Schools, and 1 Senior High School. Our investment in education has produced many citizens with advanced degrees including PhDs, Professors, and various professional qualifications who contribute meaningfully to national development.
+
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#4C7000] hover:shadow-xl transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Improved Learning Environment</h3>
+                <p className="text-gray-700">
+                  Provision of furniture to Tanyigbe Senior High School, contributing to better teaching and learning conditions.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#FF4516] hover:shadow-xl transition-shadow">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Academic Excellence</h3>
+                <p className="text-gray-700">
+                  Strengthening the NorDU Junior High School Quiz Competition through partnership with UNIWIZ Foundation and other stakeholders to encourage learning, confidence, and healthy academic competition.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#E2A201] to-[#4C7000] rounded-xl shadow-lg p-6 text-white hover:shadow-xl transition-shadow">
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-xl font-bold">Youth Skills & ICT Development</h3>
+                  <span className="bg-white text-[#E2A201] text-xs font-bold px-2 py-1 rounded">ONGOING</span>
+                </div>
+                <p className="leading-relaxed">
+                  Ongoing efforts to establish a Youth Skills Development and ICT Centre in Tanyigbe to equip young people with practical skills, digital literacy, and pathways to employment and entrepreneurship.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-[#E2A201] to-[#4C7000] rounded-2xl shadow-2xl p-8 md:p-12 text-white">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">A Holistic Approach to Youth Empowerment</h3>
+              <p className="text-lg leading-relaxed">
+                These initiatives reflect a comprehensive strategy that combines academic support with skills development and long-term youth empowerment, building a foundation for sustainable community development and preparing the next generation for success.
               </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Education Initiatives:</h3>
-              <ul className="space-y-3 text-gray-700 mb-6">
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>BECE Support Programs:</strong> Providing study materials, extra classes, and exam preparation for all students preparing for basic education exams</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Scholarship Fund:</strong> Financial assistance for brilliant but needy students to continue their education at secondary and tertiary levels</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Youth Development & ICT Centre:</strong> In partnership with Eban Capital, we're building a multipurpose Youth Development & ICT centre to equip the youth with modern skills and technology</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>School Infrastructure:</strong> Renovating classrooms, building libraries, and improving learning facilities across all four divisions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Teacher Support:</strong> Incentives and accommodations to attract and retain quality teachers in our schools</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#E2A201] mr-2 text-xl">•</span>
-                  <span><strong>Youth-Centered Programs:</strong> Our annual yam festival celebrations emphasize youth development, cultural preservation, and serve as homecoming events to inspire the next generation of leaders</span>
-                </li>
-              </ul>
-
-              <div className="bg-[#E2A201] bg-opacity-10 rounded-lg p-6">
-                <p className="text-gray-900 font-semibold mb-4">
-                  "Education is not just about passing exams—it's about empowering our people to reach their full potential and contribute meaningfully to our community's development."
-                </p>
-                <p className="text-gray-700 text-sm">
-                  Current leaders focus on developing the skills of youth while consciously mobilizing them to embrace our tradition, culture and customs as future leaders. Our annual yam festival celebrations emphasize these areas with youth-centered activities that also serve as homecoming events.
-                </p>
-              </div>
             </div>
           </div>
         </div>
