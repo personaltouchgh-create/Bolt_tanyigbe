@@ -65,59 +65,51 @@ export default function GoodwillModal({ isOpen, onClose }: GoodwillModalProps) {
         </button>
 
         <div className="overflow-y-auto max-h-[90vh]">
-          <div className="bg-gradient-to-br from-[#E2A201] via-[#4C7000] to-[#FF4516] p-8 text-center">
+          <div className="bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 p-8 text-center">
             <Heart className="text-white mx-auto mb-4" size={48} />
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-2">
               Goodwill Message
             </h2>
             <p className="text-white text-lg">
-              From the Paramount Chief and Traditional Council
+              From the Traditional Council and People of Tanyigbe
             </p>
           </div>
 
           <div className="p-8 md:p-10">
             <div className="text-center mb-8">
               <div className="relative inline-block mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#E2A201] via-[#4C7000] to-[#FF4516] rounded-full blur-xl opacity-30"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 via-orange-400 to-yellow-400 rounded-full blur-xl opacity-30"></div>
                 <img
                   src="/48 copy.jpg"
-                  alt="Togbe Kodi Adiko VI"
+                  alt="His Royal Highness Togbega Kodi Adiko VI"
                   className="relative w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-white shadow-xl mx-auto"
                 />
               </div>
               <h3 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Togbe Kodi Adiko VI
+                His Royal Highness Togbega Kodi Adiko VI
               </h3>
               <p className="text-lg text-gray-600">
-                Paramount Chief of Tanyigbe Traditional Area
+                Paramount Chief, Tanyigbe Traditional Area
               </p>
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4 font-serif italic">
-                "On behalf of the people of Tanyigbe, Gbélé-Nyamprobiawo, I extend warm greetings and solidarity to all communities participating in the 2025 NorDU Festival."
+              <p className="text-base text-gray-700 leading-relaxed mb-4">
+                On behalf of the Traditional Council and the people of Tanyigbe, we extend warm greetings to all residents, friends, and well-wishers of our community.
               </p>
 
               <p className="text-base text-gray-700 leading-relaxed mb-4">
-                As descendants of courageous ancestors who journeyed from Ŋɔtsie seeking freedom and prosperity, we understand the power of unity and cultural preservation.
+                Tanyigbe's strength lies in its people, shared values, and rich heritage. As we honour our history and culture, we also reaffirm our collective commitment to unity, peace, and development. Together, we can continue to build a community that supports education, wellbeing, and opportunities for present and future generations.
               </p>
 
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Our community's founding motto <span className="font-bold text-[#E2A201]">'ta ko ayi anyigba'</span> - <span className="font-bold">'except death'</span> - reflects our unwavering commitment to progress and cultural continuity.
-              </p>
-
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                May this festival strengthen the bonds among our communities, promote peace and understanding, and inspire our youth to embrace their cultural identity while pursuing modern development.
-              </p>
-
-              <p className="text-lg text-gray-900 leading-relaxed font-semibold">
-                Together, we build a stronger, more united NorDU for future generations.
+              <p className="text-base text-gray-700 leading-relaxed">
+                We welcome all who seek to engage with Tanyigbe in the spirit of cooperation, respect, and shared progress.
               </p>
             </div>
 
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <p className="text-base font-bold text-gray-900">Togbe Kodi Adiko VI</p>
-              <p className="text-sm text-gray-600">Paramount Chief of Tanyigbe Traditional Area</p>
+              <p className="text-base font-bold text-gray-900">His Royal Highness Togbega Kodi Adiko VI</p>
+              <p className="text-sm text-gray-600">Paramount Chief, Tanyigbe Traditional Area</p>
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-between">
@@ -138,7 +130,7 @@ export default function GoodwillModal({ isOpen, onClose }: GoodwillModalProps) {
                 </button>
                 <button
                   onClick={handleClose}
-                  className="px-6 py-2 bg-gradient-to-r from-[#E2A201] to-[#4C7000] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+                  className="px-6 py-2 bg-gradient-to-r from-amber-400 to-orange-400 text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
                 >
                   OK
                 </button>
