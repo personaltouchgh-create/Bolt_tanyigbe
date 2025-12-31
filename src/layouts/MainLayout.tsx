@@ -67,7 +67,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 onMouseLeave={handleMouseLeave}
               >
                 <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  About Us
+                  About
                   <ChevronDown
                     size={16}
                     className={`ml-1 transition-transform duration-300 ${
@@ -106,6 +106,64 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                       >
                         <div className="font-semibold text-gray-900">Goodwill Message</div>
                         <div className="text-sm text-gray-600">From the Paramount Chief</div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('divisions')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
+                  Divisions
+                  <ChevronDown
+                    size={16}
+                    className={`ml-1 transition-transform duration-300 ${
+                      activeDropdown === 'divisions' ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
+                    activeDropdown === 'divisions'
+                      ? 'opacity-100 translate-y-0 pointer-events-auto'
+                      : 'opacity-0 -translate-y-2 pointer-events-none'
+                  }`}
+                  style={{ paddingTop: '0.5rem' }}
+                >
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
+                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Four Divisions</h3>
+                    <div className="grid gap-3">
+                      <Link
+                        to="/divisions/anyigbe"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Tanyigbe Anyigbe</div>
+                        <div className="text-sm text-gray-600">Most senior division</div>
+                      </Link>
+                      <Link
+                        to="/divisions/etoe"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Tanyigbe Etoe</div>
+                        <div className="text-sm text-gray-600">Right-Hand Chief</div>
+                      </Link>
+                      <Link
+                        to="/divisions/atidze"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Tanyigbe Atidze</div>
+                        <div className="text-sm text-gray-600">Left-Hand Chief</div>
+                      </Link>
+                      <Link
+                        to="/divisions/dzafe"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Tanyigbe Dzaƒe</div>
+                        <div className="text-sm text-gray-600">Fourth division</div>
                       </Link>
                     </div>
                   </div>
@@ -236,32 +294,56 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 </div>
               </div>
 
-              <Link
-                to="/diaspora"
-                className={`px-4 py-2 rounded-md transition-colors ${
-                  isActive('/diaspora') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
-                }`}
+              <div
+                className="relative"
+                onMouseEnter={() => handleMouseEnter('community')}
+                onMouseLeave={handleMouseLeave}
               >
-                Diaspora
-              </Link>
-
-              <Link
-                to="/tourism"
-                className={`px-4 py-2 rounded-md transition-colors ${
-                  isActive('/tourism') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
-                }`}
-              >
-                Tourism
-              </Link>
-
-              <Link
-                to="/gallery"
-                className={`px-4 py-2 rounded-md transition-colors ${
-                  isActive('/gallery') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
-                }`}
-              >
-                Gallery
-              </Link>
+                <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
+                  Community
+                  <ChevronDown
+                    size={16}
+                    className={`ml-1 transition-transform duration-300 ${
+                      activeDropdown === 'community' ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
+                    activeDropdown === 'community'
+                      ? 'opacity-100 translate-y-0 pointer-events-auto'
+                      : 'opacity-0 -translate-y-2 pointer-events-none'
+                  }`}
+                  style={{ paddingTop: '0.5rem' }}
+                >
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
+                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Community & Connections</h3>
+                    <div className="grid gap-3">
+                      <Link
+                        to="/diaspora"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Diaspora Network</div>
+                        <div className="text-sm text-gray-600">Connect with Tanyigbe worldwide</div>
+                      </Link>
+                      <Link
+                        to="/tourism"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Tourism</div>
+                        <div className="text-sm text-gray-600">Visit our beautiful community</div>
+                      </Link>
+                      <Link
+                        to="/gallery"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Gallery</div>
+                        <div className="text-sm text-gray-600">Photos & memories</div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <Link
                 to="/blog"
@@ -299,7 +381,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
 
           <div
             className={`lg:hidden border-t border-gray-200 overflow-hidden transition-all duration-500 ease-in-out ${
-              isMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+              isMenuOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
             <div className="py-4 space-y-1">
@@ -316,7 +398,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                   onClick={() => toggleMobileSubmenu('about')}
                   className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
                 >
-                  <span>About Us</span>
+                  <span>About</span>
                   <ChevronDown
                     size={18}
                     className={`transition-transform duration-300 ${
@@ -350,6 +432,57 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Goodwill Message
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  onClick={() => toggleMobileSubmenu('divisions')}
+                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
+                >
+                  <span>Divisions</span>
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform duration-300 ${
+                      mobileExpandedMenus.has('divisions') ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    mobileExpandedMenus.has('divisions') ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="pl-4 py-2 space-y-1">
+                    <Link
+                      to="/divisions/anyigbe"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Tanyigbe Anyigbe
+                    </Link>
+                    <Link
+                      to="/divisions/etoe"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Tanyigbe Etoe
+                    </Link>
+                    <Link
+                      to="/divisions/atidze"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Tanyigbe Atidze
+                    </Link>
+                    <Link
+                      to="/divisions/dzafe"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Tanyigbe Dzaƒe
                     </Link>
                   </div>
                 </div>
@@ -458,29 +591,49 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 </div>
               </div>
 
-              <Link
-                to="/diaspora"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Diaspora
-              </Link>
-
-              <Link
-                to="/tourism"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Tourism
-              </Link>
-
-              <Link
-                to="/gallery"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Gallery
-              </Link>
+              <div>
+                <button
+                  onClick={() => toggleMobileSubmenu('community')}
+                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
+                >
+                  <span>Community</span>
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform duration-300 ${
+                      mobileExpandedMenus.has('community') ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    mobileExpandedMenus.has('community') ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="pl-4 py-2 space-y-1">
+                    <Link
+                      to="/diaspora"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Diaspora Network
+                    </Link>
+                    <Link
+                      to="/tourism"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Tourism
+                    </Link>
+                    <Link
+                      to="/gallery"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Gallery
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
               <Link
                 to="/blog"
