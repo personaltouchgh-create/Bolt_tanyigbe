@@ -38,7 +38,7 @@ export default function Culture() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Cuisine</h3>
               <p className="text-gray-700">
-                Traditional Eʋe cuisine is prepared for festivals and community gatherings
+                Traditional Eʋe dishes like Akple or Banku with Fetri detsi, Fufu with various soups, and Abolo with fried fish
               </p>
             </div>
 
@@ -59,6 +59,42 @@ export default function Culture() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3">Ceremonies</h3>
               <p className="text-gray-700">
                 Traditional rites and ceremonies mark important life transitions and community events
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Traditional Cuisine
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Tanyigbe's culinary heritage reflects our Eʋe traditions with dishes that bring families and communities together
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Akple & Banku</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Akple or Banku served with Fetri detsi (okro soup or stew), Borbitadi, and other traditional sauces are staples at meals and celebrations.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Fufu & Soups</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Fufu prepared with various soups including light soup, palm nut soup, and groundnut soup remains a beloved traditional meal.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Abolo</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Abolo served with fried fish and pepper sauce is a popular dish enjoyed across the community during gatherings and everyday meals.
               </p>
             </div>
           </div>
@@ -107,8 +143,10 @@ export default function Culture() {
               <div>
                 <h4 className="text-xl font-bold text-[#E2A201] mb-3">Traditional Performances</h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• Borborbor drum and dance ensemble</li>
-                  <li>• Atsiagbekor war dance</li>
+                  <li>• Abeyoyro (hailing of abe)</li>
+                  <li>• Zikpuiworwor (Stool rites performances)</li>
+                  <li>• Borborbor drum competitions among divisions</li>
+                  <li>• Gbormetsatsa competitions among divisions</li>
                   <li>• Traditional poetry and storytelling</li>
                   <li>• Youth cultural displays</li>
                 </ul>
@@ -117,9 +155,11 @@ export default function Culture() {
                 <h4 className="text-xl font-bold text-[#4C7000] mb-3">Community Activities</h4>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Grand durbar of chiefs</li>
+                  <li>• Health walk by all divisions to neighbouring communities</li>
+                  <li>• Football competitions among divisions (male & female teams)</li>
+                  <li>• Volleyball competitions among divisions (male & female teams)</li>
                   <li>• Community awards ceremony</li>
                   <li>• Development presentations</li>
-                  <li>• Unity walk through divisions</li>
                 </ul>
               </div>
               <div>
@@ -146,9 +186,6 @@ export default function Culture() {
               <h3 className="font-serif text-3xl font-bold text-gray-900 mb-6">Preserving Artistry</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Tanyigbe is home to skilled artisans who keep traditional crafts alive. From intricate kente weaving to calabash carving, pottery, and beadwork, our craftspeople create functional art that connects us to our ancestors.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The art of drum-making holds special significance. Our master drum makers craft instruments that don't just produce sound—they speak the language of our ancestors, conveying messages and emotions through complex rhythms.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 These crafts are more than commercial products; they're carriers of cultural knowledge, with techniques and meanings passed from generation to generation.
@@ -187,8 +224,8 @@ export default function Culture() {
                   <li><span className="font-semibold">Miawoezɔ:</span> Welcome (plural)</li>
                   <li><span className="font-semibold">Ŋdi na wò:</span> Good morning</li>
                   <li><span className="font-semibold">Ŋdɔ na wò:</span> Good afternoon</li>
-                  <li><span className="font-semibold">Fiẽyi na wò:</span> Good afternoon (alternate)</li>
-                  <li><span className="font-semibold">Zãyi na wò:</span> Good evening</li>
+                  <li><span className="font-semibold">Fiẽyi na wò:</span> Good evening</li>
+                  <li><span className="font-semibold">Za ne nyo nawo / Na dor agbe:</span> Good night</li>
                   <li><span className="font-semibold">Akpe na wò:</span> Thank you</li>
                 </ul>
               </div>
@@ -196,10 +233,9 @@ export default function Culture() {
               <div className="bg-[#4C7000] bg-opacity-10 rounded-lg p-6">
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Cultural Expressions</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li><span className="font-semibold">Deka kple Dzotsotso:</span> Unity and Progress</li>
-                  <li><span className="font-semibold">Mia deka mia so:</span> We are one</li>
-                  <li><span className="font-semibold">Míaƒe tɔgbuiwo:</span> Our ancestors</li>
-                  <li><span className="font-semibold">Hame kple Amenuveve:</span> Peace and Love</li>
+                  <li><span className="font-semibold">Dekawowor kple Ngoyiyi:</span> Unity and Progress</li>
+                  <li><span className="font-semibold">Ame dekawo mienyo:</span> We are one people</li>
+                  <li><span className="font-semibold">Fafa kple Lolo:</span> Peace and Love</li>
                 </ul>
               </div>
             </div>
