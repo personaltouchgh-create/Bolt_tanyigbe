@@ -111,14 +111,14 @@ export default function Development() {
               <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#4C7000] hover:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Improved Learning Environment</h3>
                 <p className="text-gray-700">
-                  Provision of furniture to Tanyigbe Senior High School, contributing to better teaching and learning conditions.
+                  Tanyigbe citizens regularly donate items including chairs, books, cornmills and other resources to support TASHS. The community also organizes forums where experiences are shared, contributing to better teaching and learning conditions.
                 </p>
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#FF4516] hover:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Academic Excellence</h3>
                 <p className="text-gray-700">
-                  Strengthening the NorDU Junior High School Quiz Competition through partnership with UNIWIZ Foundation and other stakeholders to encourage learning, confidence, and healthy academic competition.
+                  Strengthening the NorDU Junior High School Quiz Competition through partnership with UNIWIZ Foundation and other stakeholders. In 2024, Mathematics, Science, and ICT were introduced into the competition with improved prize awards for winners to encourage learning, confidence, and healthy academic competition.
                 </p>
               </div>
 
@@ -171,7 +171,7 @@ export default function Development() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FF4516] mr-2 text-xl">•</span>
-                  <span><strong>Health Screening Programs:</strong> Regular free health checks for common conditions like diabetes, hypertension, and malaria</span>
+                  <span><strong>Health Screening Programs:</strong> Regular free health checks including prostate screening and education, breast cancer screening and education, cholesterol monitoring, as well as screening for diabetes, hypertension, and malaria</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#FF4516] mr-2 text-xl">•</span>
