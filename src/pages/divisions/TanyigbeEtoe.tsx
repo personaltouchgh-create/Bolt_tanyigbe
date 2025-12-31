@@ -16,9 +16,9 @@ export default function TanyigbeEtoe() {
           <nav className="mb-6 text-sm">
             <Link to="/culture/tayafest" className="hover:text-[#E2A201] transition">TAYAFEST</Link>
             <span className="mx-2">/</span>
-            <span>Tanyigbe-Etoe</span>
+            <span>Tanyigbe Etoe</span>
           </nav>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Tanyigbe-Etoe</h1>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Tanyigbe Etoe</h1>
           <p className="text-xl md:text-2xl">Division of the Tanyigbe Traditional Area</p>
         </div>
       </section>
@@ -27,10 +27,10 @@ export default function TanyigbeEtoe() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Tanyigbe-Etoe
+              About Tanyigbe Etoe
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Tanyigbe-Etoe is one of the four divisions of the Tanyigbe Traditional Area, with a rich history and vibrant cultural heritage. The division is home to several communities united under traditional governance.
+              Tanyigbe Etoe is one of the four divisions of the Tanyigbe Traditional Area, with a rich history and vibrant cultural heritage. The division is home to several communities united under traditional governance.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export default function TanyigbeEtoe() {
                   Divisional Chief
                 </div>
                 <h3 className="font-serif text-3xl font-bold text-gray-900 mb-2">Togbe [Name]</h3>
-                <p className="text-[#4C7000] font-semibold mb-4">Chief of Tanyigbe-Etoe</p>
+                <p className="text-[#4C7000] font-semibold mb-4">Chief of Tanyigbe Etoe</p>
                 <p className="text-gray-700 leading-relaxed">
                   Leading the division with wisdom and dedication to preserving cultural heritage while promoting community development.
                 </p>
@@ -102,7 +102,7 @@ export default function TanyigbeEtoe() {
                   Divisional Queenmother
                 </div>
                 <h3 className="font-serif text-3xl font-bold text-gray-900 mb-2">Mama [Name]</h3>
-                <p className="text-[#FF4516] font-semibold mb-4">Queenmother of Tanyigbe-Etoe</p>
+                <p className="text-[#FF4516] font-semibold mb-4">Queenmother of Tanyigbe Etoe</p>
                 <p className="text-gray-700 leading-relaxed">
                   Providing maternal guidance and wisdom, nurturing the community with compassion and cultural knowledge.
                 </p>
@@ -116,12 +116,12 @@ export default function TanyigbeEtoe() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
-              Communities Under Tanyigbe-Etoe
+              Communities Under Tanyigbe Etoe
             </h2>
 
             <div className="bg-gradient-to-r from-[#4C7000]/10 to-[#FF4516]/10 rounded-2xl p-8 mb-8">
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                The Tanyigbe-Etoe division comprises several communities, each with its own unique character while united under shared traditions and governance.
+                The Tanyigbe Etoe division comprises several communities, each with its own unique character while united under shared traditions and governance.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {communities.map((community, index) => (
@@ -185,7 +185,7 @@ export default function TanyigbeEtoe() {
               Part of Tanyigbe's Rich Heritage
             </h2>
             <p className="text-xl text-gray-200 leading-relaxed mb-8">
-              Tanyigbe-Etoe continues to play a vital role in preserving and promoting the cultural heritage of the Tanyigbe Traditional Area.
+              Tanyigbe Etoe continues to play a vital role in preserving and promoting the cultural heritage of the Tanyigbe Traditional Area.
             </p>
             <Link
               to="/culture/tayafest"
