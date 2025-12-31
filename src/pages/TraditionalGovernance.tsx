@@ -289,7 +289,7 @@ export default function TraditionalGovernance() {
               </div>
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Divisional Chiefs</h3>
               <p className="text-gray-700 leading-relaxed">
-                Chiefs from TanyigbeEtoe, TanyigbeAveme, TanyigbeBator, and TanyigbeDzigbe oversee local affairs and coordinate with the paramount chief on community matters.
+                Chiefs from Tanyigbe-Etoe, Tanyigbe-Aveme, Tanyigbe-Bator, and Tanyigbe-Dzigbe oversee local affairs and coordinate with the paramount chief on community matters.
               </p>
             </div>
 

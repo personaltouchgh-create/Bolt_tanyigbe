@@ -17,9 +17,9 @@ export default function TanyigbeAnyigbe() {
           <nav className="mb-6 text-sm">
             <Link to="/culture/tayafest" className="hover:text-[#E2A201] transition">TAYAFEST</Link>
             <span className="mx-2">/</span>
-            <span>Tanyigbe Anyigbe</span>
+            <span>Tanyigbe-Anyigbe</span>
           </nav>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Tanyigbe Anyigbe</h1>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">Tanyigbe-Anyigbe</h1>
           <p className="text-xl md:text-2xl">Division of the Tanyigbe Traditional Area</p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function TanyigbeAnyigbe() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Tanyigbe Anyigbe
+              About Tanyigbe-Anyigbe
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Anyigbe is the most senior division of Tanyigbe and derives its name from Anyigbemɛ, meaning "down the hill" or "lower end," referring to where its forebears first settled at Gborxome, the community's last settlement before the present location.
@@ -93,7 +93,7 @@ export default function TanyigbeAnyigbe() {
                   Divisional Chief
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Togbe Kwami Akoto V</h3>
-                <p className="text-[#E2A201] font-semibold mb-4">Chief of Tanyigbe Anyigbe</p>
+                <p className="text-[#E2A201] font-semibold mb-4">Chief of Tanyigbe-Anyigbe</p>
                 <p className="text-gray-700 leading-relaxed">
                   Leading the most senior division with wisdom and dedication to preserving cultural heritage while promoting community development.
                 </p>
@@ -125,7 +125,7 @@ export default function TanyigbeAnyigbe() {
                   Divisional Queenmother
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Mama Amenorvi Hiadzi I</h3>
-                <p className="text-[#FF4516] font-semibold mb-4">Queenmother of Tanyigbe Anyigbe</p>
+                <p className="text-[#FF4516] font-semibold mb-4">Queenmother of Tanyigbe-Anyigbe</p>
                 <p className="text-gray-700 leading-relaxed">
                   Providing maternal guidance and wisdom, nurturing the division with compassion and cultural knowledge.
                 </p>

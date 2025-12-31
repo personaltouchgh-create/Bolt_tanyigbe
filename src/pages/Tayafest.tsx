@@ -207,7 +207,7 @@ export default function Tayafest() {
                 </div>
               </div>
               <div className="p-6 text-center">
-                <p className="text-gray-700 mb-4">Explore the traditional governance and communities of Tanyigbe Anyigbe</p>
+                <p className="text-gray-700 mb-4">Explore the traditional governance and communities of Tanyigbe-Anyigbe</p>
                 <span className="text-[#E2A201] font-semibold group-hover:underline">Learn More →</span>
               </div>
             </Link>
@@ -224,7 +224,7 @@ export default function Tayafest() {
                 </div>
               </div>
               <div className="p-6 text-center">
-                <p className="text-gray-700 mb-4">Discover the heritage and leadership of Tanyigbe Etoe</p>
+                <p className="text-gray-700 mb-4">Discover the heritage and leadership of Tanyigbe-Etoe</p>
                 <span className="text-[#4C7000] font-semibold group-hover:underline">Learn More →</span>
               </div>
             </Link>
@@ -241,7 +241,7 @@ export default function Tayafest() {
                 </div>
               </div>
               <div className="p-6 text-center">
-                <p className="text-gray-700 mb-4">Experience the culture and traditions of Tanyigbe Atidze</p>
+                <p className="text-gray-700 mb-4">Experience the culture and traditions of Tanyigbe-Atidze</p>
                 <span className="text-[#FF4516] font-semibold group-hover:underline">Learn More →</span>
               </div>
             </Link>
@@ -258,7 +258,7 @@ export default function Tayafest() {
                 </div>
               </div>
               <div className="p-6 text-center">
-                <p className="text-gray-700 mb-4">Meet the leaders and communities of Tanyigbe Dzafe</p>
+                <p className="text-gray-700 mb-4">Meet the leaders and communities of Tanyigbe-Dzafe</p>
                 <span className="text-[#1F2937] font-semibold group-hover:underline">Learn More →</span>
               </div>
             </Link>

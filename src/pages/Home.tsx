@@ -104,7 +104,7 @@ export default function Home() {
                 <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Users className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-center">TanyigbeAnyigbe</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Anyigbe</h3>
                 <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
                 <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More <ArrowRight size={16} className="ml-1" />
@@ -121,7 +121,7 @@ export default function Home() {
                 <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Landmark className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-center">TanyigbeEtoe</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Etoe</h3>
                 <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
                 <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More <ArrowRight size={16} className="ml-1" />
@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Users className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-center">TanyigbeAtidze</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Atidze</h3>
                 <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
                 <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More <ArrowRight size={16} className="ml-1" />
@@ -155,7 +155,7 @@ export default function Home() {
                 <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Landmark className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-center">TanyigbeDzafe</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2 text-center">Tanyigbe-Dzafe</h3>
                 <p className="text-sm text-white text-opacity-90 text-center mb-4">Explore Leadership & Governance</p>
                 <div className="flex items-center text-sm font-semibold group-hover:translate-x-2 transition-transform">
                   Learn More <ArrowRight size={16} className="ml-1" />

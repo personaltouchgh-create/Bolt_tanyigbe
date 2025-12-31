@@ -258,7 +258,7 @@ export default function Contact() {
               <div className="bg-[#E2A201] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">TanyigbeEtoe</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Etoe</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 24 040 2187</p>
@@ -270,7 +270,7 @@ export default function Contact() {
               <div className="bg-[#4C7000] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">TanyigbeGbogame</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Gbogame</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 54 868 2669</p>
@@ -282,7 +282,7 @@ export default function Contact() {
               <div className="bg-[#FF4516] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">TanyigbeAvedome</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Avedome</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 24 040 2187</p>
@@ -294,7 +294,7 @@ export default function Contact() {
               <div className="bg-[#1F2937] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="text-white" size={32} />
               </div>
-              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">TanyigbeDugame</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-900 mb-3 text-center">Tanyigbe-Dugame</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p className="text-center"><strong>Chief's Palace</strong></p>
                 <p>Contact: +233 54 868 2669</p>
