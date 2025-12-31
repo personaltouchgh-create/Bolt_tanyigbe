@@ -335,10 +335,10 @@ export default function Diaspora() {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#E2A201] focus:border-transparent"
                     >
                       <option value="">Select your division</option>
-                      <option value="etoe">Tanyigbe-Etoe</option>
-                      <option value="gbogame">Tanyigbe-Gbogame</option>
-                      <option value="avedome">Tanyigbe-Avedome</option>
-                      <option value="dugame">Tanyigbe-Dugame</option>
+                      <option value="etoe">TanyigbeEtoe</option>
+                      <option value="gbogame">TanyigbeGbogame</option>
+                      <option value="avedome">TanyigbeAvedome</option>
+                      <option value="dugame">TanyigbeDugame</option>
                     </select>
                   </div>
                 </div>
