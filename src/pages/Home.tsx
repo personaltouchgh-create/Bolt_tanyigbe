@@ -331,10 +331,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Experience Tanyigbe
+              Natural Wonders Near Tanyigbe
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover the natural wonders and cultural treasures that make our region unforgettable.
+              Tanyigbe is your gateway to the region's spectacular natural attractions. Just 10 minutes from Ho, our community provides easy access to some of Ghana's most breathtaking wonders.
             </p>
           </div>
 
@@ -348,7 +348,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Wli Waterfalls</h3>
                 <p className="text-gray-700 mb-4">
-                  Experience the tallest waterfall in West Africa, a breathtaking natural wonder.
+                  Experience the tallest waterfall in West Africa, located near Tanyigbe and easily accessible in a short time.
                 </p>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Mount Afadja</h3>
                 <p className="text-gray-700 mb-4">
-                  Hike to the highest point in Ghana and witness stunning panoramic views.
+                  Hike to Ghana's highest point, close to Tanyigbe, and witness stunning panoramic views.
                 </p>
               </div>
             </div>
@@ -376,7 +376,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Amedzofe Canopy Walk</h3>
                 <p className="text-gray-700 mb-4">
-                  Walk among the treetops and experience the forest from a unique perspective.
+                  Walk among the treetops near Tanyigbe and experience the forest from a unique perspective.
                 </p>
               </div>
             </div>

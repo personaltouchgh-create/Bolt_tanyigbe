@@ -28,9 +28,9 @@ const galleryImages: GalleryImage[] = [
   { id: 17, src: '/36.jpg', alt: 'Tanyigbe View', category: 'Tourism' },
   { id: 18, src: '/48.jpg', alt: 'Community Event', category: 'Community' },
   { id: 19, src: '/93.jpg', alt: 'Cultural Practice', category: 'Culture' },
-  { id: 20, src: '/screenshot_2025-12-05_234830 copy.png', alt: 'Wli Waterfalls', category: 'Developments' },
-  { id: 21, src: '/screenshot_2025-12-06_001430 copy copy.png', alt: 'Mount Afadja', category: 'Developments' },
-  { id: 22, src: '/screenshot_2025-12-06_001918.png', alt: 'Amedzofe Canopy Walk', category: 'Developments' },
+  { id: 20, src: '/screenshot_2025-12-05_234830 copy.png', alt: 'Wli Waterfalls (Near Tanyigbe)', category: 'Tourism' },
+  { id: 21, src: '/screenshot_2025-12-06_001430 copy copy.png', alt: 'Mount Afadja (Near Tanyigbe)', category: 'Tourism' },
+  { id: 22, src: '/screenshot_2025-12-06_001918.png', alt: 'Amedzofe Canopy Walk (Near Tanyigbe)', category: 'Tourism' },
 ];
 
 const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Tourism'];

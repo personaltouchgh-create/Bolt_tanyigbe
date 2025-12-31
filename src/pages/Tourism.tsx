@@ -17,7 +17,7 @@ export default function Tourism() {
               Gateway to Natural Beauty
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tanyigbe's location in the scenic Volta Region places you at the heart of some of Ghana's most spectacular natural attractions. From the highest peak to the tallest waterfall, adventure awaits.
+              Tanyigbe's strategic location in the scenic Volta Region, just 10 minutes from Ho, places you within easy reach of some of Ghana's most spectacular natural attractions. From the highest peak to the tallest waterfall, these nearby wonders are easily accessible from Tanyigbe.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function Tourism() {
                 Wli Waterfalls
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The crown jewel of the Volta Region, Wli Waterfalls (also known as Agumatsa) is the highest waterfall in West Africa. Located just a short distance from Tanyigbe, this spectacular 80-meter cascade is a must-see for any visitor to the region.
+                The crown jewel of the Volta Region, Wli Waterfalls (also known as Agumatsa) is the highest waterfall in West Africa. Located near Tanyigbe, this spectacular 80-meter cascade can be visited in a short time from our community, making it a must-see for any visitor to the region.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Experience Highlights:</h3>
@@ -111,7 +111,7 @@ export default function Tourism() {
                 Mount Afadja (Afadjato)
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Standing at 885 meters above sea level, Mount Afadja is Ghana's highest mountain. The challenging but rewarding hike offers breathtaking panoramic views of Ghana and Togo, making it a favorite for adventure seekers and nature lovers.
+                Standing at 885 meters above sea level, Mount Afadja is Ghana's highest mountain. Located close to Tanyigbe and easily accessible in a short time, the challenging but rewarding hike offers breathtaking panoramic views of Ghana and Togo, making it a favorite for adventure seekers and nature lovers.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Expect:</h3>
@@ -169,7 +169,7 @@ export default function Tourism() {
                 Amedzofe Canopy Walkway
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Located in Ghana's highest village, Amedzofe, this 350-meter-long canopy walkway offers a unique perspective of the forest. Suspended 30 meters above the ground, it provides an unforgettable bird's-eye view of the lush canopy and valley below.
+                Located in Ghana's highest village, Amedzofe, close to Tanyigbe, this 350-meter-long canopy walkway offers a unique perspective of the forest. Easily accessible in a short time from Tanyigbe, the walkway is suspended 30 meters above the ground and provides an unforgettable bird's-eye view of the lush canopy and valley below.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Experience Features:</h3>
@@ -225,7 +225,7 @@ export default function Tourism() {
               <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Getting There</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• From Accra: 4-5 hours by road</li>
-                <li>• Via Ho: 30-45 minutes to Tanyigbe</li>
+                <li>• From Ho to Tanyigbe: About 10 minutes drive</li>
                 <li>• Public transport available</li>
                 <li>• Private hire recommended for flexibility</li>
               </ul>
@@ -329,10 +329,10 @@ export default function Tourism() {
               Experience Tanyigbe Hospitality
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Beyond the natural attractions, visiting Tanyigbe means experiencing the warmth and hospitality of our community. Whether you're here for adventure, cultural immersion, or simply to connect with nature, you'll find a welcoming spirit that makes every visit memorable.
+              Tanyigbe is your perfect base for exploring the region's natural attractions. While Wli Waterfalls, Mount Afadja, and Amedzofe Canopy Walkway are not located in Tanyigbe itself, they are all within easy reach and can be visited in a short time from our community. Beyond these nearby natural wonders, visiting Tanyigbe means experiencing the warmth and hospitality of our community.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Come explore the wonders of our region—where Ghana's highest peaks meet its warmest hearts.
+              Come explore the wonders of our region—where Ghana's highest peaks meet its warmest hearts, just 10 minutes from Ho.
             </p>
           </div>
         </div>
