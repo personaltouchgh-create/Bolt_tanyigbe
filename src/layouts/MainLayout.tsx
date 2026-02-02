@@ -52,15 +52,6 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
             </Link>
 
             <div className="hidden lg:flex items-center space-x-1">
-              <Link
-                to="/"
-                className={`px-4 py-2 rounded-md transition-colors ${
-                  isActive('/') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
-                }`}
-              >
-                Home
-              </Link>
-
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter('about')}
@@ -83,29 +74,28 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                   }`}
                   style={{ paddingTop: '0.5rem' }}
                 >
-                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
-                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">About Tanyigbe</h3>
-                    <div className="grid gap-3">
-                      <Link
-                        to="/about"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Overview</div>
-                        <div className="text-sm text-gray-600">Learn about our community</div>
-                      </Link>
-                      <Link
-                        to="/history"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">History & Heritage</div>
-                        <div className="text-sm text-gray-600">Our migration story</div>
-                      </Link>
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-4">
+                    <div className="grid gap-2">
                       <Link
                         to="/about/goodwill-message"
                         className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
                       >
                         <div className="font-semibold text-gray-900">Goodwill Message</div>
                         <div className="text-sm text-gray-600">From the Paramount Chief</div>
+                      </Link>
+                      <Link
+                        to="/about"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Welcome to Tanyigbe</div>
+                        <div className="text-sm text-gray-600">Learn about our community</div>
+                      </Link>
+                      <Link
+                        to="/history"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Our History & Heritage</div>
+                        <div className="text-sm text-gray-600">Our migration story</div>
                       </Link>
                     </div>
                   </div>
@@ -134,9 +124,8 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                   }`}
                   style={{ paddingTop: '0.5rem' }}
                 >
-                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
-                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Four Divisions</h3>
-                    <div className="grid gap-3">
+                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-4">
+                    <div className="grid gap-2">
                       <Link
                         to="/divisions/anyigbe"
                         className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
@@ -170,180 +159,32 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 </div>
               </div>
 
-              <div
-                className="relative"
-                onMouseEnter={() => handleMouseEnter('culture')}
-                onMouseLeave={handleMouseLeave}
+              <Link
+                to="/culture"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  isActive('/culture') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                }`}
               >
-                <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  Culture
-                  <ChevronDown
-                    size={16}
-                    className={`ml-1 transition-transform duration-300 ${
-                      activeDropdown === 'culture' ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
-                    activeDropdown === 'culture'
-                      ? 'opacity-100 translate-y-0 pointer-events-auto'
-                      : 'opacity-0 -translate-y-2 pointer-events-none'
-                  }`}
-                  style={{ paddingTop: '0.5rem' }}
-                >
-                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
-                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Culture & Traditions</h3>
-                    <div className="grid gap-3">
-                      <Link
-                        to="/culture"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Overview</div>
-                        <div className="text-sm text-gray-600">Eʋe culture and traditions</div>
-                      </Link>
-                      <Link
-                        to="/culture/governance"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Traditional Governance</div>
-                        <div className="text-sm text-gray-600">Leadership & customs</div>
-                      </Link>
-                      <div className="border-t border-gray-200 my-2"></div>
-                      <div className="px-4 py-2">
-                        <div className="text-xs font-bold text-gray-500 uppercase tracking-wider">Festivals</div>
-                      </div>
-                      <Link
-                        to="/culture/tayafest"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">TAYAFEST</div>
-                        <div className="text-sm text-gray-600">Annual Yam Festival</div>
-                      </Link>
-                      <Link
-                        to="/culture/nordu-festival"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">NORDU Festival</div>
-                        <div className="text-sm text-gray-600">Community celebration</div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                Culture
+              </Link>
 
-              <div
-                className="relative"
-                onMouseEnter={() => handleMouseEnter('development')}
-                onMouseLeave={handleMouseLeave}
+              <Link
+                to="/development"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  isActive('/development') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                }`}
               >
-                <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  Development
-                  <ChevronDown
-                    size={16}
-                    className={`ml-1 transition-transform duration-300 ${
-                      activeDropdown === 'development' ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`absolute top-full left-1/2 -translate-x-1/2 w-[600px] transition-all duration-300 ease-out origin-top ${
-                    activeDropdown === 'development'
-                      ? 'opacity-100 translate-y-0 pointer-events-auto'
-                      : 'opacity-0 -translate-y-2 pointer-events-none'
-                  }`}
-                  style={{ paddingTop: '0.5rem' }}
-                >
-                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
-                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Development Initiatives</h3>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-3">
-                        <Link
-                          to="/development#education"
-                          className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                        >
-                          <div className="font-semibold text-gray-900">Education</div>
-                          <div className="text-sm text-gray-600">BECE support & scholarships</div>
-                        </Link>
-                        <Link
-                          to="/development#health"
-                          className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                        >
-                          <div className="font-semibold text-gray-900">Health</div>
-                          <div className="text-sm text-gray-600">Medical facilities & programs</div>
-                        </Link>
-                      </div>
-                      <div className="space-y-3">
-                        <Link
-                          to="/development#infrastructure"
-                          className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                        >
-                          <div className="font-semibold text-gray-900">Infrastructure</div>
-                          <div className="text-sm text-gray-600">Roads & water projects</div>
-                        </Link>
-                        <Link
-                          to="/development#agriculture"
-                          className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                        >
-                          <div className="font-semibold text-gray-900">Agriculture</div>
-                          <div className="text-sm text-gray-600">Cocoa & food security</div>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                Development
+              </Link>
 
-              <div
-                className="relative"
-                onMouseEnter={() => handleMouseEnter('community')}
-                onMouseLeave={handleMouseLeave}
+              <Link
+                to="/diaspora"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  isActive('/diaspora') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                }`}
               >
-                <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  Community
-                  <ChevronDown
-                    size={16}
-                    className={`ml-1 transition-transform duration-300 ${
-                      activeDropdown === 'community' ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
-                    activeDropdown === 'community'
-                      ? 'opacity-100 translate-y-0 pointer-events-auto'
-                      : 'opacity-0 -translate-y-2 pointer-events-none'
-                  }`}
-                  style={{ paddingTop: '0.5rem' }}
-                >
-                  <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-6">
-                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-4">Community & Connections</h3>
-                    <div className="grid gap-3">
-                      <Link
-                        to="/diaspora"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Diaspora Network</div>
-                        <div className="text-sm text-gray-600">Connect with Tanyigbe worldwide</div>
-                      </Link>
-                      <Link
-                        to="/tourism"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Tourism</div>
-                        <div className="text-sm text-gray-600">Visit our beautiful community</div>
-                      </Link>
-                      <Link
-                        to="/gallery"
-                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
-                      >
-                        <div className="font-semibold text-gray-900">Gallery</div>
-                        <div className="text-sm text-gray-600">Photos & memories</div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                Diaspora Network
+              </Link>
 
               <Link
                 to="/blog"
@@ -355,12 +196,12 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               </Link>
 
               <Link
-                to="/contact"
+                to="/gallery"
                 className={`px-4 py-2 rounded-md transition-colors ${
-                  isActive('/contact') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
+                  isActive('/gallery') ? 'text-[#E2A201] font-semibold' : 'text-gray-700 hover:text-[#E2A201]'
                 }`}
               >
-                Contact
+                Gallery
               </Link>
 
               <button
@@ -385,14 +226,6 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
             }`}
           >
             <div className="py-4 space-y-1">
-              <Link
-                to="/"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-
               <div>
                 <button
                   onClick={() => toggleMobileSubmenu('about')}
@@ -413,25 +246,25 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 >
                   <div className="pl-4 py-2 space-y-1">
                     <Link
+                      to="/about/goodwill-message"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Goodwill Message
+                    </Link>
+                    <Link
                       to="/about"
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Overview
+                      Welcome to Tanyigbe
                     </Link>
                     <Link
                       to="/history"
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      History & Heritage
-                    </Link>
-                    <Link
-                      to="/about/goodwill-message"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Goodwill Message
+                      Our History & Heritage
                     </Link>
                   </div>
                 </div>
@@ -488,152 +321,29 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 </div>
               </div>
 
-              <div>
-                <button
-                  onClick={() => toggleMobileSubmenu('culture')}
-                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
-                >
-                  <span>Culture</span>
-                  <ChevronDown
-                    size={18}
-                    className={`transition-transform duration-300 ${
-                      mobileExpandedMenus.has('culture') ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('culture') ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="pl-4 py-2 space-y-1">
-                    <Link
-                      to="/culture"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Overview
-                    </Link>
-                    <Link
-                      to="/culture/governance"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Traditional Governance
-                    </Link>
-                    <div className="px-4 py-2 text-xs font-bold text-gray-500 uppercase">Festivals</div>
-                    <Link
-                      to="/culture/tayafest"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      TAYAFEST
-                    </Link>
-                    <Link
-                      to="/culture/nordu-festival"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      NORDU Festival
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link
+                to="/culture"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Culture
+              </Link>
 
-              <div>
-                <button
-                  onClick={() => toggleMobileSubmenu('development')}
-                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
-                >
-                  <span>Development</span>
-                  <ChevronDown
-                    size={18}
-                    className={`transition-transform duration-300 ${
-                      mobileExpandedMenus.has('development') ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('development') ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="pl-4 py-2 space-y-1">
-                    <Link
-                      to="/development#education"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Education
-                    </Link>
-                    <Link
-                      to="/development#health"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Health
-                    </Link>
-                    <Link
-                      to="/development#infrastructure"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Infrastructure
-                    </Link>
-                    <Link
-                      to="/development#agriculture"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Agriculture
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link
+                to="/development"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Development
+              </Link>
 
-              <div>
-                <button
-                  onClick={() => toggleMobileSubmenu('community')}
-                  className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
-                >
-                  <span>Community</span>
-                  <ChevronDown
-                    size={18}
-                    className={`transition-transform duration-300 ${
-                      mobileExpandedMenus.has('community') ? 'rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('community') ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="pl-4 py-2 space-y-1">
-                    <Link
-                      to="/diaspora"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Diaspora Network
-                    </Link>
-                    <Link
-                      to="/tourism"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Tourism
-                    </Link>
-                    <Link
-                      to="/gallery"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Gallery
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link
+                to="/diaspora"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Diaspora Network
+              </Link>
 
               <Link
                 to="/blog"
@@ -644,11 +354,11 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               </Link>
 
               <Link
-                to="/contact"
+                to="/gallery"
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Gallery
               </Link>
 
               <div className="pt-4">
@@ -704,8 +414,8 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
             <div>
               <h4 className="font-serif text-lg font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><Link to="/about" className="text-gray-300 hover:text-[#E2A201] transition-colors">About Us</Link></li>
-                <li><Link to="/history" className="text-gray-300 hover:text-[#E2A201] transition-colors">History</Link></li>
+                <li><Link to="/about" className="text-gray-300 hover:text-[#E2A201] transition-colors">Welcome to Tanyigbe</Link></li>
+                <li><Link to="/history" className="text-gray-300 hover:text-[#E2A201] transition-colors">History & Heritage</Link></li>
                 <li><Link to="/culture" className="text-gray-300 hover:text-[#E2A201] transition-colors">Culture</Link></li>
                 <li><Link to="/development" className="text-gray-300 hover:text-[#E2A201] transition-colors">Development</Link></li>
                 <li><Link to="/blog" className="text-gray-300 hover:text-[#E2A201] transition-colors">Publications</Link></li>
@@ -713,11 +423,11 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
             </div>
 
             <div>
-              <h4 className="font-serif text-lg font-bold mb-4">Community</h4>
+              <h4 className="font-serif text-lg font-bold mb-4">Connect</h4>
               <ul className="space-y-2">
                 <li><Link to="/diaspora" className="text-gray-300 hover:text-[#E2A201] transition-colors">Diaspora Network</Link></li>
-                <li><Link to="/tourism" className="text-gray-300 hover:text-[#E2A201] transition-colors">Tourism</Link></li>
                 <li><Link to="/gallery" className="text-gray-300 hover:text-[#E2A201] transition-colors">Gallery</Link></li>
+                <li><Link to="/contact" className="text-gray-300 hover:text-[#E2A201] transition-colors">Contact Us</Link></li>
                 <li><button onClick={onDonateClick} className="text-gray-300 hover:text-[#E2A201] transition-colors">Donate</button></li>
               </ul>
             </div>
