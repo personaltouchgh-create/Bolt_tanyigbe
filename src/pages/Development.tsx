@@ -310,29 +310,6 @@ export default function Development() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#E2A201] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              Partner With Us
-            </h2>
-            <p className="text-xl mb-8">
-              These development initiatives require resources, expertise, and commitment. Whether through financial support, technical assistance, or volunteer time, your contribution makes a real difference.
-            </p>
-            <p className="text-lg mb-8">
-              Join us in building a Tanyigbe where every child gets an education, every person has access to healthcare, infrastructure supports growth, and agriculture provides prosperity.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#E2A201] px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
-                Support Development
-              </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-[#E2A201] transition-colors">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
