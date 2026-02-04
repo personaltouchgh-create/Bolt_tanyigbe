@@ -9,6 +9,7 @@ interface Stats {
   posts: number;
   categories: number;
   tags: number;
+  pages: number;
 }
 
 export default function Dashboard() {
@@ -17,6 +18,7 @@ export default function Dashboard() {
     posts: 0,
     categories: 0,
     tags: 0,
+    pages: 0,
   });
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
@@ -28,11 +30,12 @@ export default function Dashboard() {
 
   const fetchStats = async () => {
     try {
-      const [imagesResult, postsResult, categoriesResult, tagsResult] = await Promise.all([
+      const [imagesResult, postsResult, categoriesResult, tagsResult, pagesResult] = await Promise.all([
         supabase.from('gallery_images').select('id', { count: 'exact', head: true }),
         supabase.from('blog_posts').select('id', { count: 'exact', head: true }),
         supabase.from('gallery_categories').select('id', { count: 'exact', head: true }),
         supabase.from('gallery_tags').select('id', { count: 'exact', head: true }),
+        supabase.from('pages').select('id', { count: 'exact', head: true }),
       ]);
 
       setStats({
@@ -40,6 +43,7 @@ export default function Dashboard() {
         posts: postsResult.count || 0,
         categories: categoriesResult.count || 0,
         tags: tagsResult.count || 0,
+        pages: pagesResult.count || 0,
       });
     } catch (error) {
       console.error('Error fetching stats:', error);
@@ -51,6 +55,7 @@ export default function Dashboard() {
   const statCards = [
     { name: 'Gallery Images', value: stats.images, icon: Image, color: 'bg-blue-500', href: '/admin/gallery' },
     { name: 'Blog Posts', value: stats.posts, icon: FileText, color: 'bg-green-500', href: '/admin/posts' },
+    { name: 'Pages', value: stats.pages, icon: FileEdit, color: 'bg-teal-500', href: '/admin/pages' },
     { name: 'Categories', value: stats.categories, icon: FolderOpen, color: 'bg-purple-500', href: '/admin/categories' },
     { name: 'Tags', value: stats.tags, icon: Tags, color: 'bg-orange-500', href: '/admin/tags' },
   ];
@@ -70,7 +75,7 @@ export default function Dashboard() {
         <p className="text-gray-600">Welcome to your content management system</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8">
         {statCards.map((card) => (
           <a
             key={card.name}
