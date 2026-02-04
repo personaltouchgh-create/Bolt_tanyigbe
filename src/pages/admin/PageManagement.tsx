@@ -33,7 +33,7 @@ export default function PageManagement() {
   const [showEditor, setShowEditor] = useState(false);
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
-  const { hasPermission, isSuperAdmin } = usePermissions();
+  const { hasPermission, isSuperAdmin, loading: permissionsLoading } = usePermissions();
 
   useEffect(() => {
     fetchPages();
@@ -111,6 +111,14 @@ export default function PageManagement() {
     setPageContent(null);
   };
 
+  if (loading || permissionsLoading) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+      </div>
+    );
+  }
+
   if (!hasPermission('can_edit_pages') && !isSuperAdmin) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -118,15 +126,8 @@ export default function PageManagement() {
           <XCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Access Denied</h2>
           <p className="text-gray-600">You do not have permission to edit pages.</p>
+          <p className="text-gray-500 text-sm mt-2">Contact an administrator to request page editing access.</p>
         </div>
-      </div>
-    );
-  }
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
       </div>
     );
   }

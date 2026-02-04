@@ -40,7 +40,7 @@ export default function GalleryManagement() {
   });
   const [submitting, setSubmitting] = useState(false);
   const { user } = useAuth();
-  const { hasPermission, isSuperAdmin } = usePermissions();
+  const { hasPermission, isSuperAdmin, loading: permissionsLoading } = usePermissions();
 
   useEffect(() => {
     fetchData();
@@ -204,6 +204,14 @@ export default function GalleryManagement() {
     }));
   };
 
+  if (loading || permissionsLoading) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+      </div>
+    );
+  }
+
   if (!hasPermission('can_upload_gallery') && !hasPermission('can_manage_gallery') && !isSuperAdmin) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -211,15 +219,8 @@ export default function GalleryManagement() {
           <XCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Access Denied</h2>
           <p className="text-gray-600">You do not have permission to manage gallery images.</p>
+          <p className="text-gray-500 text-sm mt-2">Contact an administrator to request gallery management access.</p>
         </div>
-      </div>
-    );
-  }
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
       </div>
     );
   }

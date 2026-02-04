@@ -31,7 +31,7 @@ export default function RoleManagement() {
   const [selectedRole, setSelectedRole] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
-  const { isSuperAdmin } = usePermissions();
+  const { isSuperAdmin, loading: permissionsLoading } = usePermissions();
 
   useEffect(() => {
     fetchData();
@@ -120,6 +120,14 @@ export default function RoleManagement() {
       .map(([key, _]) => key.replace('can_', '').replace(/_/g, ' '));
   };
 
+  if (loading || permissionsLoading) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+      </div>
+    );
+  }
+
   if (!isSuperAdmin) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -130,14 +138,6 @@ export default function RoleManagement() {
             Only super administrators can manage roles and permissions.
           </p>
         </div>
-      </div>
-    );
-  }
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
       </div>
     );
   }
