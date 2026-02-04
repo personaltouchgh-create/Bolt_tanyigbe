@@ -11,8 +11,8 @@ interface BlogPost {
   slug: string;
   excerpt: string;
   content: string;
-  featured_image_url: string | null;
-  post_status: string;
+  featured_image: string | null;
+  published: boolean;
   published_at: string | null;
   created_at: string;
 }
@@ -63,12 +63,12 @@ export default function PostsManagement() {
       return;
     }
 
-    const newStatus = post.post_status === 'published' ? 'draft' : 'published';
+    const newPublishedState = !post.published;
     const { error } = await supabase
       .from('blog_posts')
       .update({
-        post_status: newStatus,
-        published_at: newStatus === 'published' ? new Date().toISOString() : null,
+        published: newPublishedState,
+        published_at: newPublishedState ? new Date().toISOString() : null,
       })
       .eq('id', post.id);
 
@@ -149,12 +149,12 @@ export default function PostsManagement() {
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span
                       className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                        post.post_status === 'published'
+                        post.published
                           ? 'bg-green-100 text-green-800'
                           : 'bg-gray-100 text-gray-800'
                       }`}
                     >
-                      {post.post_status}
+                      {post.published ? 'Published' : 'Draft'}
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
@@ -167,9 +167,9 @@ export default function PostsManagement() {
                       <button
                         onClick={() => togglePublishStatus(post)}
                         className="text-blue-600 hover:text-blue-800 mr-3"
-                        title={post.post_status === 'published' ? 'Unpublish' : 'Publish'}
+                        title={post.published ? 'Unpublish' : 'Publish'}
                       >
-                        {post.post_status === 'published' ? (
+                        {post.published ? (
                           <EyeOff className="w-5 h-5" />
                         ) : (
                           <Eye className="w-5 h-5" />

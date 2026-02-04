@@ -16,8 +16,8 @@ export default function PostEditor() {
     slug: '',
     excerpt: '',
     content: '',
-    featured_image_url: '',
-    post_status: 'draft',
+    featured_image: '',
+    published: false,
   });
 
   useEffect(() => {
@@ -44,8 +44,8 @@ export default function PostEditor() {
         slug: data.slug,
         excerpt: data.excerpt || '',
         content: data.content,
-        featured_image_url: data.featured_image_url || '',
-        post_status: data.post_status,
+        featured_image: data.featured_image || '',
+        published: data.published || false,
       });
 
       const { data: attachmentsData } = await supabase
@@ -68,19 +68,20 @@ export default function PostEditor() {
       .replace(/(^-|-$)/g, '');
   };
 
-  const handleSubmit = async (e: FormEvent, status?: string) => {
+  const handleSubmit = async (e: FormEvent, shouldPublish?: boolean) => {
     e.preventDefault();
     setSaving(true);
 
+    const isPublishing = shouldPublish !== undefined ? shouldPublish : formData.published;
     const postData = {
       title: formData.title,
       slug: formData.slug || generateSlug(formData.title),
       excerpt: formData.excerpt,
       content: formData.content,
-      featured_image_url: formData.featured_image_url || null,
-      post_status: status || formData.post_status,
-      published_at: status === 'published' ? new Date().toISOString() : null,
-      author_id: user?.id,
+      featured_image: formData.featured_image || null,
+      published: isPublishing,
+      published_at: isPublishing ? new Date().toISOString() : null,
+      author: user?.email || 'Anonymous',
     };
 
     if (postId) {
@@ -197,8 +198,8 @@ export default function PostEditor() {
               </label>
               <input
                 type="url"
-                value={formData.featured_image_url}
-                onChange={(e) => setFormData({ ...formData, featured_image_url: e.target.value })}
+                value={formData.featured_image}
+                onChange={(e) => setFormData({ ...formData, featured_image: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none"
                 placeholder="https://example.com/image.jpg or /image.jpg"
               />
@@ -269,7 +270,7 @@ export default function PostEditor() {
           </button>
           <button
             type="button"
-            onClick={(e) => handleSubmit(e, 'published')}
+            onClick={(e) => handleSubmit(e, true)}
             disabled={saving}
             className="flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors disabled:opacity-50"
           >
