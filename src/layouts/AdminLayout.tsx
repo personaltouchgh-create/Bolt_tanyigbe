@@ -9,20 +9,32 @@ import {
   LogOut,
   Menu,
   X,
-  Home
+  Home,
+  FileEdit,
+  Shield
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import { usePermissions } from '../hooks/usePermissions';
 
 interface AdminLayoutProps {
   children: ReactNode;
 }
 
-const navigation = [
+interface NavItem {
+  name: string;
+  href: string;
+  icon: any;
+  permission?: string;
+}
+
+const navigationItems: NavItem[] = [
   { name: 'Dashboard', href: '/admin/dashboard', icon: LayoutDashboard },
-  { name: 'Gallery Images', href: '/admin/gallery', icon: Image },
+  { name: 'Page Editor', href: '/admin/pages', icon: FileEdit, permission: 'can_edit_pages' },
+  { name: 'Blog Posts', href: '/admin/posts', icon: FileText, permission: 'can_edit_blogs' },
+  { name: 'Gallery Images', href: '/admin/gallery', icon: Image, permission: 'can_upload_gallery' },
   { name: 'Categories', href: '/admin/categories', icon: FolderOpen },
   { name: 'Tags', href: '/admin/tags', icon: Tags },
-  { name: 'Blog Posts', href: '/admin/posts', icon: FileText },
+  { name: 'Role Management', href: '/admin/roles', icon: Shield, permission: 'super_admin_only' },
 ];
 
 export default function AdminLayout({ children }: AdminLayoutProps) {
@@ -30,6 +42,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const { signOut, user } = useAuth();
+  const { hasPermission, isSuperAdmin } = usePermissions();
 
   const handleSignOut = async () => {
     await signOut();
@@ -62,24 +75,30 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           </div>
 
           <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
-            {navigation.map((item) => {
-              const isActive = location.pathname === item.href;
-              return (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={() => setSidebarOpen(false)}
-                  className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                    isActive
-                      ? 'bg-green-50 text-green-700'
-                      : 'text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  <item.icon className="w-5 h-5 mr-3" />
-                  {item.name}
-                </Link>
-              );
-            })}
+            {navigationItems
+              .filter((item) => {
+                if (!item.permission) return true;
+                if (item.permission === 'super_admin_only') return isSuperAdmin;
+                return hasPermission(item.permission) || isSuperAdmin;
+              })
+              .map((item) => {
+                const isActive = location.pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={() => setSidebarOpen(false)}
+                    className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
+                      isActive
+                        ? 'bg-green-50 text-green-700'
+                        : 'text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    <item.icon className="w-5 h-5 mr-3" />
+                    {item.name}
+                  </Link>
+                );
+              })}
           </nav>
 
           <div className="border-t border-gray-200 p-4 space-y-2">
@@ -117,7 +136,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             </button>
             <div className="flex-1 lg:flex-none">
               <h2 className="text-lg font-semibold text-gray-900">
-                {navigation.find(item => item.href === location.pathname)?.name || 'Admin'}
+                {navigationItems.find(item => item.href === location.pathname)?.name || 'Admin'}
               </h2>
             </div>
           </div>

@@ -1,7 +1,8 @@
 import { useEffect, useState, FormEvent } from 'react';
-import { Plus, Edit2, Trash2, X } from 'lucide-react';
+import { Plus, Edit2, Trash2, X, XCircle } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useAuth } from '../../contexts/AuthContext';
+import { usePermissions } from '../../hooks/usePermissions';
 
 interface GalleryImage {
   id: string;
@@ -39,6 +40,7 @@ export default function GalleryManagement() {
   });
   const [submitting, setSubmitting] = useState(false);
   const { user } = useAuth();
+  const { hasPermission, isSuperAdmin } = usePermissions();
 
   useEffect(() => {
     fetchData();
@@ -60,6 +62,12 @@ export default function GalleryManagement() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    if (!hasPermission('can_upload_gallery') && !isSuperAdmin) {
+      alert('You do not have permission to upload gallery images.');
+      return;
+    }
+
     setSubmitting(true);
 
     const imageData = {
@@ -126,6 +134,11 @@ export default function GalleryManagement() {
   };
 
   const handleDelete = async (id: string) => {
+    if (!hasPermission('can_manage_gallery') && !isSuperAdmin) {
+      alert('You do not have permission to delete gallery images.');
+      return;
+    }
+
     if (!confirm('Are you sure you want to delete this image?')) return;
 
     const { error } = await supabase.from('gallery_images').delete().eq('id', id);
@@ -191,6 +204,18 @@ export default function GalleryManagement() {
     }));
   };
 
+  if (!hasPermission('can_upload_gallery') && !hasPermission('can_manage_gallery') && !isSuperAdmin) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="text-center">
+          <XCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Access Denied</h2>
+          <p className="text-gray-600">You do not have permission to manage gallery images.</p>
+        </div>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -206,13 +231,15 @@ export default function GalleryManagement() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Gallery Images</h1>
           <p className="text-gray-600">Manage your image gallery</p>
         </div>
-        <button
-          onClick={() => openModal()}
-          className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-        >
-          <Plus className="w-5 h-5 mr-2" />
-          Add Image
-        </button>
+        {(hasPermission('can_upload_gallery') || isSuperAdmin) && (
+          <button
+            onClick={() => openModal()}
+            className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+          >
+            <Plus className="w-5 h-5 mr-2" />
+            Add Image
+          </button>
+        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -229,20 +256,24 @@ export default function GalleryManagement() {
               <h3 className="font-semibold text-gray-900 mb-2">{image.title}</h3>
               <p className="text-sm text-gray-600 mb-4">{image.alt_text}</p>
               <div className="flex gap-2">
-                <button
-                  onClick={() => openModal(image)}
-                  className="flex-1 flex items-center justify-center px-3 py-2 text-sm bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
-                >
-                  <Edit2 className="w-4 h-4 mr-2" />
-                  Edit
-                </button>
-                <button
-                  onClick={() => handleDelete(image.id)}
-                  className="flex-1 flex items-center justify-center px-3 py-2 text-sm bg-red-50 text-red-700 rounded-lg hover:bg-red-100 transition-colors"
-                >
-                  <Trash2 className="w-4 h-4 mr-2" />
-                  Delete
-                </button>
+                {(hasPermission('can_manage_gallery') || isSuperAdmin) && (
+                  <button
+                    onClick={() => openModal(image)}
+                    className="flex-1 flex items-center justify-center px-3 py-2 text-sm bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors"
+                  >
+                    <Edit2 className="w-4 h-4 mr-2" />
+                    Edit
+                  </button>
+                )}
+                {(hasPermission('can_manage_gallery') || isSuperAdmin) && (
+                  <button
+                    onClick={() => handleDelete(image.id)}
+                    className="flex-1 flex items-center justify-center px-3 py-2 text-sm bg-red-50 text-red-700 rounded-lg hover:bg-red-100 transition-colors"
+                  >
+                    <Trash2 className="w-4 h-4 mr-2" />
+                    Delete
+                  </button>
+                )}
               </div>
             </div>
           </div>

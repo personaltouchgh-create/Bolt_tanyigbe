@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Image, FileText, FolderOpen, Tags } from 'lucide-react';
+import { Image, FileText, FolderOpen, Tags, FileEdit, Shield } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
+import { useAuth } from '../../contexts/AuthContext';
+import { usePermissions } from '../../hooks/usePermissions';
 
 interface Stats {
   images: number;
@@ -17,6 +19,8 @@ export default function Dashboard() {
     tags: 0,
   });
   const [loading, setLoading] = useState(true);
+  const { user } = useAuth();
+  const { roles, hasPermission, isSuperAdmin } = usePermissions();
 
   useEffect(() => {
     fetchStats();
@@ -86,51 +90,62 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
-          <div className="space-y-3">
-            <a
-              href="/admin/gallery"
-              className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              <p className="font-medium text-gray-900">Upload New Images</p>
-              <p className="text-sm text-gray-600">Add images to your gallery</p>
-            </a>
-            <a
-              href="/admin/posts"
-              className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              <p className="font-medium text-gray-900">Create Blog Post</p>
-              <p className="text-sm text-gray-600">Write and publish new content</p>
-            </a>
-            <a
-              href="/admin/categories"
-              className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
-            >
-              <p className="font-medium text-gray-900">Manage Categories</p>
-              <p className="text-sm text-gray-600">Organize your content</p>
-            </a>
-          </div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Your Roles</h3>
+          {roles.length > 0 ? (
+            <div className="space-y-2">
+              {roles.map((role) => (
+                <div key={role.id} className="flex items-center px-4 py-3 bg-green-50 rounded-lg">
+                  <Shield className="w-5 h-5 text-green-600 mr-3" />
+                  <div>
+                    <p className="font-medium text-gray-900">{role.name}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-gray-600">No roles assigned yet</p>
+          )}
         </div>
 
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">System Info</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
           <div className="space-y-3">
-            <div className="flex justify-between py-3 border-b border-gray-100">
-              <span className="text-gray-600">Total Images</span>
-              <span className="font-semibold text-gray-900">{stats.images}</span>
-            </div>
-            <div className="flex justify-between py-3 border-b border-gray-100">
-              <span className="text-gray-600">Total Posts</span>
-              <span className="font-semibold text-gray-900">{stats.posts}</span>
-            </div>
-            <div className="flex justify-between py-3 border-b border-gray-100">
-              <span className="text-gray-600">Categories</span>
-              <span className="font-semibold text-gray-900">{stats.categories}</span>
-            </div>
-            <div className="flex justify-between py-3">
-              <span className="text-gray-600">Tags</span>
-              <span className="font-semibold text-gray-900">{stats.tags}</span>
-            </div>
+            {(hasPermission('can_edit_pages') || isSuperAdmin) && (
+              <a
+                href="/admin/pages"
+                className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <p className="font-medium text-gray-900">Edit Pages</p>
+                <p className="text-sm text-gray-600">Update page content with drag-and-drop editor</p>
+              </a>
+            )}
+            {(hasPermission('can_create_blogs') || isSuperAdmin) && (
+              <a
+                href="/admin/posts"
+                className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <p className="font-medium text-gray-900">Create Blog Post</p>
+                <p className="text-sm text-gray-600">Write and publish new content</p>
+              </a>
+            )}
+            {(hasPermission('can_upload_gallery') || isSuperAdmin) && (
+              <a
+                href="/admin/gallery"
+                className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <p className="font-medium text-gray-900">Upload New Images</p>
+                <p className="text-sm text-gray-600">Add images to your gallery</p>
+              </a>
+            )}
+            {isSuperAdmin && (
+              <a
+                href="/admin/roles"
+                className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <p className="font-medium text-gray-900">Manage Roles</p>
+                <p className="text-sm text-gray-600">Assign roles and permissions to users</p>
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -28,6 +28,8 @@ import Tags from './pages/admin/Tags';
 import GalleryManagement from './pages/admin/GalleryManagement';
 import PostsManagement from './pages/admin/PostsManagement';
 import PostEditor from './pages/admin/PostEditor';
+import PageManagement from './pages/admin/PageManagement';
+import RoleManagement from './pages/admin/RoleManagement';
 
 function App() {
   const [isDonationModalOpen, setIsDonationModalOpen] = useState(false);
@@ -46,6 +48,8 @@ function App() {
                 <AdminLayout>
                   <Routes>
                     <Route path="dashboard" element={<Dashboard />} />
+                    <Route path="pages" element={<PageManagement />} />
+                    <Route path="roles" element={<RoleManagement />} />
                     <Route path="categories" element={<Categories />} />
                     <Route path="tags" element={<Tags />} />
                     <Route path="gallery" element={<GalleryManagement />} />

@@ -1,8 +1,9 @@
 import { useEffect, useState, FormEvent } from 'react';
-import { Plus, Edit2, Trash2, Eye, EyeOff } from 'lucide-react';
+import { Plus, Edit2, Trash2, Eye, EyeOff, XCircle } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useAuth } from '../../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { usePermissions } from '../../hooks/usePermissions';
 
 interface BlogPost {
   id: string;
@@ -21,6 +22,7 @@ export default function PostsManagement() {
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
   const navigate = useNavigate();
+  const { hasPermission, isSuperAdmin } = usePermissions();
 
   useEffect(() => {
     fetchPosts();
@@ -39,6 +41,11 @@ export default function PostsManagement() {
   };
 
   const handleDelete = async (id: string) => {
+    if (!hasPermission('can_delete_blogs') && !isSuperAdmin) {
+      alert('You do not have permission to delete posts.');
+      return;
+    }
+
     if (!confirm('Are you sure you want to delete this post?')) return;
 
     const { error } = await supabase.from('blog_posts').delete().eq('id', id);
@@ -51,6 +58,11 @@ export default function PostsManagement() {
   };
 
   const togglePublishStatus = async (post: BlogPost) => {
+    if (!hasPermission('can_publish_blogs') && !isSuperAdmin) {
+      alert('You do not have permission to publish/unpublish posts.');
+      return;
+    }
+
     const newStatus = post.post_status === 'published' ? 'draft' : 'published';
     const { error } = await supabase
       .from('blog_posts')
@@ -67,6 +79,18 @@ export default function PostsManagement() {
     }
   };
 
+  if (!hasPermission('can_edit_blogs') && !hasPermission('can_create_blogs') && !isSuperAdmin) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="text-center">
+          <XCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Access Denied</h2>
+          <p className="text-gray-600">You do not have permission to manage blog posts.</p>
+        </div>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -82,13 +106,15 @@ export default function PostsManagement() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog Posts</h1>
           <p className="text-gray-600">Manage your blog content</p>
         </div>
-        <button
-          onClick={() => navigate('/admin/posts/new')}
-          className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-        >
-          <Plus className="w-5 h-5 mr-2" />
-          New Post
-        </button>
+        {(hasPermission('can_create_blogs') || isSuperAdmin) && (
+          <button
+            onClick={() => navigate('/admin/posts/new')}
+            className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+          >
+            <Plus className="w-5 h-5 mr-2" />
+            New Post
+          </button>
+        )}
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
@@ -136,29 +162,35 @@ export default function PostsManagement() {
                       : '-'}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right">
-                    <button
-                      onClick={() => togglePublishStatus(post)}
-                      className="text-blue-600 hover:text-blue-800 mr-3"
-                      title={post.post_status === 'published' ? 'Unpublish' : 'Publish'}
-                    >
-                      {post.post_status === 'published' ? (
-                        <EyeOff className="w-5 h-5" />
-                      ) : (
-                        <Eye className="w-5 h-5" />
-                      )}
-                    </button>
-                    <button
-                      onClick={() => navigate(`/admin/posts/${post.id}`)}
-                      className="text-blue-600 hover:text-blue-800 mr-3"
-                    >
-                      <Edit2 className="w-5 h-5" />
-                    </button>
-                    <button
-                      onClick={() => handleDelete(post.id)}
-                      className="text-red-600 hover:text-red-800"
-                    >
-                      <Trash2 className="w-5 h-5" />
-                    </button>
+                    {(hasPermission('can_publish_blogs') || isSuperAdmin) && (
+                      <button
+                        onClick={() => togglePublishStatus(post)}
+                        className="text-blue-600 hover:text-blue-800 mr-3"
+                        title={post.post_status === 'published' ? 'Unpublish' : 'Publish'}
+                      >
+                        {post.post_status === 'published' ? (
+                          <EyeOff className="w-5 h-5" />
+                        ) : (
+                          <Eye className="w-5 h-5" />
+                        )}
+                      </button>
+                    )}
+                    {(hasPermission('can_edit_blogs') || isSuperAdmin) && (
+                      <button
+                        onClick={() => navigate(`/admin/posts/${post.id}`)}
+                        className="text-blue-600 hover:text-blue-800 mr-3"
+                      >
+                        <Edit2 className="w-5 h-5" />
+                      </button>
+                    )}
+                    {(hasPermission('can_delete_blogs') || isSuperAdmin) && (
+                      <button
+                        onClick={() => handleDelete(post.id)}
+                        className="text-red-600 hover:text-red-800"
+                      >
+                        <Trash2 className="w-5 h-5" />
+                      </button>
+                    )}
                   </td>
                 </tr>
               ))}
