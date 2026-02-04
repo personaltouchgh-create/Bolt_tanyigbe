@@ -2,10 +2,26 @@
 
 ## Completed Database Fixes
 
-### 1. Removed Unused Indexes ✅
+### 1. Added Foreign Key Indexes ✅
+The following indexes have been added to optimize foreign key relationships:
+- `idx_blog_attachments_uploaded_by` on `blog_attachments(uploaded_by)`
+- `idx_gallery_categories_created_by` on `gallery_categories(created_by)`
+- `idx_gallery_tags_created_by` on `gallery_tags(created_by)`
+- `idx_image_categories_created_by` on `image_categories(created_by)`
+- `idx_image_tags_created_by` on `image_tags(created_by)`
+
+**Why This Matters:**
+Foreign keys without indexes can cause slow JOIN operations, inefficient CASCADE DELETE operations, and lock contention. These indexes ensure optimal performance when querying relationships between tables, especially as the dataset grows.
+
+**Impact**:
+- Faster JOIN operations between related tables
+- Efficient CASCADE DELETE operations
+- Better query optimizer decisions
+- Improved scalability
+
+### 2. Removed Truly Unused Indexes ✅
 The following unused indexes have been removed to improve write performance and reduce storage:
 - `idx_blog_attachments_post`
-- `idx_blog_attachments_uploaded_by`
 - `idx_contact_submissions_status`
 - `idx_contact_submissions_created_at`
 - `idx_donations_payment_status`
@@ -25,14 +41,10 @@ The following unused indexes have been removed to improve write performance and 
 - `idx_gallery_images_is_featured`
 - `idx_diaspora_registrations_email`
 - `idx_diaspora_registrations_country`
-- `idx_gallery_categories_created_by`
-- `idx_gallery_tags_created_by`
-- `idx_image_categories_created_by`
-- `idx_image_tags_created_by`
 
 **Impact**: INSERT, UPDATE, and DELETE operations are faster, and storage usage is reduced.
 
-### 2. Fixed Multiple Permissive Policies ✅
+### 3. Fixed Multiple Permissive Policies ✅
 
 #### Events Table
 - Removed duplicate policies: "Anyone can view published events" and "Authenticated users can view all events"
@@ -44,7 +56,7 @@ The following unused indexes have been removed to improve write performance and 
 
 **Impact**: Clearer security model, easier to maintain, and improved query performance.
 
-### 3. Optimized RLS Policy Performance ✅
+### 4. Optimized RLS Policy Performance ✅
 
 **Changes:**
 - Updated events table policy to use `(SELECT auth.role())` instead of `auth.role()`
