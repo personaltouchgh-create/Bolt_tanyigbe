@@ -104,21 +104,21 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
 
               <div
                 className="relative"
-                onMouseEnter={() => handleMouseEnter('divisions')}
+                onMouseEnter={() => handleMouseEnter('governance')}
                 onMouseLeave={handleMouseLeave}
               >
                 <button className="px-4 py-2 rounded-md text-gray-700 hover:text-[#E2A201] transition-colors flex items-center group">
-                  Divisions
+                  Governance
                   <ChevronDown
                     size={16}
                     className={`ml-1 transition-transform duration-300 ${
-                      activeDropdown === 'divisions' ? 'rotate-180' : ''
+                      activeDropdown === 'governance' ? 'rotate-180' : ''
                     }`}
                   />
                 </button>
                 <div
                   className={`absolute top-full left-0 w-80 transition-all duration-300 ease-out origin-top ${
-                    activeDropdown === 'divisions'
+                    activeDropdown === 'governance'
                       ? 'opacity-100 translate-y-0 pointer-events-auto'
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
@@ -126,6 +126,16 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 >
                   <div className="bg-white shadow-xl rounded-lg border border-gray-100 p-4">
                     <div className="grid gap-2">
+                      <Link
+                        to="/governance/paramountcy"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Paramountcy</div>
+                        <div className="text-sm text-gray-600">Paramount Chief & Queenmother</div>
+                      </Link>
+                      <div className="px-4 pt-2 pb-1">
+                        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Divisions</p>
+                      </div>
                       <Link
                         to="/divisions/anyigbe"
                         className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
@@ -280,23 +290,33 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
 
               <div>
                 <button
-                  onClick={() => toggleMobileSubmenu('divisions')}
+                  onClick={() => toggleMobileSubmenu('governance')}
                   className="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
                 >
-                  <span>Divisions</span>
+                  <span>Governance</span>
                   <ChevronDown
                     size={18}
                     className={`transition-transform duration-300 ${
-                      mobileExpandedMenus.has('divisions') ? 'rotate-180' : ''
+                      mobileExpandedMenus.has('governance') ? 'rotate-180' : ''
                     }`}
                   />
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    mobileExpandedMenus.has('divisions') ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+                    mobileExpandedMenus.has('governance') ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="pl-4 py-2 space-y-1">
+                    <Link
+                      to="/governance/paramountcy"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Paramountcy
+                    </Link>
+                    <p className="px-4 pt-2 text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                      Divisions
+                    </p>
                     <Link
                       to="/divisions/anyigbe"
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
