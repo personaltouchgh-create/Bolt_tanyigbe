@@ -46,13 +46,13 @@ export default function History() {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  The Tanyigbe Traditional Area operates under a hierarchical governance system typical of Eʋe communities. A paramount chief serves as the overall traditional authority, supported by divisional chiefs from each of the four divisions: Anyigbe, Etoe, Atidze, and Dzafe.
+                  The Tanyigbe Traditional Area operates under a hierarchical governance system typical of Eʋe communities. Traditional authority is vested in the Paramount Chief, Divisional Chiefs, and Sub-Divisional Chiefs — each drawing on deep-rooted customary law to guide their respective communities.
                 </p>
                 <p>
-                  The traditional council comprises the paramount chief, divisional chiefs, and elders who provide guidance on customary matters, dispute resolution, and community development initiatives.
+                  Integral to this governance structure are the female counterparts who stand alongside the chiefs at every level. A <strong>Paramount Queenmother</strong>, <strong>Divisional Queenmothers</strong>, and <strong>Sub-Divisional Queenmothers</strong> play an essential and recognised role in traditional administration, counsel, and the welfare of the people. The current Paramount Queenmother is <strong>Mamaga Klu Adiko II</strong>.
                 </p>
                 <p>
-                  This structure maintains continuity with traditional Eʋe governance while adapting to contemporary administrative requirements.
+                  Together, the chiefs, queenmothers, and elders form a council that oversees customary matters, dispute resolution, and community development — maintaining continuity with traditional Eʋe governance while adapting to contemporary administrative requirements.
                 </p>
               </div>
             </div>
