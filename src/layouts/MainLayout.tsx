@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Facebook, Instagram, Youtube, Music, Mail, Phone, MapPin } from 'lucide-react';
+import { Menu, X, ChevronDown, Facebook, Instagram, Youtube, Music, Mail, Phone, MapPin, Lock } from 'lucide-react';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -210,6 +210,14 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
               >
                 Donate
               </button>
+
+              <Link
+                to="/admin/login"
+                className="text-gray-400 hover:text-gray-600 transition-colors p-2 rounded-md"
+                title="Admin Login"
+              >
+                <Lock size={16} />
+              </Link>
             </div>
 
             <button
@@ -361,7 +369,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 Gallery
               </Link>
 
-              <div className="pt-4">
+              <div className="pt-4 space-y-2">
                 <button
                   onClick={() => {
                     onDonateClick();
@@ -372,6 +380,14 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                 >
                   Donate / Support
                 </button>
+                <Link
+                  to="/admin/login"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  <Lock size={14} />
+                  Admin Login
+                </Link>
               </div>
             </div>
           </div>
@@ -451,8 +467,15 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
             </div>
           </div>
 
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between text-gray-400 gap-3">
             <p>&copy; 2026 Tanyigbe Traditional Area. All rights reserved.</p>
+            <Link
+              to="/admin/login"
+              className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-300 transition-colors"
+            >
+              <Lock size={13} />
+              Admin
+            </Link>
           </div>
         </div>
       </footer>
