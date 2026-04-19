@@ -36,9 +36,15 @@ export default function TanyigbeAnyigbe() {
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Anyigbe is made up of four clans: Kodivi, Anyidoto, ʋlivi, and Defeme, in order of seniority. The Kodivi clan, descendants of Togbe Kodi Adiko I, the first Fiaga of Tanyigbe, holds the Paramount Stool, making Anyigbe the seat of the Paramountcy.
             </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
               The division is recognised for its unity and collective strength, reflected in its appellation <span className="font-bold text-[#E2A201]">"Adzasi Kotoko"</span>, which symbolises shared responsibility and solidarity.
             </p>
+            <div className="bg-amber-50 border-l-4 border-[#E2A201] rounded-r-xl p-6 text-left">
+              <h3 className="font-bold text-gray-900 text-lg mb-3">A Notable Distinction</h3>
+              <p className="text-gray-700 leading-relaxed">
+                While Anyigbe is the most senior division — by virtue of the Paramount Stool residing within it — its divisional chieftaincy is the youngest among the four divisions. This is because the Paramount Chief historically doubled as the divisional chief of Anyigbe, meaning a separate divisional stool never existed for the division. It was Togbe Kwasi Adiko V who, following his installation as Paramount Chief in 1951, decoupled the two roles in 1952 and established a distinct divisional stool for Anyigbe. As a result, the chieftaincy stools of Etoe, Atidze, and Dzafe are all older than that of Anyigbe.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -95,7 +101,7 @@ export default function TanyigbeAnyigbe() {
                 <h3 className="font-serif text-2xl font-bold text-gray-900 mb-2">Togbe Kwami Akoto V</h3>
                 <p className="text-[#E2A201] font-semibold mb-4">Chief of Tanyigbe Anyigbe</p>
                 <p className="text-gray-700 leading-relaxed">
-                  Leading the most senior division with wisdom and dedication to preserving cultural heritage while promoting community development.
+                  Holder of a stool established in 1952 by Togbe Kwasi Adiko V, who decoupled the divisional chieftaincy from the Paramountcy. Though the youngest divisional stool, it leads the most senior division in Tanyigbe.
                 </p>
               </div>
             </div>
