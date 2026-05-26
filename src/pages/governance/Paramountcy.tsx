@@ -66,28 +66,26 @@ export default function Paramountcy() {
             <div className="mt-6 w-20 h-1 bg-[#E2A201] mx-auto rounded-full" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div className="relative">
-              <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="grid lg:grid-cols-5 gap-12 items-start">
+            <div className="lg:col-span-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/480937541_1187395832959975_5640828220721013428_n.jpg"
-                  alt="Togbe Kwasi Adiko V — Past Paramount Chief of Tanyigbe"
-                  className="w-full h-full object-cover object-top"
+                  src="/Photo_2_.png"
+                  alt="Togbega Kodi Adiko VI — Paramount Chief of Tanyigbe"
+                  className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex items-center gap-2">
                     <Crown size={18} className="text-[#E2A201]" />
-                    <span className="text-white font-semibold text-sm">Past Paramount Chief</span>
+                    <span className="text-white font-semibold text-sm">Paramount Chief</span>
                   </div>
-                  <p className="text-white font-serif text-xl font-bold mt-1">Togbe Kwasi Adiko V</p>
+                  <p className="text-white font-serif text-xl font-bold mt-1">Togbega Kodi Adiko VI</p>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-[#E2A201]/10 rounded-full -z-10" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#4C7000]/10 rounded-full -z-10" />
             </div>
 
-            <div className="space-y-7 pt-4">
+            <div className="lg:col-span-3 space-y-7 pt-4">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="w-8 h-0.5 bg-[#E2A201] inline-block" />
@@ -139,9 +137,36 @@ export default function Paramountcy() {
         </div>
       </section>
 
-      <section className="py-4 bg-gray-100">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-px bg-gradient-to-r from-transparent via-[#E2A201] to-transparent" />
+          <div className="text-center mb-10">
+            <p className="text-[#E2A201] uppercase tracking-[0.2em] text-sm font-semibold mb-2">
+              Royal Heritage
+            </p>
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-gray-900">
+              Past Paramount Chief
+            </h3>
+          </div>
+          <div className="max-w-sm mx-auto">
+            <div className="relative rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="/480937541_1187395832959975_5640828220721013428_n.jpg"
+                alt="Togbe Kwasi Adiko V — Past Paramount Chief of Tanyigbe"
+                className="w-full h-[400px] object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
+                <p className="text-[#E2A201] text-xs uppercase tracking-wider font-semibold mb-1">5th Paramount Chief</p>
+                <p className="text-white font-serif text-lg font-bold">Togbe Kwasi Adiko V</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="h-px bg-gradient-to-r from-transparent via-[#4C7000] to-transparent" />
         </div>
       </section>
 
@@ -158,8 +183,8 @@ export default function Paramountcy() {
             <div className="mt-6 w-20 h-1 bg-[#4C7000] mx-auto rounded-full" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div className="space-y-7 pt-4 lg:order-1">
+          <div className="grid lg:grid-cols-5 gap-12 items-start">
+            <div className="lg:col-span-3 space-y-7 pt-4 lg:order-1">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span className="w-8 h-0.5 bg-[#4C7000] inline-block" />
@@ -169,7 +194,6 @@ export default function Paramountcy() {
                   The institution of the Queenmother — known in Eʋe as <em>Mamaga</em> — is one of the most revered in Eʋe traditional governance. Mamaga Klu Adiko II serves as the Paramount Queenmother of Tanyigbe, standing as an equal pillar of authority alongside the Paramount Chief and embodying the feminine wisdom at the heart of communal life.
                 </p>
               </div>
-
 
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
@@ -199,12 +223,12 @@ export default function Paramountcy() {
               </div>
             </div>
 
-            <div className="relative lg:order-2">
-              <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="lg:col-span-2 lg:order-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/mamaga.jpeg"
                   alt="Mamaga Klu Adiko II — Paramount Queenmother of Tanyigbe"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -215,8 +239,6 @@ export default function Paramountcy() {
                   <p className="text-white font-serif text-xl font-bold mt-1">Mamaga Klu Adiko II</p>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-[#4C7000]/10 rounded-full -z-10" />
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#E2A201]/10 rounded-full -z-10" />
             </div>
           </div>
         </div>
