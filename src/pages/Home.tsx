@@ -341,8 +341,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/screenshot_2025-12-05_234830 copy.png"
-                alt="Wli Falls"
+                src="/wli-waterfalls.webp"
+                alt="Wli Waterfalls"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
