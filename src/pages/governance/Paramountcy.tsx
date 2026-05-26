@@ -191,7 +191,7 @@ export default function Paramountcy() {
                   The Office of the Paramount Queenmother
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  The institution of the Queenmother — known in Eʋe as <em>Mamaga</em> — is one of the most revered in Eʋe traditional governance. Mamaga Klu Adiko II serves as the Paramount Queenmother of Tanyigbe, standing as an equal pillar of authority alongside the Paramount Chief and embodying the feminine wisdom at the heart of communal life.
+                  The institution of the Queenmother — known in Eʋe as <em>Mamaga</em> — is one of the most revered in Eʋe traditional governance. Succeeding Mamaga Ama Adiko I, Mamaga Klu Adiko II serves as the Paramount Queenmother of Tanyigbe, standing as an equal pillar of authority alongside the Paramount Chief and embodying the feminine wisdom at the heart of communal life.
                 </p>
               </div>
 
