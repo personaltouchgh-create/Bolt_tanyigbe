@@ -355,7 +355,7 @@ export default function Home() {
 
             <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/screenshot_2025-12-06_001430 copy copy.png"
+                src="/screenshot_2025-12-06_001430_copy2.png"
                 alt="Mount Afadja"
                 className="w-full h-48 object-cover"
               />
