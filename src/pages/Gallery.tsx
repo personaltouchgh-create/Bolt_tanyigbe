@@ -41,6 +41,16 @@ const galleryImages: GalleryImage[] = [
   { id: 30, src: '/WhatsApp_Image_2026-05-20_at_09.50.18_(1).jpeg', alt: 'Queenmother in Traditional Procession', category: 'Culture' },
   { id: 31, src: '/WhatsApp_Image_2026-05-20_at_09.50.19_(2).jpeg', alt: 'Chiefs at Cultural Gathering', category: 'Culture' },
   { id: 32, src: '/WhatsApp_Image_2026-05-20_at_09.50.27_(2).jpeg', alt: 'Citation Presentation Ceremony', category: 'Community' },
+  { id: 33, src: '/WhatsApp_Image_2026-05-20_at_09.50.21_(2).jpeg', alt: 'Festival Procession Through Town', category: 'Festivals' },
+  { id: 34, src: '/WhatsApp_Image_2026-05-20_at_09.50.20.jpeg', alt: 'Sword Ceremony Celebration', category: 'Culture' },
+  { id: 35, src: '/WhatsApp_Image_2026-05-20_at_09.50.27.jpeg', alt: 'Children Playing Board Games at Festival', category: 'Festivals' },
+  { id: 36, src: '/WhatsApp_Image_2026-05-20_at_09.50.29_(1).jpeg', alt: 'Traditional Gold Regalia', category: 'Culture' },
+  { id: 37, src: '/WhatsApp_Image_2026-05-20_at_09.50.25_(3).jpeg', alt: 'Community Member in Garden', category: 'Community' },
+  { id: 38, src: '/WhatsApp_Image_2026-05-20_at_09.50.20_(3).jpeg', alt: 'Women in Festival March', category: 'Festivals' },
+  { id: 39, src: '/WhatsApp_Image_2026-05-20_at_09.50.24_(2).jpeg', alt: 'Traditional Elders in Ritual', category: 'Culture' },
+  { id: 40, src: '/WhatsApp_Image_2026-05-20_at_09.50.20_(2).jpeg', alt: 'Enstoolment Ceremony', category: 'Culture' },
+  { id: 41, src: '/WhatsApp_Image_2026-05-20_at_09.50.18.jpeg', alt: 'Divisional Chiefs Portrait', category: 'Culture' },
+  { id: 42, src: '/WhatsApp_Image_2026-05-20_at_09.50.26.jpeg', alt: 'Student Prize Giving Ceremony', category: 'Developments' },
 ];
 
 const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Tourism'];
