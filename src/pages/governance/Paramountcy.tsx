@@ -71,16 +71,16 @@ export default function Paramountcy() {
               <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/480937541_1187395832959975_5640828220721013428_n.jpg"
-                  alt="Togbega Kodi Adiko VI — Paramount Chief of Tanyigbe"
+                  alt="Togbe Kwasi Adiko V — Past Paramount Chief of Tanyigbe"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex items-center gap-2">
                     <Crown size={18} className="text-[#E2A201]" />
-                    <span className="text-white font-semibold text-sm">Paramount Chief</span>
+                    <span className="text-white font-semibold text-sm">Past Paramount Chief</span>
                   </div>
-                  <p className="text-white font-serif text-xl font-bold mt-1">Togbega Kodi Adiko VI</p>
+                  <p className="text-white font-serif text-xl font-bold mt-1">Togbe Kwasi Adiko V</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-[#E2A201]/10 rounded-full -z-10" />
@@ -104,7 +104,7 @@ export default function Paramountcy() {
                   Enstoolment & Lineage
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  Ascending to the paramount stool through the time-honoured rites of the Eʋe people, Togbega Kodi Adiko VI carries the distinguished Adiko royal line — a lineage that has steered the Tanyigbe people through migration, settlement, and growth. His enstoolment represents the continuity of a governance tradition stretching back centuries to the community's origins in Notsie.
+                  Ascending to the paramount stool through the time-honoured rites of the Eʋe people, Togbega Kodi Adiko VI carries the distinguished Adiko royal line from Togbe Kodi Adiko I, Togbe Fiakpoe Adiko II, Togbe Apatsi Adiko III, Togbe Goto Kosi Adiko IV, and Togbe Kwasi Adiko V — a lineage that has steered the Tanyigbe people through migration, settlement, and growth. His enstoolment represents the continuity of a governance tradition stretching back centuries to the community's origins in Notsie.
                 </p>
               </div>
 
@@ -170,15 +170,6 @@ export default function Paramountcy() {
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                  <span className="w-8 h-0.5 bg-[#4C7000] inline-block" />
-                  A Time-Honoured Institution
-                </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  The queenmother's stool is not a ceremonial afterthought — it is foundational. In Eʋe custom, the Mamaga plays a decisive role in the selection and enstoolment of chiefs, serving as the custodian of royal lineage and the keeper of ancestral trusts. Mamaga Klu Adiko II carries this responsibility with grace and authority, ensuring that the traditions of Tanyigbe are passed faithfully to every generation.
-                </p>
-              </div>
 
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
