@@ -131,7 +131,7 @@ export default function About() {
                 <div>
                   <h3 className="text-2xl font-bold text-[#E2A201] mb-2">Traditional Governance</h3>
                   <p className="text-lg text-gray-700">
-                    Authority in the Tanyigbe Traditional Area is vested in the Paramount Chief, Divisional Chiefs, and Sub-Divisional Chiefs, each assisted by their female counterparts — the Paramount Queenmother, Divisional Queenmothers, and Sub-Divisional Queenmothers. The current Paramount Queenmother is <strong>Mamaga Klu Adiko II</strong>. Together, they uphold the traditional leadership structure of the Eʋe people.
+                    Authority in Tanyigbe Traditional Area is vested in the Paramount Chief, Divisional Chiefs, and Sub-Divisional Chiefs, each assisted by their female counterparts — the Paramount Queenmother, Divisional Queenmothers, and Sub-Divisional Queenmothers.
                   </p>
                 </div>
                 <div>
