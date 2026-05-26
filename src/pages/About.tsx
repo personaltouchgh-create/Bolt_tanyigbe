@@ -172,7 +172,7 @@ export default function About() {
               The Tanyigbe Community
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-6">
-              The Tanyigbe Traditional Area operates under a traditional governance system with a paramount chief serving as the head of the four divisions.
+              Tanyigbe Traditional Area operates under a traditional governance system with a paramount chief serving as the head of the four divisions.
             </p>
             <p className="text-xl text-gray-300 leading-relaxed">
               Each division is represented in the traditional council, ensuring balanced decision-making and preservation of cultural practices across the community.
