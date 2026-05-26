@@ -51,6 +51,16 @@ const galleryImages: GalleryImage[] = [
   { id: 40, src: '/WhatsApp_Image_2026-05-20_at_09.50.20_(2).jpeg', alt: 'Enstoolment Ceremony', category: 'Culture' },
   { id: 41, src: '/WhatsApp_Image_2026-05-20_at_09.50.18.jpeg', alt: 'Divisional Chiefs Portrait', category: 'Culture' },
   { id: 42, src: '/WhatsApp_Image_2026-05-20_at_09.50.26.jpeg', alt: 'Student Prize Giving Ceremony', category: 'Developments' },
+  { id: 43, src: '/WhatsApp_Image_2026-05-20_at_09.50.17_(2).jpeg', alt: 'Traditional Enstoolment Rites', category: 'Culture' },
+  { id: 44, src: '/WhatsApp_Image_2026-05-20_at_09.50.21.jpeg', alt: 'Togbe Kodi Adiko VI 5th Anniversary Crowd', category: 'Festivals' },
+  { id: 45, src: '/WhatsApp_Image_2026-05-20_at_09.50.28_(2).jpeg', alt: 'Community Health Outreach', category: 'Developments' },
+  { id: 46, src: '/WhatsApp_Image_2026-05-20_at_09.50.25_(2).jpeg', alt: 'Tree Planting Initiative', category: 'Developments' },
+  { id: 47, src: '/WhatsApp_Image_2026-05-20_at_09.50.22_(3).jpeg', alt: 'Anniversary Football Competition Medals', category: 'Festivals' },
+  { id: 48, src: '/WhatsApp_Image_2026-05-20_at_09.50.18_(2).jpeg', alt: 'Newly Enstooled Chief with Elders', category: 'Culture' },
+  { id: 49, src: '/WhatsApp_Image_2026-05-20_at_09.50.19.jpeg', alt: 'Traditional Oath Ceremony', category: 'Culture' },
+  { id: 50, src: '/WhatsApp_Image_2026-05-20_at_09.50.24_(3).jpeg', alt: 'Community Women at Gathering', category: 'Community' },
+  { id: 51, src: '/WhatsApp_Image_2026-05-20_at_09.50.23_(2).jpeg', alt: 'Young Girls in Traditional Attire', category: 'Culture' },
+  { id: 52, src: '/WhatsApp_Image_2026-05-20_at_09.50.21_(2) copy.jpeg', alt: 'Festival Street Procession', category: 'Festivals' },
 ];
 
 const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Tourism'];
