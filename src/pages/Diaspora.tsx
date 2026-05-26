@@ -415,12 +415,6 @@ export default function Diaspora() {
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
               While you may be thousands of miles away, Tanyigbe will always be home. We welcome you back for visits, festivals, retirement, or simply to reconnect with your roots. Your experiences abroad enrich our community, and your connection to home keeps our traditions alive.
             </p>
-            <p className="text-2xl font-serif text-[#E2A201]">
-              "Aƒe le nya me, eye ame le aƒe me"
-            </p>
-            <p className="text-lg text-gray-300 mt-4">
-              There's a home in the world, and a person at home
-            </p>
           </div>
         </div>
       </section>
