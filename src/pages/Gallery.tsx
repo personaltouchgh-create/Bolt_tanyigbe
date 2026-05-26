@@ -31,6 +31,16 @@ const galleryImages: GalleryImage[] = [
   { id: 20, src: '/screenshot_2025-12-05_234830_copy1.png', alt: 'Wli Waterfalls (Near Tanyigbe)', category: 'Tourism' },
   { id: 21, src: '/screenshot_2025-12-06_001430_copy2.png', alt: 'Mount Afadja (Near Tanyigbe)', category: 'Tourism' },
   { id: 22, src: '/screenshot_2025-12-06_001918.png', alt: 'Amedzofe Canopy Walk (Near Tanyigbe)', category: 'Tourism' },
+  { id: 23, src: '/WhatsApp_Image_2026-05-20_at_09.50.19_(1).jpeg', alt: 'Paramount Chief at Durbar', category: 'Culture' },
+  { id: 24, src: '/WhatsApp_Image_2026-05-20_at_09.50.25.jpeg', alt: 'Traditional Council Group Photo', category: 'Community' },
+  { id: 25, src: '/205855838_333748261658074_5783774750889541290_n.jpg', alt: 'Togbe Kwasi Adiko V Portrait', category: 'Culture' },
+  { id: 26, src: '/WhatsApp_Image_2026-05-20_at_09.50.19_(3).jpeg', alt: 'Traditional Drumming Procession', category: 'Festivals' },
+  { id: 27, src: '/WhatsApp_Image_2026-05-20_at_09.50.27_(1).jpeg', alt: 'Children Face Painting at Festival', category: 'Festivals' },
+  { id: 28, src: '/WhatsApp_Image_2026-05-20_at_09.50.27_(3).jpeg', alt: 'Community Citation Award Ceremony', category: 'Community' },
+  { id: 29, src: '/WhatsApp_Image_2026-05-20_at_09.50.29.jpeg', alt: 'Breast Cancer Awareness Screening', category: 'Developments' },
+  { id: 30, src: '/WhatsApp_Image_2026-05-20_at_09.50.18_(1).jpeg', alt: 'Queenmother in Traditional Procession', category: 'Culture' },
+  { id: 31, src: '/WhatsApp_Image_2026-05-20_at_09.50.19_(2).jpeg', alt: 'Chiefs at Cultural Gathering', category: 'Culture' },
+  { id: 32, src: '/WhatsApp_Image_2026-05-20_at_09.50.27_(2).jpeg', alt: 'Citation Presentation Ceremony', category: 'Community' },
 ];
 
 const categories = ['All', 'Community', 'Culture', 'Festivals', 'Developments', 'Tourism'];
