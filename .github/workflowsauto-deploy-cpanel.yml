@@ -1,0 +1,31 @@
+name: Auto Deploy to cPanel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Deploy to cPanel via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_USERNAME }}
+          key: ${{ secrets.CPANEL_SSH_KEY }}
+          port: 22
+          script: |
+            cd /home/retailda/public_html/tanyigbe
+            git pull origin main
+            cp -R . /home/retailda/domains/tanyigbe.com/public_html/
+            chmod -R 755 /home/retailda/domains/tanyigbe.com/public_html
+            echo "✅ Deployment completed at $(date)" >> /tmp/tanyigbe_deploy.log
+      
+      - name: Deployment Status
+        run: echo "✅ Website deployed successfully to https://tanyigbe.com"
