@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export REPOPATH=/home/retailda/public_html/tanyigbe
-    - /bin/cp -R $REPOPATH/* /home/retailda/domains/tanyigbe.com/public_html/
-    - /bin/cp -R $REPOPATH/.[^.]* /home/retailda/domains/tanyigbe.com/public_html/ 2>/dev/null || true
