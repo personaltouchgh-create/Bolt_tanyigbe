@@ -133,6 +133,13 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                         <div className="font-semibold text-gray-900">Paramountcy</div>
                         <div className="text-sm text-gray-600">Paramount Chief & Queenmother</div>
                       </Link>
+                      <Link
+                        to="/governance/paramountcy#governance-structure"
+                        className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
+                      >
+                        <div className="font-semibold text-gray-900">Traditional Governance</div>
+                        <div className="text-sm text-gray-600">Structure, offices & authority</div>
+                      </Link>
                       <div className="px-4 pt-2 pb-1">
                         <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Divisions</p>
                       </div>
@@ -313,6 +320,13 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Paramountcy
+                    </Link>
+                    <Link
+                      to="/governance/paramountcy#governance-structure"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Traditional Governance
                     </Link>
                     <p className="px-4 pt-2 text-xs font-semibold text-gray-400 uppercase tracking-widest">
                       Divisions
