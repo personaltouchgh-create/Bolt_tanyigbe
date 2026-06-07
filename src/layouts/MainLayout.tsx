@@ -134,7 +134,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                         <div className="text-sm text-gray-600">Paramount Chief & Queenmother</div>
                       </Link>
                       <Link
-                        to="/governance/paramountcy#traditional-governance"
+                        to="/governance/traditional-governance"
                         className="block px-4 py-3 rounded-md hover:bg-[#E2A201] hover:bg-opacity-10 transition-all duration-200 hover:translate-x-1"
                       >
                         <div className="font-semibold text-gray-900">Traditional Governance</div>
@@ -322,7 +322,7 @@ export default function MainLayout({ children, onDonateClick }: MainLayoutProps)
                       Paramountcy
                     </Link>
                     <Link
-                      to="/governance/paramountcy#traditional-governance"
+                      to="/governance/traditional-governance"
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-md transition-all duration-200 hover:translate-x-1"
                       onClick={() => setIsMenuOpen(false)}
                     >

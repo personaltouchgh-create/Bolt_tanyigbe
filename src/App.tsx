@@ -17,6 +17,7 @@ import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Paramountcy from './pages/governance/Paramountcy';
+import TraditionalGovernance from './pages/governance/TraditionalGovernance';
 import TanyigbeAnyigbe from './pages/divisions/TanyigbeAnyigbe';
 import TanyigbeEtoe from './pages/divisions/TanyigbeEtoe';
 import TanyigbeAtidze from './pages/divisions/TanyigbeAtidze';
@@ -73,6 +74,7 @@ function App() {
                   <Route path="/about/goodwill-message" element={<GoodwillMessage />} />
                   <Route path="/history" element={<History />} />
                   <Route path="/governance/paramountcy" element={<Paramountcy />} />
+                  <Route path="/governance/traditional-governance" element={<TraditionalGovernance />} />
                   <Route path="/culture" element={<Culture />} />
                   <Route path="/divisions/anyigbe" element={<TanyigbeAnyigbe />} />
                   <Route path="/divisions/etoe" element={<TanyigbeEtoe />} />
