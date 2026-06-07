@@ -303,7 +303,7 @@ export default function Paramountcy() {
       </section>
 
       {/* Full Governance Structure */}
-      <section id="governance-structure" className="py-24 bg-white">
+      <section id="traditional-governance" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-[#E2A201] uppercase tracking-[0.2em] text-sm font-semibold mb-3">
