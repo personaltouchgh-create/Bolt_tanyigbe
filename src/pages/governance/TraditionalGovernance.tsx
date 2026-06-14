@@ -149,7 +149,7 @@ export default function TraditionalGovernance() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm">
-                The Mankrado is the senior administrative officer of the paramountcy — the principal deputy who manages the day-to-day affairs of the traditional government. Acting as the right hand of the Paramount Chief, the Mankrado coordinates communication between the paramount stool and the divisional chiefs, oversees the implementation of council resolutions, and ensures order and protocol are maintained at all traditional gatherings and ceremonies. In the absence of the Paramount Chief, the Mankrado may preside over council proceedings.
+                The Mankrado is the head of the elders and is responsible for overseeing the implementation of the Traditional Council's resolutions. He ensures order, discipline, and adherence to protocol at all traditional ceremonies, gatherings, and within the community. A key aspect of his role is maintaining internal peace, security, and social cohesion, while helping to resolve disputes and uphold communal harmony.
               </p>
             </div>
 
@@ -160,11 +160,11 @@ export default function TraditionalGovernance() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-orange-600 font-semibold">Custodians of Tradition &amp; Succession</p>
-                  <h3 className="font-serif text-xl font-bold text-gray-900">Stoolfathers</h3>
+                  <h3 className="font-serif text-xl font-bold text-gray-900">ZIKPUITOR (Stoolfather)</h3>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm">
-                The Stoolfathers are the custodians of the paramount stool itself — the most sacred symbol of chieftaincy authority in Tanyigbe. They guard the customs, protocols, and rites of succession that govern how a new paramount chief is identified, nominated, and installed. In times of interregnum the Stoolfathers are paramount, ensuring continuity of governance and the inviolability of traditional succession. Their institutional memory preserves the oral history and customary law that define the identity of the Tanyigbe stool across generations.
+                The Stoolfather is the custodian of a stool, the most sacred symbol of chieftaincy authority in Tanyigbe. Led by the Stoolfather of the Paramount Stool, the Stoolfathers safeguard the customs, protocols, and succession rites that guide the selection, nomination, and installation of chiefs. During periods of interregnum, they ensure continuity of governance and uphold the integrity of the traditional succession process. As custodians of oral history and customary law, they preserve the heritage, identity, and traditions of the Tanyigbe stools for future generations.
               </p>
             </div>
 
