@@ -76,6 +76,9 @@ const galleryImages: GalleryImage[] = [
   { id: 130, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.11.jpeg', alt: 'Grand Festival Procession with Warriors and Chiefs', category: 'Culture' },
   { id: 131, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.13.jpeg', alt: 'Elder Receiving Traditional Greeting', category: 'Culture' },
   { id: 132, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.14_(1).jpeg', alt: 'Chief in Royal Regalia at Traditional Procession', category: 'Culture' },
+  { id: 200, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.28_(1).jpeg', alt: 'Woman in Blue Kente Holding Carved Ceremonial Scepter', category: 'Culture' },
+  { id: 201, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.28_(2).jpeg', alt: 'Elder with Gold Ceremonial Staff in Kente Cloth', category: 'Culture' },
+  { id: 202, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.24.jpeg', alt: 'Chief with Ceremonial Sword at Community Welcome', category: 'Culture' },
   // Durbar & Procession
   { id: 120, src: '/gallery/uncategorized/8.jpg', alt: 'Durbar — Chief in Red Leopard Hat Under Royal Umbrella', category: 'Culture' },
   { id: 121, src: '/gallery/uncategorized/9.jpg', alt: 'Tanyigbe Durbar — Procession with Ceremonial Bowl', category: 'Culture' },
@@ -146,6 +149,10 @@ const galleryImages: GalleryImage[] = [
   // NorDU Beauty Pageant
   { id: 138, src: '/gallery/uncategorized/10.jpg', alt: 'NorDU Beauty Pageant — Chief Speaking at Grand Finale', category: 'Events' },
   { id: 139, src: '/gallery/uncategorized/11.jpg', alt: 'NorDU Beauty Pageant — Paramount Chief Addressing the Crowd', category: 'Events' },
+  { id: 203, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.25_(1).jpeg', alt: 'Community Celebration — Women Making Peace Signs', category: 'Events' },
+  { id: 204, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26.jpeg', alt: 'Welcome Home March for Togbe Kodi Adiko VI', category: 'Events' },
+  { id: 205, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.27_(1).jpeg', alt: 'Football Tournament — Team Lifting the Trophy', category: 'Events' },
+  { id: 206, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.27_(2).jpeg', alt: 'State Award Ceremony — Chief Receives Medal', category: 'Events' },
   // Developments
   { id: 11, src: '/1.jpg', alt: 'Tanyigbe Landscape', category: 'Developments' },
   { id: 12, src: '/2.jpg', alt: 'Community Infrastructure', category: 'Developments' },
@@ -159,6 +166,8 @@ const galleryImages: GalleryImage[] = [
   { id: 46, src: '/WhatsApp_Image_2026-05-20_at_09.50.25_(2).jpeg', alt: 'Tree Planting Initiative', category: 'Developments' },
   { id: 53, src: '/WhatsApp_Image_2026-05-20_at_09.50.25_(1).jpeg', alt: 'Tree Planting Volunteer', category: 'Developments' },
   { id: 57, src: '/WhatsApp_Image_2026-05-20_at_09.50.22_(1).jpeg', alt: 'Community Reforestation Group', category: 'Developments' },
+  { id: 207, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26_(1).jpeg', alt: 'School Girls Receiving Supplies from Community Member', category: 'Developments' },
+  { id: 208, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26_(2).jpeg', alt: 'Community Members at Agricultural Farm Activity', category: 'Developments' },
   // Health
   { id: 29, src: '/WhatsApp_Image_2026-05-20_at_09.50.29.jpeg', alt: 'Breast Cancer Awareness Screening', category: 'Health' },
   { id: 45, src: '/WhatsApp_Image_2026-05-20_at_09.50.28_(2).jpeg', alt: 'Community Health Outreach', category: 'Health' },
