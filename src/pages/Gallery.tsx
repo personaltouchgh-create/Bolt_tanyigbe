@@ -142,7 +142,6 @@ const galleryImages: GalleryImage[] = [
   { id: 116, src: '/gallery/uncategorized/73.jpg', alt: 'Annual Health Walk — Leaders and Participants Walking', category: 'Events' },
   { id: 117, src: '/gallery/uncategorized/74.jpg', alt: 'Annual Health Walk — Chief Walking with Pink Team', category: 'Events' },
   { id: 118, src: '/gallery/uncategorized/75.jpg', alt: 'Annual Health Walk — Chief Addressing the Crowd', category: 'Events' },
-  { id: 119, src: '/gallery/uncategorized/76.jpg', alt: 'Annual Health Walk — Community Leaders at the Podium', category: 'Events' },
   { id: 133, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.18.jpeg', alt: 'Gift Presentation Ceremony to Community Chief', category: 'Events' },
   { id: 134, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.05.jpeg', alt: 'Togbe Kodi Adiko VI at Kwibuka 32 Commemoration', category: 'Events' },
   { id: 135, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.06.jpeg', alt: 'CEANA 2026 Launch — Tanyigbe Chiefs at Event', category: 'Events' },
