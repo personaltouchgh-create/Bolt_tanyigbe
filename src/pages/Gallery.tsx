@@ -98,6 +98,7 @@ const galleryImages: GalleryImage[] = [
   { id: 135, src: '/gallery/uncategorized/27.jpg', alt: 'Young Woman in Kente at Traditional Ceremony', category: 'Culture' },
   { id: 136, src: '/gallery/uncategorized/28.jpg', alt: 'Woman in Kente Attire at Traditional Gathering', category: 'Culture' },
   { id: 137, src: '/gallery/uncategorized/29.jpg', alt: 'Yam Festival — Warrior with Black Face Paint and Gold Spear', category: 'Culture' },
+  { id: 144, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.32_(2).jpeg', alt: 'Togbe Kodi Adiko VI Holding an Infant', category: 'Culture' },
   // Events
   { id: 3, src: '/475764112_1168645144835044_4633959021770456733_n.jpg', alt: 'TAYAFEST Celebration', category: 'Events' },
   { id: 7, src: '/491354591_1229152408784317_3726456993382028091_n.jpg', alt: 'Traditional Dance Performance', category: 'Events' },
@@ -149,6 +150,7 @@ const galleryImages: GalleryImage[] = [
   // NorDU Beauty Pageant
   { id: 138, src: '/gallery/uncategorized/10.jpg', alt: 'NorDU Beauty Pageant — Chief Speaking at Grand Finale', category: 'Events' },
   { id: 139, src: '/gallery/uncategorized/11.jpg', alt: 'NorDU Beauty Pageant — Paramount Chief Addressing the Crowd', category: 'Events' },
+  { id: 145, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.32.jpeg', alt: 'Chief Presenting Framed Citation at Award Ceremony', category: 'Events' },
   { id: 203, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.25_(1).jpeg', alt: 'Community Celebration — Women Making Peace Signs', category: 'Events' },
   { id: 204, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26.jpeg', alt: 'Welcome Home March for Togbe Kodi Adiko VI', category: 'Events' },
   { id: 205, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.27_(1).jpeg', alt: 'Football Tournament — Team Lifting the Trophy', category: 'Events' },
@@ -168,6 +170,7 @@ const galleryImages: GalleryImage[] = [
   { id: 57, src: '/WhatsApp_Image_2026-05-20_at_09.50.22_(1).jpeg', alt: 'Community Reforestation Group', category: 'Developments' },
   { id: 207, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26_(1).jpeg', alt: 'School Girls Receiving Supplies from Community Member', category: 'Developments' },
   { id: 208, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.26_(2).jpeg', alt: 'Community Members at Agricultural Farm Activity', category: 'Developments' },
+  { id: 140, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.29_(3).jpeg', alt: 'Tree Planting — Woman Planting Seedling', category: 'Developments' },
   // Health
   { id: 29, src: '/WhatsApp_Image_2026-05-20_at_09.50.29.jpeg', alt: 'Breast Cancer Awareness Screening', category: 'Health' },
   { id: 45, src: '/WhatsApp_Image_2026-05-20_at_09.50.28_(2).jpeg', alt: 'Community Health Outreach', category: 'Health' },
@@ -175,6 +178,9 @@ const galleryImages: GalleryImage[] = [
   { id: 27, src: '/WhatsApp_Image_2026-05-20_at_09.50.27_(1).jpeg', alt: 'Children Face Painting Activity', category: 'Education' },
   { id: 35, src: '/WhatsApp_Image_2026-05-20_at_09.50.27.jpeg', alt: 'Children Playing Board Games', category: 'Education' },
   { id: 42, src: '/WhatsApp_Image_2026-05-20_at_09.50.26.jpeg', alt: 'Student Prize Giving Ceremony', category: 'Education' },
+  { id: 141, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.31_(1).jpeg', alt: 'Children\'s Fun Day — Kids on Inflatable Bounce Castle', category: 'Education' },
+  { id: 142, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.31.jpeg', alt: 'Togbe Kodi Adiko VI\'s Award — Best Performing School in 2019 BECE', category: 'Education' },
+  { id: 143, src: '/gallery/uncategorized/WhatsApp_Image_2026-06-14_at_12.22.32_(3).jpeg', alt: 'Community Leader Addressing Youth at Church Hall', category: 'Education' },
 ];
 
 const categories = ['All', 'Culture', 'Events', 'Developments', 'Health', 'Education'];
